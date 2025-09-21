@@ -1,0 +1,618 @@
+A GUIDE TO THE  
+MACHINERY  
+REGULATION (EU)
+2023/1230
+Key changes and challenges  \nAs the “go to” document for machine builders, 
+the European machinery directive lays 
+out the minimum safety requirements for 
+machinery.  The last change to the directive was 
+on 29 December 2009, when 2006/42/EC was 
+introduced. 
+In 2020, as part of the commission work program ‘A Europe 
+fit for the Digital Age’, the Machinery Directive underwent an 
+impact assessment, and it was concluded that a number of gaps 
+required addressing – namely (i) tackling new risks originating from 
+emerging technologies; (ii) legal uncertainty on scope definitions; 
+(iii) insufficient provisions for high-risk machines; (iv) adoption 
+of digital documentation; and (vi) divergences in transposition 
+interpretation.
+As the implementation date draws closer, it is important for OEM/
+machine builders to understand the key changes and challenges.
+What is the impact on OEMs? 
+For OEMs exporting or selling equipment in the EU this will replace 
+the Machinery Directive 2006/42/EC.  It highlights: 
+•  A new compliance route
+•  A revised structure to the annexes to improve the flow
+•  Additional requirements added into the essential health and 
+safety requirements 
+• Digital documentation
+• Cybersecurity requirements
+1 https://eur-lex.europa.eu/eli/reg/2023/1230/ojThe Machinery 
+Regulation (EU) 
+2023/12301 
+2The Machinery 
+Regulation (EU)
+PG 2Key Dates
+PG 3Re-ordering of  
+the annexes
+PG 4Substantial
+Modifications
+PG 9Compliance Route/ 
+Fines & Penalties
+PG 10OEM - Call to Action
+PG 11Further  
+Information
+PG 12\nJULY 2026
+First report by the member 
+states that assesses the 
+effectiveness of Articles 
+6(4) and (5)
+OCTOBER 2026
+Member States must notify 
+the European Commission 
+of their penalty rules and 
+measures.Key dates
+The new Machinery Regulation (EU) 
+2023/1230 was published in the 
+official journal on 29 June 2023, 
+and entered into force on 19 July 
+2023, with a 42-month transition to 
+the application date of 20 January 
+2027. This date is the same for all 
+EU and EFTA countries; and being 
+a regulation and not a directive 
+means it will be adopted at the same 
+time with no modification. After 
+20 January 2027, all machinery 
+and related products will need to 
+meet the requirements of the new 
+regulation before being placed on  
+the market. 
+The key changes to the new 
+machinery regulation include a 
+reordering of the annexes from 
+the current machinery directive 
+2006/42/EC, a focus on changing 
+technologies, and the threat from 
+cybersecurity breaches. It is the first regulation to tie together 
+machinery safety  and cybersecurity.JUNE 2023
+Publication of  Regulation 
+(EU) 2023/1230 in the 
+Official Journal.
+JULY 2023
+Regulation (EU) 2023/1230 
+enters into force.JULY 2025
+Member States must 
+provide data and 
+information related to 
+machinery and related 
+products, including 
+whether specific events 
+have occurred.20 JANUARY 2027
+Application of  Regulation 
+(EU)  2023/1230 for  private 
+companies2023 2024 2025 2026 2027
+Machines must comply with the requirements of Directive 
+2006/42/EC; it will not be possible to issue declarations of 
+conformity to Regulation (EU) 2023/1230. BEFORE 20TH JANUARY 2027MACHINERY REGULATION (EU) 2023/1230 TIMELINE
+AFTER 20TH JANUARY 2027
+Machines must comply with the requirements of 
+Regulation (EU) 2023/1230 and be accompanied by an 
+EU Declaration of Conformity under that regulation.
+3The Machinery 
+Regulation (EU)
+PG 2Key Dates
+PG 3Re-ordering of  
+the annexes
+PG 4Substantial
+Modifications
+PG 9Compliance Route/ 
+Fines & Penalties
+PG 10OEM - Call to Action
+PG 11Further  
+Information
+PG 12\nRe-ordering of the annexes
+The annexes have been re-ordered to provide a better flow , with the essential health and safety regulations 
+(EHSRs) moving to Annex III , and the requirements for categories of machines and products, and the indicative list 
+of safety components moving  to Annex I &II.
+Annex IV details the requirements for any technical documentation needed to support compliance with the 
+regulations, with Annex V providing the details for either a declaration of conformity or declaration of incorporation.
+Annex VI to Annex IX provide support for the compliance route to follow for the machinery or related product being 
+manufactured.
+4The Machinery 
+Regulation (EU)
+PG 2Key Dates
+PG 3Re-ordering of  
+the annexes
+PG 4Substantial
+Modifications
+PG 9Compliance Route/ 
+Fines & Penalties
+PG 10OEM - Call to Action
+PG 11Further  
+Information
+PG 12\n5Annex I
+Categories of machinery or  
+related products 
+As mentioned previously, the annexes have been reordered to  
+provide better flow.
+Annex I now covers - Categories of machines or related products 
+and has been split into Part A and Part B. 
+•  PART A includes the addition of safety components and 
+embedded safety systems with fully or partially self-evolving 
+behaviour using machine learning approaches ensuring safety 
+functions, a nod towards future solutions that may use AI 
+technology.
+•  PART B covers the majority of the current Annex IV machines 
+in 2006/42/EC of the current machinery directive, with the 
+exception of removable mechanical transmission devices, 
+including their guards, guards for removable mechanical 
+transmission devices, vehicle servicing lifts, and portable 
+cartridge-operated fixing and other impact machinery, which 
+are included in PART A.
+  (see bibliography for Annex I categories of machinery or related products)
+5The Machinery 
+Regulation (EU)
+PG 2Key Dates
+PG 3Re-ordering of  
+the annexes
+PG 4Substantial
+Modifications
+PG 9Compliance Route/ 
+Fines & Penalties
+PG 10OEM - Call to Action
+PG 11Further  
+Information
+PG 12\n6
+Annex IIIndicative list of safety  
+components
+It also includes and covers the aspects for components and 
+embedded safety systems using fully or partially self-evolving 
+behavior using machine learning  approaches ensuring safety 
+functions.
+The other addition in Annex II is filtration systems intended for 
+integration into machinery cabins, in order to protect operators 
+or other persons against hazardous materials and substances, 
+including pesticides. It also covers filters for such filtration 
+systems.
+ (see bibliography for Annex I categories of machinery or related products)
+6The Machinery 
+Regulation (EU)
+PG 2Key Dates
+PG 3Re-ordering of  
+the annexes
+PG 4Substantial
+Modifications
+PG 9Compliance Route/ 
+Fines & Penalties
+PG 10OEM - Call to Action
+PG 11Further  
+Information
+PG 12\n7Annex III
+Essential health and safety requirements 
+(EHSRs)
+This Annex has seen a number of significant additions including:
+Ergonomics (Clause 1.1.6) gives consideration to how operators interact with machinery 
+or related products that have either fully or partially self-evolving behavior.
+Autonomous mobile machinery (Clause 3.6.3.3) gains extra requirements, which are 
+included in annex III and the supplementary essential health and safety requirements to 
+offset risks due to the mobility of machinery or related products.
+Protection against corruption (Clause 1.1.9) introduces cyber security requirements 
+related to OT (Operational Technology) and has been added to cover the increase in 
+industrial networks for safety systems, and also the generation of data to support 
+the growth of connected enterprise solutions. It covers both hardware and software 
+requirements.
+Machinery needs to ensure that the connection of another device – either locally or 
+remotely – doesn’t lead to a hazardous situation. In addition, any hardware component 
+that transmits signals or data and has access to software that is critical for the 
+machinery’s compliance to relevant health and safety requirements, needs to be 
+protected against both accidental or intentional corruption, and will collect evidence of 
+both legitimate or illegitimate interventions.
+Finally, for protection against corruption, software and data that are critical for the 
+compliance of the machinery or related products with the relevant health and safety 
+requirements, shall be identified as such and shall be adequately protected against 
+accidental or intentional corruption. The machinery or related product shall identify the 
+software installed on it that is necessary for it to operate safely; and shall be able to 
+provide that information at all times in an easily accessible form. The machinery or related 
+product shall collect evidence of a legitimate or illegitimate intervention in the software 
+or a modification of the software installed on the machinery or related product or its 
+configuration.
+7The Machinery 
+Regulation (EU)
+PG 2Key Dates
+PG 3Re-ordering of  
+the annexes
+PG 4Substantial
+Modifications
+PG 9Compliance Route/ 
+Fines & Penalties
+PG 10OEM - Call to Action
+PG 11Further  
+Information
+PG 12\n8Additional requirements have been included for control systems.
+Safety and reliability of control systems (Clause 1.2.1)
+Control systems shall be designed and constructed in such a way as to prevent 
+hazardous situations from occuring. They also should withstand where appropriate 
+to the circumstances and risks, the intended operating stresses and intended and 
+unintended external influences, including reasonably foreseeable malicious attempts 
+from third parties leading to a hazardous situation.
+It’s here that the link between safety and cybersecurity is evident. There is also the need 
+for a tracing log containing the data generated in relation to an intervention, and of the 
+versions of the safety software uploaded after the machinery or related product has been 
+placed on the market or put into service. This needs to be enabled for five years after such 
+an upload. 
+The requirement here is exclusively to demonstrate the conformity of the machinery 
+or the related product with this EHSRs should a reasonable request from a competent 
+national authority be made.
+For OEMs developing control systems or logic with fully or partially self-evolving behavior, 
+that are designed to operate with varying levels of autonomy, additional requirements 
+have been added into the EHSRs in Annex III.
+They shall not cause the machinery or related product to perform actions beyond their 
+defined task and movement space.
+Recording of data on the safety related decision-making process for software-based 
+safety systems ensuring safety functions must be enabled and retained for one year after 
+the machinery or related product is place on to the market or put into service. At all times 
+it must be possible to correct the machinery or related product in order to maintain its 
+inherent safety.
+8The Machinery 
+Regulation (EU)
+PG 2Key Dates
+PG 3Re-ordering of  
+the annexes
+PG 4Substantial
+Modifications
+PG 9Compliance Route/ 
+Fines & Penalties
+PG 10OEM - Call to Action
+PG 11Further  
+Information
+PG 12\nSubstantial 
+modifications – 
+explanation of 
+Article 3 (16) 
+After being placed on the market or 
+put into service, should machinery be 
+modified, by physical or digital means 
+(meaning hardware or software), 
+in a way that is not foreseen by the 
+manufacturer, and which affects the 
+safety of such products by creating a 
+new hazard or increasing an existing risk, 
+the modification should be considered 
+as substantial when significant new 
+protective measures are required . The 
+person that carries out the substantial 
+modification should be required to 
+perform a new conformity assessment 
+before placing the modified product on 
+the market or putting it into service. This 
+conformity assessment can be restricted 
+to the part of the production line that has 
+been modified, and so does not have to 
+be completed for the whole assembly.
+Five Steps to Improving  
+Safety Maturity
+PG 2The RA Safety Maturity 
+Improvement Process
+PG 6Step One       
+PG 7Step Two       
+PG 11Step Three       
+PG 13Step Four       
+PG 15Step Five       
+PG 20
+ 9The Machinery 
+Regulation (EU)
+PG 2Key Dates
+PG 3Re-ordering of  
+the annexes
+PG 4Substantial
+Modifications
+PG 9Compliance Route/ 
+Fines & Penalties
+PG 10OEM - Call to Action
+PG 11Further  
+Information
+PG 12\nCompliance Route 
+There is more emphasis in the regulation 
+for third-party certification. However, self-
+certification is still possible as long as the 
+machinery is in Annex I Part B and is built 
+preferably using harmonized standards or a 
+common specification. If the machinery is 
+not in Annex I, the preferred route is to follow 
+harmonized standards. The compliance route for 
+this type of equipment is in Annex VI module A.
+For all other equipment, third-party certification 
+through a notified body is required.
+The route to compliance is covered in Annexes 
+VII VIII & IX of the Machinery Regulation (EU) 
+2023/12302.
+2 https://eur-lex.europa.eu/legal-content/EN/
+TXT/?uri=CELEX:32023R1230
+Fines & Penalties
+Article 50 empowers member states to define 
+the exact size of the fines and penalties 
+against the Machinery Regulations (EU) 
+2023/1230. Although not yet confirmed it is 
+expected that these will aligned with other 
+recent directives, such as the Network & 
+Information Security Directive (NIS2) which 
+can impose fines of up to €10,000,000 or 2% 
+of global annual revenue.
+Five Steps to Improving  
+Safety Maturity
+PG 2The RA Safety Maturity 
+Improvement Process
+PG 6Step One       
+PG 7Step Two       
+PG 11Step Three       
+PG 13Step Four       
+PG 15Step Five       
+PG 20
+COMPLIANCE ROUTE
+ANNEX I PART A
+NOT FULLY 
+DESIGNED TO 
+HARMONISED 
+STANDARDS 
+OR COMMON 
+SPECIFICATIONS
+ANNEX I PART B
+NOT LISTED IN 
+ANNEX I MACHINERY 
+& RELATED 
+PRODUCTFULLY DESIGNED 
+TO HARMONISED 
+STANDARDS 
+OR COMMON 
+SPECIFICATIONS
+PREFERENCE TO 
+USE HARMONISED 
+STANDARDS ANNEX VII MODULE 
+B EU TYPE 
+EXAMINATION
+ANNEX IX MODULE 
+H FULL QUALITY 
+ASSURANCE
+ANNEX X 
+MODULE G UNIT 
+VERIFICATIONANNEX VIII MODULE 
+C CONFORMITY 
+TO TYPE BASED 
+ON INTERNAL 
+PRODUCTION 
+CONTROL
+ANNEX VI MODULE 
+A INTERNAL 
+PRODUCTION 
+CONTROLANNEX V 
+DECLARATION OF 
+CONFORMITYCE MARK 
+REGULATION 
+765/2008 + 
+NOTIFIED BODY ID
+ANNEX V 
+DECLARATION OF 
+CONFORMITYCE MARK 
+REGULATION 
+765/2008
+10The Machinery 
+Regulation (EU)
+PG 2Key Dates
+PG 3Re-ordering of  
+the annexes
+PG 4Substantial
+Modifications
+PG 9Compliance Route/  
+Fines & Penalties
+PG 10OEM - Call to Action
+PG 11Further  
+Information
+PG 12\nReview, update, or 
+generate cybersecurity 
+policy documents. 
+This may need the 
+organization to partner 
+with a third-party 
+consultancy.
+Learn more here     If you have any form 
+of network, conduct 
+a vulnerability 
+assessment to allow 
+the development of 
+relevant cybersecurity 
+requirements, and 
+then implement the 
+necessary mitigation / 
+technology.
+Learn more here     Identify the changes 
+that affect you and your 
+machinery. With the 
+additional requirements 
+for protection 
+against corruption, 
+Rockwell Automation 
+recommends you 
+conduct a cyber risk 
+assessment. 
+Learn more here     OEM – Call to Action
+As an OEM, download 
+a copy of the 
+Machinery Regulation 
+2023/1230 and review 
+the document. The 
+Machinery Regulation 
+can be found here .    Finally, keep yourself 
+updated.
+Learn more here     
+11The Machinery 
+Regulation (EU)
+PG 2Key Dates
+PG 3Re-ordering of  
+the annexes
+PG 4Substantial
+Modifications
+PG 9Compliance Route/ 
+Fines & Penalties
+PG 10OEM - Call to Action
+PG 11Further  
+Information
+PG 12\nFurther Information
+The Rockwell Automation website will provide further 
+details on the Machinery Regulation (EU) 2023/1230 
+and also provide updates as the standards covering 
+the new requirements highlighted in this guide are 
+released. 
+If you’re looking to enhance the performance, safety, 
+and productivity of your business, you might want to 
+learn more about the services, tools, and technology 
+available. You can check out this webpage       to 
+explore the best-in-class options available for your 
+business needs and outcomes.
+If you’re interested in learning more about industrial 
+cybersecurity and how to protect your operational 
+technology (OT) environment, check out our latest 
+cybersecurity resources here .
+12The Machinery 
+Regulation (EU)
+PG 2Key Dates
+PG 3Re-ordering of  
+the annexes
+PG 4Substantial
+Modifications
+PG 9Compliance Route/ 
+Fines & Penalties
+PG 10OEM - Call to Action
+PG 11Further  
+Information
+PG 12\nPART A 
+Categories of machinery or related products to which a procedure referred to in  
+Article 25(2) shall be applied: 
+1. Removable mechanical transmission devices including their guards. 
+2. Guards for removable mechanical transmission devices. 
+3. Vehicle servicing lifts. 
+4. Portable cartridge-operated fixing and other impact machinery. 
+5.  Safety components with fully or partially self-evolving behaviour using machine 
+learning approaches ensuring safety functions. 
+6.  Machinery that has embedded systems with fully or partially self-evolving behaviour 
+using machine learning approaches ensuring safety functions that have not been 
+placed independently on the market, in respect only of those systems. 
+PART B 
+Categories of machinery or related products to which one of the procedures referred to in 
+Article 25(3) shall be applied: 
+1.    Circular saws (single- or multi-blade) for working with wood and material with similar 
+physical characteristics, or for working with meat and material with similar physical 
+characteristics, of the following types: 
+1.1.   sawing machinery with fixed blade(s) during cutting, having a fixed bed or support 
+with manual feed of the workpiece or with a demountable power feed; 
+1.2.   sawing machinery with fixed blade(s) during cutting, having a manually operated 
+reciprocating saw-bench or carriage; 
+1.3.   sawing machinery with fixed blade(s) during cutting, having a built-in mechanical 
+feed device for the workpieces, with manual loading and/or unloading; 
+1.4.   sawing machinery with movable blade(s) during cutting, having mechanical 
+movement of the blade, with manual loading and/or unloading. 
+2.   Hand-fed surface planing machinery for woodworking. 
+3.   Thicknesses for one-side dressing having a built-in mechanical feed device, with 
+manual loading and/or unloading for woodworking. 4.   Bandsaws with manual loading and/or unloading for working with wood and material 
+with similar physical characteristics, or for working with meat and material with 
+similar physical characteristics, of the following types: 
+4.1.   sawing machinery with fixed blade(s) during cutting, having a fixed or 
+reciprocating-movement bed or support for the workpiece; 
+4.2.  sawing machinery with blade(s) assembled on a carriage with reciprocating motion.
+5.   Combined machinery of the types referred to in points 1 to 4 and in point 7 for 
+working with wood and material with similar physical characteristics. 
+6.  Hand-fed tenoning machinery with several tool holders for woodworking. 
+7.   Hand-fed vertical spindle molding machinery for working with wood and material 
+with similar physical characteristics. 
+8.  Portable chainsaws for woodworking. 
+9.   Presses, including press-brakes, for the cold working of metals, with manual 
+loading and/or unloading, whose movable working parts may have a travel 
+exceeding 6 mm and a speed exceeding 30 mm/s. 
+10.   Injection or compression plastics-molding machinery with manual loading or 
+unloading. 
+11.   Injection or compression rubber-molding machinery with manual loading or 
+unloading. 
+12.  Machinery for underground working of the following types: 
+12.1.  locomotives and brake-vans; 
+12.2. hydraulic-powered roof supports. 
+13.   Manually loaded trucks for the collection of household refuse incorporating a 
+compression mechanism. 
+14.   Devices for the lifting of persons or of persons and goods involving a hazard of 
+falling from a vertical height of more than 3 m. 
+15.  Protective devices designed to detect the presence of persons. 
+16.   Power-operated interlocking movable guards designed to be used as safeguards in 
+machinery referred to in points 9, 10 and 11 of this Part. 
+17.  Logic units to ensure safety functions. 
+18.  Roll-over protective structures (ROPS). 
+19.  Falling-object protective structures (FOPS).BIBLIOGRAPHY  •  ANNEX I  •  CATEGORIES OF MACHINERY OR RELATED PRODUCTS
+13The Machinery 
+Regulation (EU)
+PG 2Key Dates
+PG 3Re-ordering of  
+the annexes
+PG 4Substantial
+Modifications
+PG 9Compliance Route/ 
+Fines & Penalties
+PG 10OEM - Call to Action
+PG 11Further  
+Information
+PG 12\nBIBLIOGRAPHY  •  ANNEX II  •  INDICATIVE LIST OF SAFETY COMPONENTS
+1. Guards for removable mechanical transmission devices. 
+2. Protective devices designed to detect the presence of persons. 
+3.  Power-operated interlocking movable guards designed to be used as safeguards in 
+machinery referred to in points 9, 10 and 11 of Annex I, Part B. 
+4. Logic units to ensure safety functions. 
+5. Valves with additional means for failure detection intended for the control of dangerous 
+movements of machinery. 
+6. Extraction systems for machinery emissions. 
+7.  Guards and protective devices designed to protect persons against moving parts 
+involved in the process of the machinery. 
+8. Monitoring devices for loading and movement control in lifting machinery. 
+9. Restraint systems to keep persons in their seats. 
+10. Emergency stop devices. 
+11.  Discharging systems to prevent the build-up of potentially dangerous electrostatic 
+charges. 
+12.  Energy limiters and relief devices referred to in sections 1.5.7, 3.4.7 and 4.1.2.6 of Annex 
+III. 
+13. Systems and devices to reduce the emission of noise and vibrations. 
+14. Roll-over protective structures (ROPS). 
+15. Falling-object protective structures (FOPS). 
+16. Two-hand control devices. 
+17.  The following components for machinery designed for lifting and/or lowering persons 
+between different landings: 
+ (a) devices for locking landing doors; 
+ (b)   devices to prevent the load-carrying unit from falling or unchecked upwards 
+movement; 
+ (c) overspeed limitation devices; 
+ (d)   energy-accumulating shock absorbers, non-linear or with damping of the return 
+movement;  (e) energy-dissipating shock absorbers; 
+ (f) safety devices fitted to jacks of hydraulic power circuits and used to prevent falls; 
+ (g) safety switches containing electronic components. 
+ 18. Software ensuring safety functions. 
+ 19.   Safety components with fully or partially self-evolving behavior using machine 
+learning approaches ensuring safety functions. 
+ 20.  Filtration systems intended to be integrated into machinery cabins in order to 
+protect operators or other persons against hazardous materials and substances, 
+including plant protection products, and filters for such filtration systems. 
+14The Machinery 
+Regulation (EU)
+PG 2Key Dates
+PG 3Re-ordering of  
+the annexes
+PG 4Substantial
+Modifications
+PG 9Compliance Route/ 
+Fines & Penalties
+PG 10OEM - Call to Action
+PG 11Further  
+Information
+PG 12\nDISCLAIMER
+This ebook presents the Rockwell Automation perspective on the latest EU Machinery Regulation. It offers insights based on our 
+current understanding and interpretation, in line with the current regulation status. Any actions taken based on this content are at your 
+own risk. We recommend seeking and conducting further research to validate and supplement the information provided herein.
+Connect with us.
+Allen-Bradley and expanding human possibility are trademarks of Rockwell Automation, Inc.
+Trademarks not belonging to Rockwell Automation are property of their respective companies.
+Publication OEM-SP123A-EN-P - August 2024
+Copyright © 2024 Rockwell Automation, Inc. All Rights Reserved. Printed in USA.

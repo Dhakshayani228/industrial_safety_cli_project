@@ -1,0 +1,352 @@
+A Safety Guide 
+to Industrial 
+Robotics 
+Hazards
+HOKUYO USA
+2019 Van Buren Ave., Suite A,  
+Indian Trail, NC 28079CONTACT
+704-882-3844  
+info@hokuyo-usa.com\nTable of Contents
+What are Industrial Robots?
+The Exponential Rise in the Use of Industrial Robotics
+Do Industrial Robots Improve Workplace Safety?
+Are Industrial Robots Completely Safe?
+Safety Principles for Industrial Robots
+Notable Industrial Robotics AccidentsCommon Industrial Robot Hazards
+Safety Considerations for Industrial Robots
+Smart Solutions for Safe Industrial Robots02
+03
+04
+06
+07
+1109
+12
+15
+\n1
+According to the World Robotics 2021  Reports by the 
+International Federation of Robotics (IFR), global robot 
+installations have significantly increased, even during the 
+pandemic. Currently, there are over 3 million industrial 
+robots operating worldwide, and this number is expected 
+to continue to grow. 
+Despite their numerous benefits, industrial robots present their own set of challenges, 
+especially when it comes to safety issues. These machines are powerful and intelligent, but they 
+can also lead to serious accidents, making it crucial to address the risks, hazards, and safety 
+standards associated with them. By prioritizing safety and adhering to industry standards, 
+we can ensure that the benefits of industrial robotics are realized while minimizing potential 
+hazards and risks. 
+This whitepaper offers an in-depth exploration of the fundamentals of industrial robotics and 
+aims to provide a comprehensive safety guide for addressing hazards and mitigating risks 
+associated with these machines.
+With the rapid growth of technology, industrial robotics 
+is becoming increasingly popular in the market. 
+These robots are being utilized to automate industrial 
+processes, which is resulting in a significant increase in 
+productivity. Moreover, they are capable of performing 
+various tasks in different industrial settings, which has 
+further boosted their demand. As a result, the robotics 
+industry has seen a positive surge in recent years.A SAFETY GUIDE TO INDUSTRIAL ROBOTICS HAZARDS
+By 2027, it is 
+predicted that the 
+industrial robotics 
+market will reachUSD 30.8 
+million\n2Industrial robots are versatile machines that have revolutionized the industrial sector. These 
+robots are programmable and can execute various tasks in different industrial settings, such as 
+manufacturing, logistics, agriculture, and healthcare. They can perform various operations that 
+are hazardous or require precision, such as welding, painting, and assembly.
+As the industrial sector requires repetitive and time-consuming tasks, industrial robots offer a cost-
+effective and efficient solution. Moreover, industrial robots can work in extreme temperatures, 
+high-pressure environments, and hazardous areas where human workers cannot operate safely.
+The increasing demand for industrial robots has led to technological advancements, resulting in 
+collaborative robots (cobots) that can work alongside human workers. These cobots are designed 
+to share the workspace with humans and can be programmed to assist workers in various tasks, 
+improving safety and productivity.What are
+Industrial Robots?
+Industrial robots have also become more accessible to small and medium-
+sized enterprises (SMEs) as the cost of industrial robots has decreased, and the 
+installation process has become more straightforward. As a result, SMEs can now 
+adopt automation and enhance their productivity and efficiency.\n3
+As industrial robots are equipped with sophisticated sensors and better control technologies, 
+they are used for a wide range of applications across different industries. The two main reasons 
+industries have started using robots at a large scale are efficiency and safety.The Exponential Rise in the 
+Use of Industrial Robotics
+Robots are capable of carrying out tedious and 
+hazardous operations with consistent efficiency 24/7 .
+These intelligent automated machineries can replace manual processes that otherwise put 
+human lives at risk. Besides, they can also execute tasks in coordination with humans, simplifying 
+industrial operations and maximizing throughput at reduced time and risks.
+The COVID-19 pandemic is another major factor that triggered the extensive adoption of industrial 
+robots in the last few years. Since factory operations were largely affected due to the imposed 
+movement restrictions, the industrial sector suffered extensive losses. The virus outbreak 
+universally highlighted the demand for automation and backups.\n4
+Minimize hazard exposure
+Human workers operate in difficult conditions in factories. There can be 
+extreme atmospheric conditions like high temperature and pressure 
+or freezing conditions depending upon the operational requirements. 
+However, humans do not have the ability to cope with extreme weather 
+conditions. Besides, as industrial operations expose them to toxic 
+chemicals and fumes, these can adversely affect the workers’ health.
+Robots, on the contrary, can work in adverse conditions 24/7. Moreover, 
+they can operate in extreme environments with high precision. Thus, 
+workers’ health risks can be eliminated if industries automate risky 
+processes through robots.Industrial robots are designed to undertake human tasks and perform them more efficiently. They 
+have faster processing speed and can handle complex tasks without any errors. These robots 
+have actuators and servo motors that generate tremendous forces for heavy lift operations. They 
+also have vision systems and sensors to help them operate precisely, quickly, and accurately.
+Here’s how industrial robots improve safety at the industrial workplace setup:Do Industrial Robots Improve 
+Workplace Safety?
+\n5Reducing the risk of injuries
+Industrial work processes include several routine tasks performed 
+repetitively. Workers often require lifting weights and are under constant 
+muscle stress. These strenuous activities can cause sprains, back pains, 
+and other muscle damage. Besides, even a minor accident, like a collision, 
+can lead to severe injuries.
+Industrial robots can perform these repetitive tasks without any failure. 
+They have well-designed control mechanisms that help them operate 
+efficiently and carry out strenuous jobs efficiently, limiting the risk of 
+injuries to human workers.
+Operational safety
+Industrial robots can help increase awareness of workplace safety. The 
+embedded sensors in these robots can trigger safety alarms in case of 
+any potential accidents. Thus, they can foster a better safety culture and 
+ensure minimal risks of accidents in a factory environment.
+\n6
+• Robots have high-speed movements, and it is almost impossible to follow these 
+movement sequences. As different equipment operates in the industries at a time, 
+there are chances of overlapping their radius of actions.   
+• Energy beams like lasers or water jets carry a high reserve of energy, and any 
+asynchronism can cause uncontrolled release.  
+• Robots are programmed machinery. They are sensitive to external errors like 
+electromagnetic compatibility. Moreover, there are chances of software corruption 
+or malfunction, which can lead to unforeseen circumstances.  
+• Mishaps can also result from human errors that can cause issues in the robot’s 
+defined operation.Robots are automatic machines that require little to no human intervention to operate. While 
+there are several technical disciplines that govern industrial robotics, there are still chances of 
+mishaps. Therefore, they cannot be considered completely safe as:
+Since the 1980s, several notable fatal accidents related to robots have occurred. Typically, 
+accidents do not occur during normal mode operations. The common reasons for accidents 
+resulting from robots include any malfunctioning or breakdown, power failure, control defects, 
+or similar incidents.As per reports , more than half of the robot accidents in Japan resulted from electronic circuit 
+faults. Also, about 20% of issues were due to human faults. Therefore, even if we can govern 
+human behavior, system faults cannot be reduced down to zero.Are Industrial Robots 
+Completely Safe?\n7
+Since industrial robots have complex mechanisms involved, it is also necessary to follow 
+robotics safety standards to establish a safe working environment for humans. No matter how 
+efficient and productive industrial robots are, there are underlying safety concerns. This is 
+why industrial standard bodies have developed several safety standards and guidelines that 
+industrial businesses must follow to ensure safe working environments.
+OSHA  
+OSHA,  or the Occupational Safety and Health Administration, outlines the standard regulations 
+for hazard-free and safe workplace conditions. These standards are updated regularly based 
+on the latest safety guidelines. As per OSHA, each stage of robot development needs risk 
+assessment to outline the worker and system safety requirements. Besides, when implementing 
+industrial robots, it is also essential to use safeguarding devices. These devices ensure that 
+there are fixed barriers to restrict the work area.  
+ 
+OSHA also highlights that awareness devices should be used in the industrial robotics system. 
+These can generate warning signals in the form of flashlights or alarms to alert the workers in 
+case of crossing the safe proximity levels or any other impending hazards.  
+ 
+Additionally, OSHA also emphasizes routine inspections and regular maintenance of industrial 
+robots. Any wear and tear or mechanical malfunctions should be detected beforehand. Another 
+important aspect that OSHA outlines is the proper training of those involved in dealing with 
+industrial robots. The workers interacting with these intelligent machines must be fully aware of 
+the safety standards and features.The three primary versions of robot safety standards are from OSHA, ISO, and ANSI.Safety Principles for 
+Industrial Robots\n8OSHA standards related to robotics include 1910 Subpart J, which highlights the general 
+environmental controls. The 1910 Subpart O further outlines the machine and machinery 
+guarding. It contains standard definitions of different machine parts and operations. The 1910 
+Subpart S highlights the electrical work practices, protection, equipment, training, and other 
+aspects.
+ANSI  
+The American National Standards Institute defines safety standards for robotics systems. It 
+also outlines the guidelines for manufacturing facilities to integrate industrial robots into their 
+operations. These standards are developed along with RIA or the Robotics Industries Association.
+ 
+The most extensive ANSI standard is ANSI/RIA R15.06-1999 . It elaborates on the guidelines about 
+the manufacturer requirements, installation, protection, and safeguarding practices related to the 
+operation of robots. It also specifies the importance of personnel safety and risk assessment. This 
+version has been updated to ANSI/RIA R15.06-2012 . 
+ANSI/RIA R15.06-2012 has adopted ISO safety regulations. These international guidelines set the 
+global compliance standard for the use of industrial robots. Adhering to these standards assures 
+that the latest safety protocols are followed.
+ISO 
+The International Organization for Standardization  has prepared the international robotics 
+standards that define the safety criteria for robot operations. ISO 10218:2011 highlights the 
+requirements for robots and robot work cells. There are two parts: ISO 10218-1:2011 and ISO 
+10218-2:2011.  
+ 
+ISO 10218-1:2011  defines the requirements for the inherent safe design of industrial robots, 
+protection measures, and other associated information. It also discusses the basic hazards related 
+to robotic systems and how these risks can be adequately reduced or eliminated.  
+ISO 10218-2:2011  is about the safe integration of industrial robot systems. It also describes the 
+design, manufacturing, component devices, and other operational aspects of the system. The 
+standard highlights the requirements that industrial businesses must follow when implementing 
+an integrated manufacturing system.
+\n9
+Major industrial robot systems hazards include:Common Industrial 
+Robot Hazards
+Environmental hazards
+If the operating conditions affect the robot’s operation in any way, there 
+might be a risk of hazards. Any power failure, lightning discharge, issues 
+in equipment orientation, or potentially hazardous radiation are beyond 
+control. However, these anomalies can affect the robot’s performance and 
+result in abnormal behavior. As a result, workplace safety will be at risk.
+Operational hazards
+Any unpredicted or imprecise movement, the unexpected change in the 
+program, component malfunctions, breakdowns, or any maloperation can 
+cause serious hazards like collision, crushing, and other serious injuries.
+Installation hazards
+Poor installation of industrial robots and improper testing measures pose 
+significant risks to the working environment. Also, as workers are first 
+exposed to these systems, they are at increased risk.\n10
+Power system failures
+Any disruption in the power system can affect the functioning of industrial 
+robots. Moreover, disruption in the electric signals can also lead to 
+operational failures or malfunctioning of the system at some level. These 
+issues can affect workplace safety and also result in hazardous situations.
+Control hazards
+Software malfunctions, radio or electromagnetic interference, or any 
+such controlling errors can affect the functional safety performance of 
+the system, resulting in accidents. These hazards can also result from any 
+faults in the control system, electrical sub-controls, hydraulic faults, and 
+similar issues.
+Human errors
+Industrial robots need supervision at some levels and cannot be left alone 
+to perform the tasks all by themselves. Any unpredicted movement or 
+action, incorrect activation of a sub-component, or overlooked critical 
+safety functions can lead to hazards. Sometimes, workers put themselves 
+in a risky position when they make any mistake in the robotics system’s 
+operation, maintenance, or troubleshooting.\n11
+There are several instances related to industrial robot accidents.  
+In Alabama, a 20-year-old worker was killed due to the abrupt restarting of a robot in an auto 
+parts supplier facility. The assembly line stopped due to some fault. About four workers went 
+in to check the fault in the robot station when the machine crushed the young woman. OSHA 
+investigated this case, cited some serious violations, and imposed a 2.5 million USD fine  on the 
+company.
+The Washington Fatality Assessment and Control Evaluation (WA FACE) program  
+investigates hazards and performs an in-depth analysis of workplace fatalities. It reported an 
+unfortunate incident involving a driverless forklift that killed a 45-year-old worker in Washington. 
+On sharing an alarm sound from a Laser Guided Vehicle (LGV), he removed a piece of plastic 
+and was outside the sensor path. As the LGV resumed operation, he was crushed by the 
+elevated forks and was pronounced dead after being rushed to a local hospital.In another case in Ohio, an auto parts manufacturer faced a fine of USD 3.42 
+million . A 58-year-old worker suffered from an elbow fracture and serious 
+injuries while removing scrap on a robotic press line. Another 22-year-old 
+worker suffered a similar fate while coming in contact with operating machine 
+parts. OSHA found multiple violations upon investigation even after the 
+company assured to improve safety conditions. Thus, a fine was imposed.  
+Notable Industrial Robotics 
+Accidents\n12
+As per OSHA, it is essential to implement an efficient safeguarding strategy to protect 
+workplaces involving industrial robots. Following are some of the essential steps industrial 
+businesses must take to ensure a safe workplace environment when integrating robots.Safety Considerations for 
+Industrial Robots
+Safety standards review
+At the manufacturer level, it is essential to comply with applicable safety 
+regulations and standards when designing robot applications. These 
+guidelines and specifications help create a safe working environment. The 
+sum total of interlinked devices constitutes a robot. Therefore, the entire 
+system must meet safety requirements.
+Although these standards differ with countries, there are common 
+standards accepted universally, like ISO, ANSI, and OSHA. These governing 
+bodies set international guidelines and also update the standards based 
+on the latest developments. So, manufacturers should stick to certified 
+standards and mention their compliance to ensure that the systems they 
+designed are safe.
+When buying industrial robots, companies must also review the safety 
+standards of the systems. They must question the robot manufacturer 
+about the specifications and cross-check that the robots can be safely 
+integrated into their workspace.\n13
+Risk assessments
+Risk assessment and comprehensive hazard analysis must be performed 
+when integrating robotic systems. There must be ideal participation 
+from employers and workers since they will deal with the system. These 
+assessments can help detect any likelihood of risks and develop protective 
+measures for risk reduction and safety control.
+Here are some considerations that can help in effective risk assessment:
+• For risk assessment, choosing an expert in robot applications and process 
+operations is important. Also, employees must be included as they deal directly with 
+industrial robots.  
+• Documentation is an important aspect of risk assessment as the specific guidelines 
+associated with the task can be referred to in the future. The potential risks must 
+be enlisted for each task, and the team can then decide on the risk recursion 
+techniques.  
+• After finalizing the appropriate risk reduction techniques, these principles must be 
+implemented effectively. Also, all employees must be made aware of the risks and 
+how to handle them.  
+• There must be periodical reviews as, with time, the requirements might change. 
+Besides, as the safety guidelines and standards are updated regularly, the risk 
+assessment must include those. Therefore, frequent monitoring and inspections can 
+ensure correct safety functions.  
+• It is also crucial to periodically validate the training manuals, electrical and 
+mechanical drawings, control system safety function settings, sensors, and other 
+safeguarding devices. These can help drive continuous improvements.\n14
+Risk reduction
+Risk reduction measures should be decided based on specific robot 
+applications. They should align with the standards hierarchy of controls. 
+External risk control measures will include laser scanners, guards and 
+barriers, and light curtains. Training professionals can handle internal risk 
+reduction measures like built-in safety functions and software settings.  
+ 
+There are non-collaborative robots that operate separately and do not 
+need workers’ support. These applications can be physically isolated 
+during their operations. Safeguarding devices like fences and barriers, 
+safety vision systems, and scanners can serve the purpose. Providing 
+adequate clearance when designing the application layout is also a good 
+practice. Training the workers dealing with these applications and ensuring 
+they know the Standard Operating Procedures (SOPs) is also necessary.
+ 
+As collaborative robot applications need the involvement of workers, they 
+need specific risk reduction measures based on different tasks. Mostly, 
+they have safety functions integrated into their systems that can control 
+the speed, force, momentum, and positions.
+Adequate safeguarding
+Safeguarding devices can help prevent hazards related to restricted space. 
+There are presence-sensing devices, fixed and interlocked barrier guards, 
+and limiting devices that can safeguard workers from accidents. Awareness 
+devices like chain or rope barriers, alarm signals, flashlights, and horns 
+should also be implemented as per the risk level.  
+ 
+PPE or Personal Protection Equipment like safety glasses, protective 
+footwear, arc glare shields, and hand protection should be used by 
+workers when operating with the robot applications.  
+Besides, regular inspection and maintenance programs should minimize 
+any malfunctioning or breakdown within the system.
+\n15
+The development of smarter and more advanced industrial robots has brought a whole new 
+level of efficiency and productivity to industries across the globe. However, as these machines 
+become more advanced, it is critical to ensure that they are also safe to operate alongside 
+human workers.
+There is a growing need for modular or collaborative robotic systems that can work in 
+tandem with human workers, which has led to the development of various safety features 
+and protocols. The incorporation of smart solutions that utilize sensors, cameras, and other 
+technologies can help mitigate potential hazards and ensure the overall safety of the system.  
+At Hokuyo , we recognize the importance of safety in the robotics industry and offer a range 
+of industrial sensor products designed to address safety concerns related to industrial robots. 
+Our products include safety laser scanners, crane collision avoidance solutions, LiDAR/obstacle 
+detection sensors, laser distance sensors, and more. By utilizing our high-quality sensor 
+products for robotics and automation applications, you can build a safer and more efficient 
+workplace.
+Contact us  to learn more about our sensor products and how they can help you ensure the 
+safety of your industrial robotics applications.Smart Solutions for Safe 
+Industrial Robots
+\n16https://ifr.org/ifr-press-releases/news/robot-sales-rise-again
+https://www.marketsandmarkets.com/Market-Reports/Industrial-Robotics-Market-643.html
+https://www.iloencyclopaedia.org/part-viii-12633/safety-applications/item/972-safety-principles-for-industrial-robots
+https://robotsdoneright.com/Articles/best-safety-practices-for-industrial-robot-operation.html
+https://www.osha.gov/otm/section-4-safety-hazards/chapter-4
+https://www.osha.gov/robotics/standards
+https://webstore.ansi.org/standards/ria/ansiriar15061999r2009
+https://webstore.ansi.org/standards/ria/ansiriar15062012
+https://ifr.org/standardisation
+https://www.iso.org/standard/51330.html
+https://www.iso.org/standard/41571.html
+https://www.osha.gov/news/newsreleases/region4/12142016
+https://www.osha.gov/news/newsreleases/region5/06292016-0
+https://blogs.cdc.gov/niosh-science-blog/2019/07/31/robot-safety-face/
+https://hokuyo-usa.com/about
+https://hokuyo-usa.com/products/safety-laser-scanners
+https://hokuyo-usa.com/products/crane-collision-avoidance
+https://hokuyo-usa.com/products/lidar-obstacle-detection
+https://hokuyo-usa.com/products/laser-distance-sensor
+https://hokuyo-usa.com/products/hot-metal-detectors
+https://hokuyo-usa.com/contactSOURCES

@@ -1,0 +1,232 @@
+Introduction to Industrial Robot 
+Safety ISO 10218 Parts 1 and 2
+Todd Dickey
+Safety Standards Development Contractor
+Honda Development and Manufacturing of America, LLC\nTopics
+●Industrial robot safety standards development
+○ISO 10218 -1,-2
+○ANSI/RIA R15.06
+●Key terms and concepts
+●Complementary documents (TRs)\nISO 10218 -1, -2
+●Full Titles
+○ISO 10218 -1:2011, Robots and robotic devices –Safety 
+requirements for industrial robots –Part 1: Robots
+■Sets requirements to robot manufacturers
+○ISO 10218 -2:2011, Robots and robotic devices –Safety 
+requirements for industrial robots –Part 2: Robot systems and 
+integration
+■Sets requirements to integrators 
+●Developed within ISO TC299/ WG3
+○TC299 –27 participating countries and 14 observing countries
+○WG3 –20 represented organizations\nANSI/RIA R15.06
+●Full title
+○American National Standard for Industrial Robots and 
+Robot Systems –Safety Requirements
+●Published in 2012
+●National adoption of ISO 10218 -1, -2
+○Both parts are under one cover
+●Part 2 deviations
+○Normative references
+○Bibliography for R15.06\nDeviation Details
+●Normative references for USA compliance
+●Bibliography for R15.06 are not found in 10218
+\nTitle change with next revision
+●ISO 10218 -1:202X, Robotics –Safety requirements –Part 1: 
+Industrial robots
+●ISO 10218 -2:202X, Robotics –Safety requirements –Part 2: 
+Industrial robot systems, robot applications and robot cells\nStandards
+●Provide a voluntary means to achieve a desired outcome
+●Can become compulsory (i.e., law) when adopted by a regulatory agency
+●Drafted by a volunteer committee of representatives of concerned interests 
+such as manufacturers of robots and safety devices, users, regulators, 
+suppliers, integrators, consultants, and academia
+○ Balanced across multiple disciplines
+●Developed under the backing of a national orinternational
+organization which provides rules and guidance on the standards 
+development process
+●Development utilizes a consensus process throughout the drafting
+○ Consensus implies a majority agreement to the guidance, but does 
+not imply unanimous agreement\nKey Terms 
+and Concepts\nKey Terms and Concepts
+●Industrial Robot
+○ Automatically controlled, reprogrammable multipurpose manipulator, 
+programmable in three or more axes, which can be either fixed in place 
+or mobile for use in industrial automation applications
+●Industrial Robot System
+○ System comprising:
+■ Industrial robot;
+■ End-effector(s);
+■ Any machinery, equipment, devices, external auxiliary axes or 
+sensors supporting the robot performing its task
+●Industrial Robot Cell
+○ One or more robot systems including associated machinery and 
+equipment and the associated safeguarded space and protective 
+measures\nRobot, System, Cell
+\nKey Terms and Concepts (cont.)
+●Normative vs Informative guidance
+○ A normative element describes the scope of the document or sets out 
+provisions
+■ The “required” items are identifiable by the word “shall”
+■ Normative references identify requirements found in other standards
+○ An informative element provides information intended to assist the 
+understanding or use of the document.
+■ They are the “good practice” guidance identifiable by the word “should”
+■ “Notes” are always informative\nKey Terms and Concepts (cont.)
+●Permissive vs Capability guidance
+○ A permissive guidance element describes a design feature that is 
+allowed/permitted
+■ The permitted item is identifiable by the word “may”
+Example: “A robot system may be network enabled for remote access.”
+○ A capable guidance element describes a design feature that gives a 
+machine the capability to perform a certain way.
+■ The capable item is identifiable by the word “can”
+Example: “Robot systems canhave a potentially large operating volume.”\nKey Terms and Concepts (cont.)
+●Practicable
+○ Reducing a risk to a level that represents the point, objectively 
+assessed, at which the time, trouble, difficulty, and cost of further 
+reduction becomes unreasonably disproportionate to the additional 
+risk reduction obtained
+Example: “Whenever practicable , control devices and control stations 
+shall be located so that the operator is able to observe the working area 
+or hazard zone.”\nKey Terms and Concepts (cont.)
+●Risk Assessment
+○ The identification of hazards, estimation of the risk and elimination of 
+the hazard or reduction in risk through protective measures
+■ Carried out by robot manufacturer when complying with Part 1
+■ Carried out by system integrator when complying with Part 2
+● When the User of machinery modifies the equipment, they 
+are acting as an integrator and Part 2 applies to them
+●Functional Safety
+○ Refers to ISO 13849 and IEC 62061 for Performance Level and 
+Safety Integrity Level determination/requirements respectively\nKey Terms and Concepts (cont.)
+●“Collaborative Robot”
+○ Refers to robots with incorporated technologies which permit them to be used 
+in collaborative applications
+○ Types of collaborative applications
+■ Safety -rated monitored stop (not considered collaborative in next revision)
+■ Hand guiding (HGC)
+■ Speed and separation monitoring (SSM)
+■ Power and force limiting (PFL)\nKey Terms and Concepts (cont.)
+●Verification and Validation
+Verification is more of a static method of checking the identification of 
+hazards and selected risk reduction measures. Typically done during 
+development phase.
+(i.e., Is the risk reduction measure appropriate and is it used appropriately?)
+Validation is more of a dynamic process of testing the applied risk reduction 
+measures. Performed on the completed system.
+(i.e., Are the safety functions working correctly?)\nKey Terms and Concepts (cont.)
+●Verification and Validation (cont.)
+○ Clause 6
+○ Annex F & G
+\nKey Terms and Concepts (cont.)
+●Information for Use
+○ Part 1
+○ Part 2
+\nComplementary 
+Documents\nComplementary Documents
+●TR R15.306 -2016 Task -based Risk Assessment Methodology
+○Key references ISO 12100, ISO 13849 and ANSI B11.0
+●TR R15.406 -2014 Safeguarding (Withdrawn)
+○Referenced ISO 11161, ISO 13855, ISO 13857, ANSI B11.19, 
+ANSI B11.20
+●TR R15.506 Applicability of R15.06 -2012 for Existing Applications
+○To be updated after completion of 10218 revision
+●TR R15.606 -2016 Collaborative Robots (Applications)
+○Adoption of ISO TS15066
+●TR R15.706 User Responsibilities
+○Currently under revision for a R15.06 Part 3\nComplementary Documents (cont.)
+●TR R15.806 -2018 Testing Methods for Power & Force Limited 
+Collaborative Applications
+○PFL robots are NOT to be considered safe “out of the box”
+●TR R15.1006 Testing Methods for Speed and Separation 
+Monitoring Collaborative Applications ( UNDER DEVELOPMENT )
+○Validation of separation distances in SSM applications
+●RIA/ISO/TR 20218 -1:2020 End -effectors
+○Safety measures for design and integration of end -effectors
+●RIA/ISO/TR 20218 -2:2020 Manual Load/Unload Stations
+○Alternative methods of impeding access to robot cells\nCURRENT CURRENTCurrent State of Standards, TS and TR
+TR R15.306
+TR R15.806
+TR R15.706
+TR R15.506
+TR 
+R15.1006
+TR R15.606
+TR 20218
+ -
+1
+TR 20218
+ -
+2
+R15.06
+10218
+ -
+2
+TR 20218
+ -
+1
+TR 20218
+ -
+2
+10218
+ -
+1
+TS 15066
+\nProjected New 10218 and R15.06
+FUTURE CURRENT FUTURE CURRENT
+10218
+ -
+2
+TR 20218
+ -
+1
+TR 20218
+ -
+2
+10218
+ -
+1
+TS 15066
+10218
+ -
+1
+10218
+ -
+2
+TR R15.306
+TR R15.806
+TR R15.706
+TR R15.506
+TR 
+R15.1006
+TR R15.606
+TR 20218
+ -
+1
+TR 20218
+ -
+2
+R15.06
+TR R15.306
+R15.06
+TR 
+R15.1006
+\nSummary
+●ISO 10218 and ANSI/RIA R15.06 are essentially the same.
+●Standards are created by volunteers from a variety 
+professional disciplines. 
+●Standards provide normative and informative guidance and 
+can be used as a means to achieve regulatory compliance.
+●Functional safety ensures that safety functions relying on a 
+control system will be effective for the associated risk(s).​
+●“Collaborative” describes a robot application or system NOT a 
+type of robot\nQUESTIONS?\nTodd Dickey
+Safety Standards Development Contractor
+Honda Development and Manufacturing of 
+America, LLC
+24000 Honda Parkway
+Marysville, OH 43040
+United States of America
+Telephone: 937 -642-5000
+Email: richard_dickey@na.honda.com
+www.honda.com

@@ -1,0 +1,79 @@
+www.tuv.com(including the corrigendum to the regulation EU 2023/1230 
+from 04.07.2023).Conformity with the new Machinery  
+Regulation EU 2023/1230
+Since June 14, 2023, the new Machinery Regulation has been published and will replace the current 
+Machinery Directive 2006/42/EC in Europe. The Machinery Regulation specifies a 42-month transition 
+period and the change from Directive to Regulation will take place on the effective date of January 20, 
+2027.  All machinery placed on the market or put into service before January 20, 2027 must be still CE 
+marked in accordance with the Machinery Directive 2006/42/EC.  
+From January 20, 2027, the CE marking of machinery or assessment of partly completed machinery 
+will be mandatory under the Machinery Regulation EU 2023/1230.
+\nwww.tuv.com
+® TÜV, TUEV and TUV are registered trademarks. Utilisation and application requires prior approval.. DE23_S01__2300494WHAT IS NEW?  
+Many requirements of the Machinery Regulation are only 
+described in more detail and more clearly. But there are 
+also some changes in content compared to the Machinery 
+Directive of 2006. The requirements for functional safety 
+have been expanded (e.g., software). In addition, there are 
+also the aspects of cyber security and artificial intelligence.
+Safety requirements for autonomous (mobile) machines 
+have been added.  
+The obligations of the economic operators (manufacturer, 
+authorized representative, importer and distributor) are 
+described in Chapter II of the regulation.  Those are presen ted very clearly for the individual  
+economic operators in separate articles.  
+Annex I of the regulation lists the machines for which a 
+special conformity assessment procedure is prescribed. 
+This list is now divided into:
+ ·Part A (obligatory involvement of a notified body) and a
+ ·Part B (procedure as for 2006/42/EC, Annex IV  
+machinery).
+The diagram shows the possible conformity assessment 
+procedures for the various categories of machinery.
+Machinery or related products listed in Annex I
+Category Annex I, part B  
+(e.g. Presses, Woodworking, Injection Molding, …)Category Annex I, part A  
+(6 Categories including e.g.  
+Vehicle lifts, Safety-Systems  
+containing self-evolving  
+behavior, …)Full compliance to harmonized  
+standardsNo only partly compliance to 
+harmonized standards
+a) Module B (Annex VII) EC Type Examination AND  
+Module C (Annex VIII) Conformity to Type Based on Internal Production Control
+b) Module H (Annex IX) Full Quality Assurance
+c) Module G (Annex X) Unit VerificationAll other   
+machinery and
+related products
+Module A (Annex VI) Internal Production Con -
+trol Voluntary testing by TÜV Rheinland and 
+Certificate of Conformity possibleInvolvement of a Notified Body mandatory (e.g. TÜV Rheinland LGA Products GmbH)  
+CE with Number of Notified Body  (e.g. CE 0197 TÜV Rheinland LGA Products GmbH or CE 
+1008 TÜV Rheinland Intercert (Hungary))
+The modules for the conformity assessment procedures 
+(Annexes VI - XI) are strictly aligned with the NLF (New 
+Legislative Framework) of the EU.  
+In terms of content, nothing relevant has changed in the 
+procedures „Internal production control“, „EC type  
+examination“ and „Full quality assurance“.
+The module for „Type based conformity with internal pro -
+duction control“ is new. This procedure is carried out by the 
+manufacturer on his own responsibility and based on the 
+EC type examination.  
+ For complex, customer-specific machines, the module 
+„individual testing“ has been introduced. Here, the Notified 
+Body tests and certifies an individual machine whereupon 
+the serial number of the machine is listed on the certificate.
+Use the transition period to adapt your machinery and 
+processes in accordance with Regulation EU 2023/1230. 
+At TÜV Rheinland, we will be happy to carry out the testing 
+of your current machinery in accordance with the essential 
+health and safety requirements of Annex III and additionally,  
+we offer you the option of having Annex III of the  
+Machinery Regulation tested already for new machine 
+developments. Talk to us today!
+CONTACT US
+TÜV Rheinland LGA Products GmbH
+Tillystr. 2, 90431 Nuremberg, Germany
+Tel. +49 911 655-5225
+service@de.tuv.com

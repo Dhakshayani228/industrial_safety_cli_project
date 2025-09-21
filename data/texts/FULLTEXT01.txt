@@ -1,0 +1,2270 @@
+SP Electronics
+SP REPORT 2011:81How to design safe machine 
+control systems – a guideline to  
+EN ISO 13849-1
+Johan Hedberg
+Andreas Söderberg
+Jan TegehallSP Technical Research Institute of Sweden 
+Our work is concentrated on innovation and the development of value-adding technology. Using 
+Sweden’s most extensive and advanced resources for technical evaluation, measurement technolo-
+gy, research and development, we make an important contribution to the competitiveness and sus-tainable development of industry. Research is carried out in close conjunction with universities and institutes of technology, to the benefit of a customer base of about 10 000 organisations, ranging 
+from start-up companies developing new technologies or new ideas to international groups.
+SP Electronics
+SP REPORT 2011:81
+ISBN 978-91-87017-14-8
+ISSN 0284-5172SP Technical Research Institute of Sweden
+Box 857, SE-501 15 Borås, SWEDEN
+Telephone: +46 10 516 50 00
+Telefax: +46 33 13 55 02
+E-mail: info@sp.se
+www.sp.se
+SP Technical Research Institute of Sweden
+More information about publications published by SP: www.sp.se/publ\n 
+ How to design safe machine control 
+systems – a guideline to 
+EN ISO 13849-1   
+ 
+Johan Hedberg Andreas Söderberg 
+Jan Tegehall 
+ 
+ 
+ \n4 
+ \n5 
+ Abstract 
+ 
+The aim of this report is to give guida nce when applying EN ISO 13849-1:2008 in 
+projects, both for companies developing subsystems and for companies that are developing complete machines.  
+ The report will give support in different ar eas in EN ISO 13849-1:2008 that are difficult 
+to understand or parts that are described briefly. 
+ This report shall be considered as an complement to the standard EN ISO 13849-1:2008 that gives examples on how different requirements can be interpreted. 
+ 
+ 
+Key words: ISO 13849-1, IEC 62061, IEC 61508, PL, SIL, safety function, functional safety, control system.    SP Sveriges Tekniska Forskningsinstitut 
+SP Technical Research Institute of Sweden 
+ SP Rapport 2011:81   
+ISBN 978-91-87017-14-8 
+ISSN 0284-5172 
+ Borås 2011  \n6 
+ Table of Contents 
+Abstract 5  
+Table of Contents 6  
+Summary 10  
+1 Introduction 11  
+1.1 Abbreviations 11  
+1.2 The EU machinery directive and control systems 11  
+1.3 Reading guideline 13  
+1.4 References 13  
+2 Management 14  
+3 Risk assessment 22  
+4 Category and designated architectures 26  
+4.1 Designated architectures 26  
+4.1.1  Category B 27  
+4.1.1.1  Basic safety principles 28  
+4.1.2  Category 1 29  
+4.1.2.1  Well-tried safety principles 30  
+4.1.2.2  Well-tried component 32  
+4.1.3  Category 2 35  
+4.1.3.1  Disadvantage with a category 2 solution 36  
+4.1.4  Category 3 36  
+4.1.5  Category 4 37  
+4.2 Important issues during the design phase 38  
+4.2.1  Example – Category 2 force limitation system 38  
+5 Probability of dangerous failures 40  
+5.1 MTTF d 40  
+5.1.1  Basic definitions 40  
+5.1.2  Relation between MTTF and MTTFd 41  
+5.1.3  Estimation of MTTFd for electric/electronic components 42  
+5.1.4  Estimation of MTTFd for electromechanical, pneumatic or 
+hydraulic components 43  
+5.1.5  Estimation of MTTFd for individual SRP/CS 44  
+5.1.5.1  Example of estimating the MTTFd for a SRP/CS 45  
+6 Diagnostic coverage (DC avg) 48  
+7 Common cause failure 51  
+8 Software 53  
+8.1 General requirements 53  
+8.2 Safety-related software specification 56  
+8.3 System- and module design 57  
+8.4 Coding 58  
+8.5 Module- and integration testing 59  
+8.6 Software validation 59  
+8.7 Software modifications 60  
+8.8 Parameterization 60  \n7 
+ 9 Achieved PL 62  
+9.1 Apply Figure 5 in combination with Annex K 62  
+9.2 Apply Table 7 63  
+9.3 Apply Table 11 64  
+10 Conclusions 66  
+Appendix A Safety requirements specification – machinery 67  
+Appendix B Examples of diagnostic techniques 72  
+ 
+ 
+   
+ \n8 
+ Table of Figures 
+ 
+Figure 1 The safety function workflow from ISO 13849-1 .............................................. 16  
+Figure 2 The risk assessment workflow ............................................................................ 22  
+Figure 3 ISO 13849-1 Figure A.1– Risk graph ................................................................. 23  
+Figure 4 Risk graph matrix ............................................................................................... 24  
+Figure 5. Designated architecture for category B [EN ISO 13849-1 figure 8] ................. 27  
+Figure 6 Designated architecture for category 1 [EN ISO 13849-1 figure 9] ................... 29  
+Figure 7 Designated architecture for category 2 [EN ISO 13849-1 figure 10] ................. 35  
+Figure 8 Designated architecture for category 3 [EN ISO 13849-1 figure 11] ................. 36  
+Figure 9 Designated architecture for category 4 [EN ISO 13849-1 figure 12] ................. 37  
+Figure 10 A category 2 structure ....................................................................................... 38  
+Figure 11 Bathtub curve .................................................................................................... 40  
+Figure 12 Fictive SRP/CS ................................................................................................. 45  
+Figure 13 Machine behaviour when a fault occurs ........................................................... 49  
+Figure 14 A single common cause failure affects two channels ....................................... 51  
+Figure 15 Relation between SRESW and SRASW ........................................................... 54  
+Figure 16 Simplified V model of software lifecycle ......................................................... 55  
+Figure 17 Relations between ISO 13849- 1 and IEC 61508-3 for software ...................... 56  
+Figure 18 Relationships between categories, DC avg, MTTF d of each channel and PL ...... 62  
+Figure 19 Cyclic test stimuli by dyna mic change of the input signal ............................... 72  
+Figure 20 Plausibilty check ............................................................................................... 72  
+Figure 21 Cross monitoring of inputs without dynamic tests ........................................... 72  
+Figure 22 Cross monitoring of input  signals with dynamic test ....................................... 73  
+Figure 23 Cross monitoring of input signals and intermediate results .............................. 73  
+Figure 24 Indirect monitoring ........................................................................................... 74  
+Figure 25 Direct monitoring ............................................................................................. 74  
+Figure 26 Fault detection by the process ........................................................................... 75  
+Figure 27 Monitoring some characteristics of the sensor ................................................. 75  
+Figure 28 Simple temporal time monitoring ..................................................................... 76  
+Figure 29 Temporal and logic monitoring ........................................................................ 76  
+Figure 30 Checking the monitoring device reaction capability ........................................ 76  
+Figure 31 Monitoring of outputs by one channel without dynamic tests .......................... 77  
+Figure 32 Cross monitoring of outputs without dynamic test ........................................... 77  
+Figure 33 Redundant shut-off path with no monitoring of the actuator ............................ 77  
+Figure 34 Redundant shut-off path monitoring of one of the actuators ............................ 78  
+Figure 35 Redundant shut-off path monitoring actuators ................................................. 78  
+ \n9 
+ Preface 
+ 
+The background to this report is that ne w standards in the area of machine control 
+systems are more extensive compared to ear lier standards, as for instance EN 954-1:1996, 
+and the industry needs guidance concerning how  to work with these new standards and 
+how to comply with the requirements when designing systems.  This report gives a general guidance concer ning how to apply EN ISO 13849-1:2008 and 
+also describes more in detail a number of important aspects that need more detailed 
+descriptions as for instance: 
+ 
+- management of functional safety 
+- risk assessment 
+- categories and designated architectures 
+- diagnostic coverage 
+- software design 
+- determination of reached PL (Performance Level) 
+ Please obtain the full text of thestandard to know all parts of the standard. Standards are 
+protected by copyright an d can be bought from ISO ( www.iso.org ) or your national 
+standardisations (e.g. www.sis.se  in Sweden). 
+ 
+   \n10 
+ Summary 
+ 
+The aim of this report is to give guida nce when applying EN ISO 13849-1:2008 in 
+projects, both for companies developing subsystems and for companies that are developing complete machines.  
+ The report will give support in different ar eas in EN ISO 13849-1:2008 that are difficult 
+to understand or parts that are described briefly. 
+ The first part of the report gives some gene ral information about the new EU machinery 
+directive 2006/42/EG.  
+The following part of the report is focused on management of functional safety which 
+means how to maintain a high degree of safety during the different steps of the safety lifecycle, all the way from risk assessment until modifications of the safety function is done.  The next part of the report describes shortly how to perform a risk assessment and define 
+an appropriate PL
+r (Performance Level required) fo r each identified safety function. 
+ A central part of EN ISO 13849-1:2008 is to choose an appropriate category for the identified safety functions. Categories were used also in the earlier machinery safety 
+standard EN 954-1:1996. The report describes in detail the meaning of each category and 
+also gives an example of a category 2 safety function. 
+ The next step after the identification of an  appropriate category is to determine the 
+hardware reliability for each safety func tion. The report gives both background 
+information about reliability theory and how to   perform these calculations in practice. 
+ 
+Diagnostic coverage is anothe r important are in EN ISO 13849-1:2008 that together with 
+the category and MTTF
+d determines which PL that is possible to reach. The report gives a 
+number of examples on how different diagnostic  coverage techniques can look like.   
+ The report also briefly discusses systematic failures, what it means and how to handle 
+these during design and use of safety functions. 
+ Software requirements are another area that is described in the report, where the report 
+describes the difference between different ki nds of programming languages and what it 
+means to follow the V-model defined in EN ISO 13849-1:2008. 
+ 
+Finally the report describes a number of different methods to check that the PL
+r is 
+reached.  This report shall be considered as an complement to the standard EN ISO 13849-1:2008 that gives examples on how different requirements can be interpreted. 
+ 
+  \n11 
+ 1 Introduction 
+ 
+1.1 Abbreviations 
+ 
+Table 1: Abbreviations 
+B10 The expected time at which 10% of the 
+population will fail 
+C Duty cycle 
+DC Diagnostic Coverage 
+DC avg Diagnostic Coverage Average 
+E/E/PE Electrical/Electronic/Programmable 
+electronic 
+HW Hardware 
+L Logic 
+MTBF Mean Time Between Failure 
+MTTF Mean Time To Failure 
+MTTR Mean Time To Restoration 
+PFH D Probability of Dangerous Failure per Hour 
+PL Performance Level 
+PLr Performance Level Required 
+PTE Probability of Transmission Error 
+RBD Reliability Block Diagram 
+SFF  Safe Failure Fraction 
+SIL Safety Integrity Level 
+SRASW Safety-Related Application Software 
+SRCF Safety-Related Control Function 
+SRESW Safety-Related Embedded Software 
+SRP/CS Safety-Related Part of a Control System 
+SRS Safety Requirements Specification 
+SW Software 
+TE Test Equipment 
+ 
+1.2 The EU machinery direct ive and control systems 
+ 
+All machines that are used within the EU  and EES area shall fulfil the EU machinery 
+directive. Common rules in the different  countries makes it easier to know which 
+essential health- and safety requirements to be  followed. The machinery directive has 
+been reworked and the new version is valid from the 29th of December 2009. 
+ The safety of control systems is described in Clause 1.2.1 in Appendix 1 of the machinery directive.  
+Control systems must be designed and construc ted in such a way as to prevent hazardous 
+situations from arising. Above all, they must  be designed and constructed in such a way 
+that: 
+ 
+• they can withstand the intended opera ting stresses and external influences, 
+• a fault in the hardware or the software of the control system does not lead to 
+hazardous situations, 
+• errors in the control system logic do not lead to hazardous situations, \n12 
+ • reasonably foreseeable human error during op eration does not lead to hazardous 
+situations. 
+ Particular attention must be given to the following points: 
+ 
+• the machinery must not start unexpectedly, 
+•  the parameters of the machinery must not change in an uncontrolled way, where 
+such change may lead to hazardous situations, 
+•  the machinery must not be prevented from stopping if the stop command has 
+already been given, 
+• no moving part of the machinery or piece held by the machinery must fall or be 
+ejected, 
+• automatic or manual stopping of the moving parts, whatever they may be, must 
+be unimpeded, 
+•  the protective devices must remain fully effective or give a stop command, 
+•  the safety-related parts of the control system must apply in a coherent way to the 
+whole of an assembly of machinery and/or partly completed machinery. 
+ 
+For cable-less control, an automatic stop mu st be activated when correct control signals 
+are not received, including loss of communication.   
+The reworked version of the machinery direc tive that is valid from the 29th of December 
+2009 does in principle have the same requireme nts as in the earlier version, but with the 
+following additions: 
+ 
+• Predict human misbehaviour. The purpose is  to reduce the risk of operational 
+mistakes by using different kinds of ergonomic principles. 
+• The parameter setting of the machine is not allowed to be changed in an 
+uncontrolled way. One example could for in stance be that the processing speed of 
+a machine is changed remotely without i ndicating this change to the operator of 
+the machine. 
+• All safety-related parts of the mach ine shall work in a coherent way 
+• An automatic stop of the machine shall occur if no correct control signals are 
+received via the wireless control. Loss of communication or disturbed messages shall not lead to a dangerous situation  
+These rules have earlier been applied in most  machine control systems but now they are 
+also specified in the machinery directive. 
+ For certain types of machinery and logic un its certain specific procedures for the CE-
+marking are prescribed.  
+If you have a machinery or a logic unit that is  mentioned in Appendix 4 or 5 in the EU 
+machinery directive, certain specific rules sh all be followed to be able to fulfill the 
+requirements. As an example, it can be n ecessary to use a notified body in this case. 
+ The requirements in the EU machinery directiv e are intentionally written in such way to 
+make it possible for different technical solu tions. The EU machinery directive does not 
+want to prescribe a detailed technical solution that soon can become out of date. 
+ The EU machinery directive 2006/42/EG can be downloaded from:   http://eurlex.europa.eu/LexUriServ/site/s v/oj/2006/l_157/l_157 20060609sv00 240086.pdf   \n13 
+ 1.3 Reading guideline 
+ 
+When there are clauses, appendices, etc, mentioned in this report without explicit 
+references, ISO 13849-1:2008 ” Safety of mach inery – Safety-related parts of control 
+systems – Part 1: General principles for design (ISO 13849-1:2006)” is the implicit 
+reference. 
+ 
+1.4 References 
+ 
+[1] EN ISO 13849-2 “Safety of machinery - Safety-related parts of control systems - 
+Part 2: Validation (ISO 13849-2:2003)”  
+[2] EN 62061:2005 “Safety of machinery – Functional safety of safety-related 
+electrical, electronic and programmable electronic control systems”  
+[3] IEC 61508:2010, Part 1 “Functional safety of electrical/electronic/programmable 
+electronic safety related systems – Part 1: General requirements”  
+[4] IEC 61508:2010, Part 2 “Functional safety of electrical/electronic/programmable 
+electronic safety related systems – Part 2: Requirements for electrical/electronic/-
+programmable electronic safety related systems” 
+ 
+[5] IEC 61508:2010, Part 3 “Functional safety of electrical/electronic/programmable 
+electronic safety related systems – Part 3: Software requirements”  
+[6] IEC 61131-3:2003 “Programmable contro llers – Part 3: Programming languages” 
+ 
+   \n14 
+ 2 Management 
+ 
+The standard does not have a specific clause giving an overview of how to handle questions concerning management of functiona l safety but nevertheless it is an important 
+part when designing a SRP/CS or a safety function. Clause 10 in the standard gives information about which documents that sha ll be produced during the project. Clause 4.6 
+“Software safety requirements” in the sta ndard also gives some information about 
+management, for instance that a V-model can  be used when developing the software. 
+ Both [2] and [3] contain clauses describing requirements concerning management of functional safety. When working with the standard, at least the following parts are 
+recommended to apply: 
+ 
+• Develop a functional safety plan, describing: 
+- Activities during the project 
+- Identify persons and organisations res ponsible for different activities during 
+the project 
+- Competence of the persons involved in the different activities, Clause 6.2.13 
+and 6.2.14 in [3] give a good description 
+- How to document the different steps in the project 
+- Requirements when performing modification in the component/system, 
+Clause 9 in [2] gives a good description 
+- How to perform the verification (can be efficient to split up in a separate 
+document) 
+- How to perform the validation (can be  efficient to split up in a separate 
+document) 
+- How to handle issues identified dur ing for instance risk analysis, 
+verifications, validations, audits, re views by independent organisations, 
+incident reporting 
+- Which requirements that shall be placed on suppliers 
+ 
+The most important part concerning the functional safety plan is to find out how to implement it so it becomes easy to use and an  integral part of the design process.  
+ 
+Guidance: 
+ 
+• It is important to early in the project to decide which documents that shall be 
+developed by you as a manufacturer/integr ator, and which documents that shall 
+be developed by the organisation responsi ble for the evaluation/certification, for 
+more information see Clause 10 in the standard 
+• Involve the organisation responsible for evaluation/certification as early as 
+possible in the project. The reason for this  is to detect possible deviations from 
+the requirements in the standard as early as possible 
+• A general aspect for these new standards con cerning functional safety is that it is 
+not enough to design a safe system. Additionally, you must also be able to show that your system is safe by showing th at you have correctly documented all parts 
+of your development, from the initial risk analysis until the component/system is finalized \n15 
+ • The functional safety plan is an important document during all parts of the project 
+life cycle and needs to continuously be updated as the project proceeds 
+• Documentation of good quality not only simplifies for you as a manufacturer/-
+integrator, but also for the organisation responsible for the evaluation/-
+certification. In some situations, for instance when a company does not already 
+have existing procedures it may be efficient to build up the document structure in accordance with the clauses and requireme nts as described in the standard 
+• If possible, it is preferable to integrate the process requirements from the standard 
+into the normal processes of the company to avoid having two different 
+management systems 
+• A problem is to follow the functional safety plan developed during the whole 
+project and also after the project is fi nalized and possibly evaluated/certified by 
+another organization, and thus it is importa nt to design the functional safety plan 
+in such way that it is applicable and usable 
+• Take into consideration if it could be efficient to use a program that handles 
+management of functional safety 
+ 
+  \n16 
+  
+ 
+Figure 1 The safety function workflow from ISO 13849-1 
+ 
+Figure 3 in the standard (see Figure 1 above) describes the work flow from identifying that a safety function shall be performed by  SRP/CS until the safety function has been 
+validated. The following text describes whic h activities and documents that shall be 
+performed and produced for each step.  1. 
+This is the result of the risk assessment / risk reduction described in Figure 1 in the 
+standard 
+Documentation: List of all safety functions performed by SRP/CS. For more information see Chapter 3 in this report. \n17 
+ 2. & 3. 
+The aim of this part is to more in de tail describe the characteristics of each safety 
+function. This part is important both because it is the input to the design and technical realisation, but also used as input when perfo rming the validation of each safety function.  
+Chapter 5.1 in the standard informs about  the minimum information that shall be 
+considered when defining the safety requireme nts for each safety function. Chapter 5.2 in 
+the standard describes more in detail the saf ety requirements for certain safety functions. 
+ Annex A in the standard gives an example of how to determine the required performance 
+level (PLr) for each safety function.  
+The following “Requirements on requirements” are suitable to take into consideration 
+when developing the safety requirements specification documentation.   
+• Unique  – only one requirement exists addressing a specific aspect  
+• Atomic  – the requirement addresses one aspect. This also improves the possibility 
+of modifications (less dependences with other requirements)  
+• Complete  – within the scope of the individual requirement  
+• Unambiguous  – no room for different interpretations  
+• Identifiable  – can be uniquely referenced  
+• Correct  – shall address what is intended  
+• Concise  – a focussed formulation  
+• Verifiable  – e.g. by using tests, analysis, inspection, proofs etc.  
+• Traceable  – both to upper and lower level requirements  
+• Understandable  – i.e. anybody can understand the requirement. This might be 
+somewhat in conflict with Concise.  
+• Rationale  – a motivation for the requirement. This is necessary since this will 
+improve the understanding of the indivi dual requirement as well as groups of 
+requirements.  
+Guidance: 
+• For companies developing only a SRP/CS, the safety requirements specification 
+will look different compared to a company developing a complete safety 
+function, for instance: 
+- The PLr will be based on a judgment of the market expectations. 
+- It will only include requirements on the specific SRP/CS and not for the 
+complete safety function.  
+• The safety requirements specification shall describe the functional requirements 
+for each safety function, and thus it is important to not include any 
+implementation-specific requirements. 
+• The quality of the safety requirements specification will be increased if a number 
+of persons with different competences are included in the work, for instance 
+persons working with development, servi ce and quality issues. Another efficient \n18 
+ method is to let someone who has not been involved in the development of the 
+document review the safety requirements specification. 
+• Check the “Requirements on requirements” when developing the safety 
+requirements specification document 
+• Motivate how each risk parameter is chosen in Figure A.1 — “Risk graph for 
+determining required PLr for safety fu nction” in the standard. For more 
+information see Chapter 3. 
+• Go through Chapter 5.1 and 5.2 in the standard to get guidance concerning which 
+information that shall be included in the safety requirements specification 
+• When the safety requirements specification documentation is ready, it is possible 
+to start writing the safety validation plan, which describes how each specific 
+requirement in the safety requirements specification will be validated. 
+ 
+4. 
+This phase concerns the design and technical realisation of the safety functions. A safety function is normally built up by a number of SRP/CSs, where each SRP/CS separately 
+includes input, logic and output as described below: 
+ 
+  But in some cases both input, logic and output can be integrated in the same SRP/CS as 
+described below: 
+  
+Guidance: 
+• It is important to identify which SRP/CSs that are included in each safety 
+function 
+• A rule of thumb is if a fault in the SR P/CS will lead to a failure of the safety 
+function then the SRP/CS shall be included as part of the safety function \n19 
+ • At this high level description of the saf ety function it will be built up by a number 
+of SRP/CSs combined in serial. 
+• In some situations, the safety functions can be more complicated and for instance 
+include two different input SRP/CSs. 
+ 
+5. 
+When all safety functions and their corresponding SRP/CSs are identified, the next step is to go on with the design of the safety functi on. The standard describes that the following 
+issues are important to consider: 
+The PL of the SRP/CS shall be determined by the estimation of the following aspects: 
+ 
+- the MTTFd value for single components (see Annexes C and D in the 
+standard) 
+- the DC (see Annex E in the standard) 
+- the CCF (see Annex F in the standard) 
+- the structure (see Clause 6 in the standard) 
+- the behaviour of the safety function under fault condition(s) (see Clause 6 in 
+the standard) 
+- safety-related software (see 4.6 and Annex J in the standard) 
+- the ability to perform a safety func tion under expected environmental 
+conditions. 
+- systematic failure (see Annex G in the standard) 
+ 
+A systematic failure is a failure built in the design e.g. design mistakes. In order to reduce 
+the possibility for design mistakes  Annex G presents measures for: 
+ 
+• the control of systematic failures 
+• avoidance of systematic failures and 
+• avoidance of systematic failures during SRP/CS integration. 
+ The aim with these measures are to support the design process of a SRP/CS in order to 
+reduce the probability for systematic failur es for example measures for controlling the 
+effects of voltage breakdown, voltage va riations, overvoltage  and under voltage. 
+ 
+Chapter 6.3 in the standard describes an alte rnative way of calculating the reached PL for 
+a safety function when only the PL is known for each SRP/CS. This method is described 
+in Table 11 in the standard and also in Chapter 9.3 in this report.  \n20 
+ 
+ 
+ 
+Another usual situation for a machine builder is  that the control system used in the safety 
+function is developed according to [3], [4], [5].  In this case it is possible to check in Table 
+4 in the standard and transform the SIL level for the control system to a corresponding 
+PL.  
+ 
+Guidance: 
+• The simplified method in Chapter 4.5.4 in the standard can only be used if the 
+architecture of the safety function corresponds to one of the designated 
+architectures. 
+• The approach when using the simplifie d method is to first choose a certain 
+designated architecture and then go on with the calculations of MTTF d and DC avg. 
+If the PL r is not reached, it is possible to change the designated architecture 
+and/or change MTTF d and/or change the DC avg.  \n21 
+ • If the PL for each SRP/CS is known, it is possible to use Table 11 in the standard 
+to determine the PL for the safety function. In this case it is important to consider 
+the interfaces between these different SR P/CSs and check in the safety manuals 
+for each SRP/CS how it shall be connected to other SRP/CS. 
+• For other architectures, it is instead possibl e to apply the methods described in [4] 
+when performing the hardware reliability calculations. 
+ \n22 
+ 3 Risk assessment 
+ 
+The risk assessment is performed by the ma nufacturer of the complete machine. The 
+reason for this is that it is only the manufact urer of the complete machine that has got 
+knowledge about which risks that comes with the use of the machine, and in which environment the machine shall be used.  
+For a manufacturer of a certain SRP/CS, a suitable PL can be found by checking the 
+expectation from the market.  The aim of the risk assessment is to:  
+• Identify hazards 
+• Identify which hazardous events that could be connected to each hazard 
+• Determine whether a risk reduction is necessary or not 
+• Determine how the required risk  reduction shall be reached 
+- Identification of safety functions 
+- Determination of PL
+r  
+ 
+Below, Figure 1 from the standard describes the work flow during the risk assessment. 
+ 
+Figure 2 The risk assessment workflow \n23 
+  
+ 
+Chapter 4.1, 4.2 and 4.3 in the standard d escribes in detail which requirements that are 
+placed on the risk assessment. The next step af ter the identification of the hazards and the 
+corresponding hazardous events is to decide wh ich safety functions to be included and 
+corresponding PL r. 
+ 
+In the standard, five different risk reducti on levels (Performance Levels) are defined, 
+from PLa to PLe, where PLe gives the highest ri sk reduction and Pla gives the lowest risk 
+reduction. For more information, see below Table 3 from the standard:  
+ 
+ 
+ 
+Figure A.1 in the standard can be used when deciding an appropriate risk reduction level:  
+ 
+Figure 3 ISO 13849-1 Figure A.1– Risk graph \n24 
+  
+Figure A.1 in the standard is a simple method to determine the PL r for a safety function. 
+One disadvantage with this risk graph is th at it does not take into consideration the 
+frequency of the hazardous events. In this case one possibility is to instead use the risk 
+graph matrix described in Figure A.3 in [2].  
+ 
+Figure 4 Risk graph matrix 
+ Figure A.3 in [2] (Figure 4 above) gives as result that the safety function shall fulfill a 
+certain SIL, and thus it is necessary to  transform this SIL value into a PL
+r value and this is 
+possible by first using Table 3 in [2] to check which PFH D interval that corresponds to 
+each SIL.  
+ 
+ 
+And then check by using Table 3 in the standard which PL r that corresponds to each 
+PFH D. 
+ 
+ \n25 
+ 
+ 
+ 
+By combining these tables it is possible to say from a risk assessment view  that: 
+ 
+• SIL 3 corresponds to PL r=e 
+• SIL 2 corresponds to PL r=d 
+• SIL 1 corresponds to PL r=c (this is a conservative approach because the 
+probability of dangerous failure per hour  interval for SIL 1 covers both PL r=b and 
+PLr=c) 
+ When performing the risk assessment outgoing from Table A.3 in [2] it is not possible to 
+reach PLa and PLb. 
+ 
+  \n26 
+ 4 Category and designated architectures 
+ 
+The categories represent resistance to hardware faults, and have previously been the most 
+common used principle in order to design a control system that have an appropriate level of safety for the risks that are present for the intended use of the machine. The category is 
+one of the sub requirements of a PL and there is a possibility within a PL to choose different categories. 
+ 
+The category is essential to take into consid eration during the first design phase since the 
+category affects both the hardware design a nd the software design. If the principles for 
+the category (designated architectures) are not followed, the simplified method for 
+calculation of hardware reliability as presented by the standard is not valid. In the case 
+when a designated architecture is not followed , other methods for calculation of hardware 
+reliability is possible, such as methods accordi ng to [4] (not covered by this report). 
+ It is important to remember that in some cases some the categories is not suitable for the final application because the checking of th e safety function cannot be applied to all 
+components, see Chapter 4.1.3.1. 
+ 
+What is a category?  
+The category describes resistance to faults and the behavior of the machine or the control 
+system in the case a fault occurs in the saf ety related part of a control system. The 
+category is defined in the standard as:  
+ 
+ 
+ 
+There are five types of categories defined: B, 1, 2, 3, 4 and thus we  have five different 
+types of fault resistances defined. The category was previous (EN 954-1:1996) the 
+measure to reduce the risk by selecting an appropriate category according to the risks 
+analysis.   If the risk for a machine is estimated to be high, and we suppose that the result of a risk 
+assessment gives Performance Level required (PL
+r) = d for a specific safety function. The 
+following is possible: 
+• category 2 or category 3 structure can be used 
+• category B or category 1 structure are not fulfilling requirements for PL r = d 
+• category 4 structure is in this case possible but will give higher design 
+requirements for the estimated ri sk according to the standard 
+ The principle for the categories (resistance to faults) is almost identical if we compare 
+requirements from the standard and EN 954-1:1996 but MTTF
+d, DC avg and CCF need also 
+to be considered.  
+4.1 Designated architectures 
+The designated architectures are presented by an graphical structure with boxes and 
+arrows for each category by the standard. To  be able to apply the simplified method the 
+architecture shall be in accordance with one of these designated architectures.  category 
+classification of the safety-related parts of  a control system in respect of their 
+resistance to faults and their subseque nt behaviour in the fault condition, and 
+which is achieved by the structural arra ngement of the parts, fault detection and/or 
+by their reliability\n27 
+ 4.1.1 Category B 
+The figure below presents the designated architecture for category B. Category B is a 
+single channel system. 
+ 
+ 
+Figure 5. Designated a rchitecture for category B [EN ISO 13849-1 figure 8] 
+ 
+The B category is mainly characterized by selection of components, the occurrence of a 
+fault can lead to the loss of the safety function.  The B category gives “ basic requirements” , these requirements are also required for all 
+other categories (1, 2, 3 and 4).   The requirements for category B mean that the components are suitable for the intended 
+use with respect to: 
+• design, construction, selection, assemb ly and combination so the SRP/CS 
+components are in accordance with relevant standards 
+• environmental conditions, for example temp erature, vibrations, dust, moisture, 
+humidity, water 
+• operating stresses, influences of materials processed and other relevant 
+influences.  
+• basic safety principles see Chapte r 4.1.1.1 in this report 
+ It is not possible in general to say that a component is a category B component since the 
+intended use and the environmental conditions give requirements on category B. The 
+manufacturer of the component specifies technical  data for the component so that the user 
+can select a component that fulfill requirement s for category B. The manufacturer of the 
+component cannot say in general that “ category B is fulfilled ” if the final application for 
+the component is not known. 
+ 
+Example
+* of category B solutions: 
+• interlock switch for a laundry machine pr events the machine to start when the 
+door is open 
+ 
+* Remember that product standards or the risk assessment can give other required categories due to PL r. 
+ \n28 
+ 4.1.1.1  Basic safety principles 
+The basic safety principles give requireme nts for the used technology. Mechanical 
+systems, pneumatic systems, hydraulic systems and/or electrical systems [1].  Basic safety principles are based on th e following design aspects (when suitable): 
+ 
+ 
+ 
+When mechanical systems, pneumatic systems, hydraulic systems or electrical systems 
+are used in conjunction with other techno logies, relevant measures for basic safety 
+principles should also be taken into account. • use of suitable materials and adequate manufacturing 
+• correct dimensioning and shaping 
+• proper selection, combination, arrangements, assembly and installation of 
+components/system 
+• correct protective bonding 
+• proper fastening 
+• insulation monitoring 
+• use of de–energisation principle 
+• transient suppression 
+• energy limitation (pressure, speed) 
+• reduction of response time 
+• compatibility 
+• withstanding environmental conditions 
+• secure fixing of input devices 
+• protection against unexpected start–up 
+• protection of the control circuit 
+• sequential switching for circuit of serial contacts of redundant signals 
+• simplification (reduce the number of components in the safety–related 
+system) 
+• separation 
+• proper temperature range 
+• sufficient avoidance of contamination of the fluid 
+• proper range of switching time 
+• limitation of the generation and/or transmission of force and similar 
+parameters 
+• limitation of range of e nvironmental parameters 
+• proper lubrication 
+• proper prevention of the ingress of fluids and dust 
+ 
+[Summary of Table A.1, B.1, C.1 and D.1 in [1]] \n29 
+ 4.1.2 Category 1 
+The figure below presents a designated architecture for category 1. Category 1 is a single 
+channel system. 
+ 
+ 
+Figure 6 Designated architecture for category 1 [EN ISO 13849-1 figure 9] 
+ 
+The  category 1 structure is mainly characterized by selection of components, the same 
+principle as category B, and the occurrence of a fault can lead to the loss of the safety 
+function. The probability of occurrence of a fa ult is lower than a category B structure in 
+comparison.  Basic requirements of category B shall apply but in addition well-tried safety principles (see Chapter 4.1.2.1 in this report) and well-tr ied components (see Chapter 4.1.2.2 in this 
+report) shall be used. 
+ 
+Example
+* of category 1 solutions: 
+• door interlock switch for a wood working machine 
+• emergency stop device  
+ 
+* Remember that product standards or the risk assessment can give other required categories due to PL r. 
+ \n30 
+ 4.1.2.1  Well-tried safety principles 
+Well-tried safety principles shall give a higher degree of safety in comparison with basic 
+safety principles due to the design measures.  
+ Well-tried safety principles are described for electrical systems, mechanical systems, 
+pneumatic systems and hydraulic systems by [1].  Electrical systems 
+List of well tried safety principle for electrical systems [1]: 
+ 
+ 
+Applicable well-tried safety principles sh all be adopted during the design phase and 
+documented in order to support the validati on activities. Some principles are described 
+below: 
+ 
+• If we compare an “ordinary” switch with a switch that have Positive mode 
+actuation the “ordinary” switch has a higher probability that the switch will not 
+open due to a mechanical faults or welded contacts. 
+ 
+ 
+ 
+• Fault avoidance can be reached in cables by avoiding that short circuits between 
+two adjacent conductors can occur. A typical  measure can be a cable with shield 
+connected to the protective bonding circ uit on each separate conductor. For flat 
+cables a measure can be one earthed conductor between each signal conductor. 
+ All applicable well-tried safety principles sh all be followed for the intended application 
+and technology used where applicable see A.3, B.3, C.3 and D.3 in [1]. 
+ When mechanical systems, pneumatic systems, hydraulic systems or electrical systems are used in conjunction with other techno logies, relevant measures for basic safety 
+principles and well-tried safety principles should also be taken into account. 
+ 
+    
+ 
+ positive mode actuation 
+Direct action is transmitted by the shape (and not by the strength) with 
+no elastic elements, e.g. spring be tween actuator and the contacts, 
+(see ISO 14119:1998, 5.1, ISO 12100-2:2003, 4.5).• positive mechanically linked contacts 
+• fault avoidance in cables  
+• separation distance 
+• energy limitation 
+• limitation of electrical parameters 
+• no undefined states 
+• positive mode actuation 
+• failure mode orientation 
+• over–dimensioning 
+• minimise possibility of faults 
+• balance complexity/simplicity 
+ [Table D.2 in [2] \n31 
+ Mechanical systems 
+List of  well tried safety principle for mechanical systems [1]:  
+ 
+ 
+ 
+Applicable well-tried safety principles sh all be adopted during the design phase and 
+documented in order to support the validation activities. 
+ 
+Pneumatic systems and hydraulic systems 
+List of well tried safety principles for pneumatic and hydraulic systems [1]: 
+ 
+ 
+Applicable well-tried safety principles sh all be adopted during the design phase and 
+documented in order to support the validation activities. 
+ • Over–dimensioning/safety factor 
+• Safe position 
+• Increased OFF force  
+• Valve closed by load pressure  
+• Positive mechanical action  
+• Multiple parts 
+• Use of well-tried spring 
+• Speed limitation/speed reduction by resistance to 
+defined flow 
+• Force limitation/force reduction  
+• Appropriate range of working conditions 
+• Proper avoidance of contamination of the fluid  
+• Sufficient positive overlapping in piston valves  
+• Limited hysteresis 
+  [Table B.2 and C.2 in [1]] • use of carefully selected materials and manufacturing 
+• use of components with oriented failure mode  
+• over–dimensioning/safety factor  
+• safe position  
+• increased OFF force  
+• carefully selection, combination, ar rangement, assembly and installation of 
+components/system related to the application 
+• carefully selection of fastening related to the application 
+• positive mechanical action 
+• multiple parts  
+• use of well–tried spring 
+• limited range of force and similar parameters  
+• limited range of speed and similar parameters  
+• limited range of environmental parameters 
+• limited range of reaction time, limited hysteresis 
+ [Table 
+A.2 EN ISO13849-2] \n32 
+ 4.1.2.2  Well-tried component 
+A well-tried component shall be carefully select ed and also be demonstrated that it is 
+suitable for the intended application.   
+For category 1 solutions the well-tried co mponent is a key component for safety. 
+ 
+Description of a well-tried component in the standard: 
+ 
+ 
+It is important to understand that the qua lification of a component to be a well-tried 
+depends on its application. If safe operation relies on a single component, it is of great 
+importance that this component is designed and implemented for the final application by 
+following basic and well-tried safety principles.  Remember that a well–tried component for so me applications can be inappropriate for 
+other applications. 
+ In [1] examples of well-tried components are given for electrical systems and mechanical systems.  
+ 
+Electrical systems 
+A list of well tried components for electrical systems [1]: 
+ 
+ 
+ 
+The aspects that influence if a component  can be regarded as well-tried are: 
+• follow well-tried safety principles 
+• have low complexity and  
+• are demonstrated suitable by applying applicable standards. • switch with positive mode actuation e.g.: push–button, position switch, 
+cam-operated selector switch e.g. for mode of operation 
+• emergency stop device 
+• fuse 
+• circuit breaker 
+• switches, disconnectors 
+• differential circuit breaker/ RCD (Residual current detection) 
+• main contactor 
+• control and protective switching device or equipment (CPS) 
+• auxiliary contactor (e. g. contactor relay) 
+• relay 
+• transformer 
+• cables 
+• plug and socket  
+• temperature switch  
+• pressure switch  
+• solenoid for valve  
+[Table D.3 in [1]] A “well-tried component” for a safety-related application is a component which has 
+been either 
+a) widely used in the past with successful results in similar applications, or b) made and verified using principles which demonstrate its suitability and 
+reliability for safety-related applications.\n33 
+  
+ 
+Some principles are described below: 
+• a switch with positive mode actuation demons trates its suitability and reliability if 
+the switch complies with EN 60947–5–1:1997 see [1] for details. 
+• a main contractor has to fulfill additiona l conditions in order to be regarded as 
+"well–tried" such as over – dimensioning, see [1] for details. 
+ Remember that the intended application aff ects “well-tried” components. For example 
+cabling to external enclosure should be prot ected against mechanical damage (including 
+e.g. vibration or bending) in order to be regarded as a “well-tried” component. 
+ 
+Complex components: Electronic components (e.g. PLC, microprocessor, application-specific integrated circuit) cannot be consider ed as equivalent to “well tried” since they 
+are complex components, see the definition below.  
+ 
+ 
+Mechanical systems 
+A list of well tried components for mechanical systems [1]:  
+ 
+ 
+Well–tried components for a safety–related app lication in the list above are based on the 
+application of well–tried safety principles  and/or a standard for their particular 
+applications
+. 
+ 
+For a screw locking a mechanical cam the fo llowing requirements (table A.2 in [1]) can 
+be applicable: 
+• use of carefully selected materials and manufacturing 
+• over–dimensioning/safety factor  
+• carefully selection, combination, arrangement, assembly and installation of 
+components/system related to the application 
+• carefully selection of fastening related to the application 
+ The screw shall have suitable material du e to environmental conditions, correct over 
+dimensioning due to a safety factor suitable for the application, selection/arrangement/ 
+assembly of components that are suitable for the application and proper fastening. 
+ A well–tried component for some applications can be inappropriate for other applications. 
+ • Screw 
+• Spring 
+• Cam 
+• Break–pin  
+ [Table A.3 in [1]] complex component 
+component in which 
+– the failure modes are not well-defined; or 
+– the behaviour under fault conditions cannot be completely defined 
+[2] low complexity component 
+component in which 
+– the failure modes are well-defined; and – the behaviour under fault conditions can be completely defined 
+[2] \n34 
+ Pneumatic and hydraulic components 
+At the present time no list of well-tried pneum atic and hydraulic components are given. 
+The status of being well-tried is mainly a pplication specific. A well-tried component for 
+some applications can be inappr opriate for other applications. 
+ 
+Summary regarding well-tried components: 
+• Applicable basic safety principles accord ing to category B shall be followed. 
+• Well–tried components for a safety–related application are based on the 
+application of well–tried safety principles  and/or a standard for their particular 
+applications. 
+• Intended use shall not affect the well- tried component e.g. environmental 
+conditions 
+• A well–tried component for some applica tions can be inappropriate for other 
+applications. 
+• A well tried component is a low complex component 
+• Category 1 is the only category that re quires well tried components. Category 1 
+components can be used in category 2, 3 and category 4 systems. In this case the 
+total resistance to faults and the subseq uent behavior in the fault condition shall 
+be according to the intended category (2, 3 or 4). 
+ \n35 
+ 4.1.3 Category 2 
+A designated architecture for category 2 is pr esented by the standard. Category 2 is not a 
+single channel system. Basic requirements of category B shall apply and were applicable, 
+well-tried safety principles shall be used. 
+ Category 2 has an additional test equipment ( TE) that test and monitors (dashed arrows) 
+Input, Logic and Output with a periodic test in terval. The occurrence of  a fault can lead to 
+the loss of the safety function between the checks.  
+ 
+Figure 7 Designated architecture for category 2 [EN ISO 13849-1 figure 10] 
+ 
+The periodic test interval is depending on the application, the checking interval shall be as 
+short as possible, I, L and O shall be check ed/ monitored. All “boxes” of the designated 
+category 2 architecture need a corresponding hardware unit.  The checking interval can be time scheduled  or based on the operating cycle or the 
+machine cycle. It is important that the inte rval is suitable for application. The checking 
+interval needs to be evaluated/determined dur ing the risk assessment for the application. 
+ The Output of Test Equipment (OTE) needs to be separated/independent from the Output 
+(O).  
+An example of O and OTE components: 
+• Relay 
+• Contactor 
+• Transistor 
+ Example
+* of category 2 solutions: 
+• Force limitation system for a overhead sectional industrial door 
+* Remember that product standards or the risk assessment can give other required categories due to PL r. 
+ 
+ 
+ 
+ 
+ \n36 
+ 4.1.3.1  Disadvantage with a category 2 solution 
+A category 2 system is a mixture of a category B or 1 and a category 3 system since input 
+is only one sensing unit and output is two separate units.  In some applications category 2 is difficult to  realize since some of the components (I, L 
+or O) may not be checked periodically. In this case a category 3 system may be more suitable since a category structure 3 is based on two independent hard ware channels with 
+comparison/monitoring of the two channels. 
+ 
+4.1.4 Category 3 
+Category 3 is a redundant system with monito red inputs and outputs (with other words a 
+two channel system that has monitoring of inpu ts and outputs). This means that we have a 
+single fault tolerant system with diagnostics.  Basic requirements of category B shall apply and applicable well-tried safety principles 
+shall be used. 
+ A designated architecture for category 3 is presented in the standard.  
+ 
+Figure 8 Designated architecture for category 3 [EN ISO 13849-1 figure 11] 
+ 
+Some faults are not detected by a category 3 system; these faults shall have a motivation 
+why they are not detected. All “boxes” of th e designated category 3 architecture need a 
+corresponding hardware unit. 
+ Inputs (I1 and I2) are checked so that discrep ancies are detected. When a discrepancy is 
+detected, action is taken to reach a safe state.  Logic (L1 and L2) are checked so that discrep ancies are detected. When a discrepancy is 
+detected, action is taken to reach a safe state.  
+ Outputs (O1 and O2) are checked so that discr epancies are detected. When a discrepancy 
+is detected action is taken to reach a safe state.  
+Example
+* of category 3 solution(s): \n37 
+ • Input circuit for an interlock door for Machinery. The I1 and I2 are two separate 
+electric channels of one electro-mechanic  door key switch with positive mode of 
+operation. The switch has two electrica l channels but only one mechanical 
+channel (the key). Mechanical faults  are in this case excluded since this 
+component is regarded as well tried due the mechanical design and the contact 
+elements I1 and I2 have po sitive mode of operation.   
+ 
+* Remember that product standards or the risk assessment can give other required categories due to PL r. 
+ 
+4.1.5 Category 4 
+Category 4 is a redundant system with monito red inputs and outputs (with other words a 
+two channel system that has monitoring of inputs and outputs). Single faults does not lead to loss of safety function and accumulation of unde tected faults shall not lead to the loss 
+of the safety function. Category 4 offers a higher degree of resistance to faults in 
+comparison with category 3.  Basic requirements of category B shall apply and applicable well-tried safety principles 
+shall be used.  
+A designated architecture for category 4 is presented in the standard. 
+ 
+ 
+ 
+Figure 9 Designated architecture for category 4 [EN ISO 13849-1 figure 12] 
+ 
+The accumulation of two faults is consider ed to be sufficient in the standard: 
+ 
+ 
+ 
+Inputs (I1 and I2) are checked so that discrep ancies are detected. When a discrepancy is 
+detected action is taken to reach a safe state. 
+ Logic (L1 and L2) are checked so that discrep ancies are detected. When a discrepancy is 
+detected action is taken to reacha safe state.   The difference between category 3 and category 4 is a higher DCavg in category 4 
+and a required MTTFd of each channel of “high” only. In practice, the consideration of a fault combination of two faults may be sufficient\n38 
+ Outputs (O1 and O2) are checked so that discr epancies are detected. When a discrepancy 
+is detected action is taken to reacha safe state. 
+ Example
+* of category 4 solution(s): 
+• Input circuit for an interlock door for Machinery. The I1 and I2 is two separate 
+electro mechanic door key switches. They each key switch have one electrical channel and one mechanical channel (key ) each. Mechanical faults are in this 
+case not excluded since the combination of two separate electro mechanical 
+switches achieves category 4. 
+ 
+* Remember that product standards or the risk assessment can give other required categories due to PL r. 
+ 
+4.2 Important issues durin g the design phase 
+The category principles are important to verify  early in the design process. The first step 
+is to ensure that all of the “boxes” are re presented for the target category. The arrows 
+need an functional representation. 
+ 
+ 
+  
+Figure 10 A category 2 structure 
+ 
+ 
+When a category 2 structure is used  
+All of the “boxes” Input (I), Logic (L), Output (O), Test Equipment (TE) and Output Test 
+Equipment (OTE) need a representation by a hardware (HW) unit. All boxes shall be identified and described.  The monitoring of I, L and O (dashed arrows) needs to be identified and described. If the 
+monitoring is not fulfilled the DC
+avg calculations will probably fail. 
+Example If no feedback exists from output (O) the DC avg for the output is 0% . Lack of 
+feedback will probably get too low DC  avg for the calculations for the complete safety 
+function.  
+4.2.1 Example – Category 2 force limitation system 
+In order to protect people from harm on a overhead sectional industrial door, a force 
+limitation system (PSPE Pressure Sensitive Protective Equipment) is required. The 
+manufacturer of the control system aims to design the force limitation system according 
+to category 2. 
+ 
+Force limitation system for a overh ead sectional industrial door  
+When the door moves downwards there are cr ushing hazards between the door leaf and 
+the ground. In order to prevent crushing hazards, the door reverses the direction of 
+movement if the door leaf hits an obstacle (the safety edge is affected). 
+ Identification of HW units:  I = Safety edge (Pressure sensitive protective device)  L = Control unit with a micro controller  O = Motor driver \n39 
+  TE = Separate watchdog system 
+ OTE = A relay that de-energizes the motor diver (O) 
+ 
+Description of safety measures for Input (I) 
+The input interface (i m between I and L) is checked before  the start of the motor. In the 
+event of a fault, the door is not started on the start impulse. 
+Once per door cycle (opening and closing of the door leaves) the safety edge hits the 
+ground. If no there is reaction from the safety e dge (I) when the door leaf hits the ground, 
+the door is stopped by over current detection, In this case a faulty safety edge is detected 
+and further automatic operation of the door is prohibited.  Description of safety measures for Logic (L) 
+The Logic has internal tests in order to en sure safe and reliable operation. These tests are 
+based on the DC table for logic in Annex E of the standard. 
+- Inputs are tested periodically 
+- Static and dynamic memories are checked periodically 
+- Program execution is monitored 
+- Power failure is monitored in order to ensure safe operation 
+- I/O stuck at faults are monitored 
+- Watch dog 
+- Outputs are tested 
+ 
+These internal tests are necessary for appli cations where the manufacturer develops 
+electronic safety critical systems, for example when developing safety critical embedded systems based on commercial on the shelf microprocessor(s).  Logic units such as Safety – PLC, Safety Rela y or Safety Controllers (certified according 
+to the standard or [3], [4] and [5] has from factory implemented internal self tests. For 
+these units it is necessary to follow factor y recommendations and implement these logic 
+controllers (for example verify the appl ication program and the parameterization 
+software) according to the ri sks for the final solution. 
+ Description of safety measures for Test Equipment (TE) 
+Test equipment is an independent unit that m onitors, logic, input and output in order to 
+ensure reliable and safe operation.  
+Description of safety measures for Output (O) 
+The motor driver (O) is tested that it is able to operate before start of the door, a simulated 
+deactivation of the motor driver is done and a check is made that the motor does not operate. In the event that a fault is detected  further automatic operation of the door is 
+prohibited. If the motor does not stop the door in the event of a stop command, the relay (OTE) de-energizes the motor driver (O).  
+The feedback from the motor is based on two independent sources, motor current and 
+encoder signal.  
+Description of safety measures for Output Test Equipment (OTE) 
+The OTE relay de-energizes the motor driver (O ) in the event when the motor driver does 
+not de-energize the motor. \n40 
+  
+5 Probability of dangerous failures 
+ 
+The probability of dangerous failure of the safety function depends on several factors, including hardware and software structure,  reliability of components [mean time to 
+dangerous failure (MTTFd), the extent of  fault detection mechanisms [diagnostic 
+coverage (DC)], common cause failure (CCF)], design process, operating stress, 
+environmental conditions a nd operation procedures. 
+ 
+Aim 
+To give a short introduction in the concept of MTTFd, how to retrieve MTTFd-values for 
+components and how to estimate the total MTTFd for a SRP/CS. 
+ 
+Requirements 
+The MTTFd is given in three levels and sha ll be taken into account for each channel of 
+the SRP/CS individually  
+Denotation of each channel Range of each channel 
+Low 3 years ≤ MTTFd < 10 years 
+Medium 10 years ≤ MTTFd < 30 years 
+High 30 years ≤ MTTFd < 100 years 
+ 
+A channel can have a MTTFd maximum value of  100 years. If the estimation results in a 
+channel with a MTTFd > 100 years, the resulting MTTFd is set to 100 years.  The following sub-chapters are guidance.  
+5.1 MTTF d 
+ 
+5.1.1 Basic definitions 
+One of the main differences between thesta ndard and the earlier EN 954-1:1996 is the 
+addition of hardware reliability requirements.  All hardware components has a probability 
+of failure per unit time, this probability is ca lled the component failure rate and is denoted 
+with the symbol λ(lambda). Failure rate is often estim ated in failures in time (FIT) which 
+means that if a component has a failure rate of 1 FIT then the probability of failure for 
+that component is 9101−× per hour. 
+ 
+The failure rate for a certain type of co mponent can be subdivided into three phases 
+according to the following figure: 
+ 
+θ 
+Figure 11 Bathtub curve \n41 
+ Phase 1 is the early life of the component. During this period the failure rate is expected 
+to be high because of e.g. a not suffi ciently adjusted manufacturing process. 
+ During phase 2 the failure rate is assumed to be  constant for electric/electronic, hydraulic 
+and pneumatic components. This period is ca lled the useful life of the component which 
+often is symbolized with
+θ(theta). 
+ 
+Phase 3 is the wear out phase which starts when  the useful life of the component ends. In 
+this phase the component is worn out because of physical reasons and the failure rate 
+cannot longer be assumed to be constant. 
+ 
+Because the failure rate is assumed to be cons tant during the useful life period it can be 
+shown that the mean time to failure (MTTF) can be calculated according to: 
+] [1hours MTTFλ=  
+It is very important to make a difference between the MTTF and the θ because these two 
+measures have no relationship. For example,  wet electrolytic capacitors often has a 
+limited θ because of drying in time. However before the end of θthese capacitors 
+usually has a very low failure rate and thus a very large MTTF. 
+ 
+Sometimes the term MTTF is confused with the term MTBF (mean time between 
+failures). According to reliability theory literature MTBF is defined as follows:  
+ 
+MTTR MTTF MTBF + =  
+ 
+Where MTTR means: mean time to repair a nd is a measure of the expected time to 
+successfully repair a component/system. Usually MTTR << MTTF (e.g. 8 hours compared with 3500 years). The term MTBF is normally important in maintainability/availability analysis and will not  be further considered in this report. 
+ 
+5.1.2 Relation between MTTF and MTTFd 
+Example  
+Consider a relay with one contact supplying a motor. The failure rate for the relay is 
+known (REλ). The relay has two failure modes, st uck open or stuck closed and the relay 
+manufacturer has specified that if a relay failu re occurs, it is equally probable that any of 
+these failure modes occur. This is called dist ribution of the failure rate among the failure 
+modes of a component. Reliability prediction handbooks may provide guidance for distribution for certain types of components (but not for all types) if not the distribution is carried out by good engineering practice.  
+FMEA – Example motor control 
+Failure mode Failure effect Fraction of failure rate 
+Stuck-open The motor cannot start, or 
+stops unexpectedly Safe failure effect 
+REλ⋅ =%50  
+Stuck close Unexpected start, or the 
+motor does not stop Dangerous failure effect 
+REλ⋅ =%50  
+ 
+In a realistic case, there would be a lot mo re components in the FMEA. When the FMEA 
+is completed the total failure rate leading to  safe failure effects is added together. This 
+total failure rate is denoted with the symbolSλ(safe failure rate) and the total failure rate 
+leading to dangerous failure effects is denoted with the symbolDλ(dangerous failure rate) 
+where: \n42 
+ ] [1years MTTF
+DDλ=  
+When estimating MTTFd for a component the following procedure for finding data shall 
+be followed according to Clause 4.5.2 in the standard: 
+a) Use manufacturers data 
+b) Use methods in Annexes C and D in the standard 
+c) Choose ten years 
+ 
+5.1.3 Estimation of MTTFd for electric/electronic components 
+There are different techniques to estimate th e failure rate for components, either the 
+failure rate is determined by counting failures in the field on a large population of 
+components, and then use statistical methods (w hich is the most accurate method) or the 
+failure rate is predicted using a reliability prediction handbook.  
+ Always check if the manufacturer specifies th e MTTFd value in the component datasheet. 
+In some cases the datasheet only contains a PFH value or a 
+Dλ value (this is common for 
+electronic modules such as I/O modules and senso rs). In this case use the formula MTTFd 
+= 1/Dλ 
+However, for standard passive components (t ransistors, diodes, resistors etc.) use the 
+following guideline:  The latter technique is the most common for electronic components. Annex C in the standard give reliability figures for most di screte electronic components and may be used 
+unless the component manufacturer provides reliability data. For complex components 
+(integrated circuits) consult a reliability expe rt who can help predicting failure rates. 
+ Example from Table C.2 in the standard Bipolar transistor which is assigned with the following values: 
+MTTF = 34247 years 
+MTTFd (typical) = 68493 years  MTTFd (worst case) = 6849 years  For each electronic component in  Annex C in the standard it is assumed that 50% of all 
+the component failure modes leads to a dange rous failure providing the typical MTTFd: 
+MTTF MTTFd ×=2 (MTTF MTTFdD×=  =× =21 1
+215.0 λ λ λ ). 
+ 
+For each component there is also provided a worst case MTTFd where a safety margin of 
+a factor 10 have been used. 
+ 
+As far as possible select the worst case value fo r components. It is always better to use 
+pessimistic values in a reliability evaluation.  Power electronics often contribute most of all electronic components to the total MTTFd. 
+ 
+If no reliability data can be found for an electronic component or module use 10 years (e.g. standard industrial PLCs).  \n43 
+ 5.1.4 Estimation of MTTFd for electromechanical, pneumatic 
+or hydraulic components 
+The procedure of estimating the MTTFd for electromechanical components (relays, 
+contactors, pushbuttons, levers limit swit ches, guard interlocks etc), pneumatic 
+components and hydraulic components is clearly described in Annex C in the standard.  
+B
+10d is the number of operations a set of electromechanical or pneumatic components can 
+perform until 10% of the set of components faile d dangerously. This value is derived in a 
+B10-test and is to be acquired from the component manufacturer. 
+ The B
+10d-value is used to estimate the M TTFd for the components. However, B 10d-values 
+are not considered applicable for hydraulic  components. The reason for this is not 
+motivated in the standard.  In order to be able to use Table C. 1 in the standard which prescribes B
+10d-values for 
+electromechanical, pneumatic components and a MTTFd value for hydraulic components the requirements in Annex C.2 and C.3 shall be documented by the component 
+manufacturer, e.g. in the datasheet. Otherw ise the manufacturer shall deliver the B
+10d 
+value or the MTTFd value.   With a B
+10d value available, the following formul a may be used for deriving the MTTFd-
+value: 
+opd
+nBMTTFd×=1,010 
+Where n op is the mean number of annual operations  for the component. E.g. for a relay is 
+one relay activation and the sub-sequent rela y de-activation two operations. Equation C.2 
+in the standard suggests how n op can be derived. However, to be able to show the 
+rationale behind the estimation of n op is more important than strictly applying Equation 
+C.2. 
+ For some components it is difficult for the component manufacturer to provide a B
+10d 
+value because it is application dependent wh ich failures that actually are dangerous. In 
+this case the manufacturer only provides a B 10-value. The following pessimistic 
+assumption is in this case feasible (see Annex C.4.2, note 3 in the standard)): 
+10 10 2B Bd ×= (assuming that 50% of the components failure modes leads to dangerous 
+failure effects) 
+In cases where the component manufacturer cannot provide a B10-value for the component, a pessimistic assumption that B10 equals the components specified electrical 
+life as stated in the datasheet is permissible. 
+ Because the MTTFd for electromechanical or pneumatic components depends on the application of the component it is common that these type of components has a large 
+impact on the total SRP/CS MTTFd value. 
+ 
+     
+ 
+  \n44 
+ Consider the following example using a contact or relay with maximum load (e.g. main 
+motor contactor) which gives a B 10d of 400000 according to Table C.1in the standard. 
+  
+n
+op (mean relay contactor operations) Relay contactor MTTFd [years] 
+1/year 4 million 
+1/month 333 thousand 
+1/week 77 thousand 
+1/day 10 thousand 
+1/hour 457 
+1/minute 8 
+ 
+5.1.5 Estimation of MTTFd for individual SRP/CS 
+When each safety related component is iden tified together with the SRP/CS structure 
+every component is gathered in a spreadsheet (e.g. Excel or similar) and are grouped to 
+their respective Input-block, Logic-block or Output block.  The designated architectures are in fact si mplified reliability models based on a concept 
+called channels. A channel is defined so that  in all components within the channel there 
+are failure modes which can cause the loss of the safety function. Each series of Input-
+Logic-Output is a channel and thus relates to the structures according to the following 
+table: 
+Structure Reliability model configuration 
+Category B Single channel 
+Category 1 Single channel 
+Category 2 Single channel 
+Category 3 Dual channel 
+Category 4 Dual channel 
+ 
+According to the simplified method in the st andard, Annex D the MTTFd of each channel 
+is determined by the following formula: 
+
+==K
+i idi
+channeld MTTFn
+MTTF1 , ,1 
+ 
+Where:  
+i is the component type 
+K is the number of different component types within the channel 
+ni is the number of components of type i within the channel 
+MTTF d,i is the MTTF d value for the particular component type i 
+ 
+No hardware solely used for implement diagnos tics shall be part of the SRP/CS estimated 
+MTTFd \n45 
+ 5.1.5.1  Example of estimating the MTTFd for a SRP/CS 
+ 
+Consider the following hypothetical SRP/CS:  
+ 
+Figure 12 Fictive SRP/CS 
+ This system is a fictive application specific SRP/CS. The safety function is a hatchet (guard) which shall remain physically locked with two hypothetical plungers preventing access to hazardous movement while a motor shaft rotates. The locking devices can only 
+open the plungers with electr omagnets controlled by the contactors. Power loss to the 
+electromagnets causes mechanical locking of the hatchet by the plungers. 
+ The SRC/PS shall fulfill PL
+r = d. 
+ Previously, the hardware has been analyzed  (FMEA) and the structure category 3 was 
+identified. The hardware was illustrated as ch annels excluding any diagnostics, i.e. no 
+feedback signals, bus-communication betw een Microcontroller 1 and PLC, watchdogs 
+etc. are included. The two channels were also found to be not identical.  The estimation of the MTTFd was performed using the following two tables.  
+Note that some of the values in these tabl es are fictive and not intended for professional 
+use. \n46 
+  
+Table A: MTTFd for Channel 1 
+Device Block Component Source of 
+MTTFd Number of 
+components 
+[ni] MTTF d 
+[years] ni/MTTF d,i 
+Input Sensor B1, Inductive 
+sensor 1, 
+JXZ0K65J7 Datasheet 
+provides 
+Dλ 1 700 0.001429 
+Logic Interfacing 
+electronics 
+in1 Suppressor Table C 1 3196 0.000313 
+Resistor, 
+Metal film Table C 3 114 155 0.000021 
+Capacitor, 
+Ceramic Table C 2 4566 0.000438 
+ 
+Inductor,  
+Low freq. Table C 1 4566 0.000219 
+ 
+Micrcontroller 
+1 (Large) IC1 Datasheet 1 1114 0.000298 
+Interfacing 
+electronic 
+out1 Suppressor Table C 1 3196 0.000313 
+Resistor, 
+Metal film Table C 4 114 155 0.000035 
+Capacitor, 
+Ceramic Table C 2 4566 0.000438 
+MOS,  
+power Table C 1 228 0.004386 
+Output Actuator Contactor, 
+NO B10d = 
+400 000, n op 
+= 24*365 1 457 0.002188 
+1/MTTFd Channel 1 = Add all calculated ni/MTTF d,i in column 7 = 0.010677 
+Resulting MTTFd for Channel 1(inverse of the result of the previous row)  94  
+ 
+Table B: MTTFd for Channel 2 
+Device Block Component Source of 
+MTTFd Number of 
+components 
+[ni] MTTF d 
+[years] ni/MTTF d,i 
+Input Sensor B1, Inductive 
+sensor 1, 
+Jcomponent 
+data Datasheet 
+provides 
+Dλ 1 700 0.001429 
+Logic N/a 
+ PLC Not 
+available 1 10 0.1 
+Output Actuator Contactor, 
+NO B10d = 
+400 000, n op 
+= 24*365 1 457 0.002188 
+1/MTTFd Channel 2 = Add all calculated ni/MTTF d,i in column 7 = 0.103617 
+Resulting MTTFd for Channel 2(inverse the result of the previous row) = 9  
+ 
+Clause 4.5.2 in the standard requires that the MTTFd for each channel is considered 
+individually, if there are different MTTFd for two channels the lower shall be selected. In this example: MTTFd Channel 1 = 94 years MTTFd Channel 2 = 9 years  
+Means that MTTFd SRP/CS total = 9 years, a nd thus “low” according to Table 5 in the 
+standard. According to Figure 5 it is only  possible to reach PL = c for a category 3 
+structure if MTTFd = low which contradicts the previous PL
+r = d. 
+ However, the standard provides a technique in  order to resolve this problem by allowing 
+the use of the following formula: 
+ \n47 
+ ]1 11[32
+2, 1,2, 1, ,
+chd chdchd chd eqvd
+MTTF MTTFMTTF MTTF MTTF
++− + =  
+ 
+Which in this example would provide: 
+63]
+91
+94119 94[32
+, =
++−+ =eqvd MTTF  years  
+This SRP/CS MTTFd value is within the interv al for “high” MTTFd and thus is sufficient 
+for PL = d according to Table 5 in the standard.  \n48 
+ 6 Diagnostic coverage (DC avg) 
+ 
+Aim: 
+The aim of this chapter is to discuss the concept and meaning of  diagnostic coverage 
+(DC) and to enlighten some techniques which may be applied in order to estimate the DC 
+for a function or a module included in a SRP/CS.  
+ 
+Recalling Chapter 5.1.1 in this report, the fa ilure rate for a component can be subdivided 
+into different fractions depending on the com ponents different failure mode effects on the 
+control system (Dλand Sλ). If automatic self-checking and error detecting mechanisms 
+are included in the control system and which detects certain dangerous failures a third 
+fraction can be derived from the FMEA called DDλwhich means dangerous detected 
+failure rate. 
+ What is diagnostic coverage? 
+The formal definition of diagnostic coverage is: 
+[%]=
+DDDDCλλ
+ 
+ 
+Where: 
+= Dλ The fraction of the SRP/CS total failure rate which leads to a dangerous system 
+failure, e.g. the loss of the safety function ( dangerous failure rate ); and 
+= DDλ The fraction of the SRP/CS total danger ous failure rate which is detected 
+(AND  handled) by automatic and self monitoring mechanisms that are implemented in 
+the SRP/CS or by other systems external to the SRP/CS.  
+Safety-related faults may also be revealed  (detected) by manual tests or inspections. 
+However, the coverage of such procedures does not  contribute to the diagnostic 
+coverage.  
+When a fault is detected? 
+When a fault is detected, the monitoring mechan isms shall handle the fault by initiate an 
+appropriate action which is a pplication dependent. For many applications within the 
+machinery sector such an appropriate action is  to initiate a so called safe-state (i.e. the 
+safety-function is performed). The term safe-state implies that the control system removes the hazard instantly (e.g. by immediately st opping/preventing hazardous movement of a 
+part of a machine by remove the power to a motor). For other machines or applications 
+other actions may be more appropriate, such as issuing an alarm. 
+Unfortunately ISO 13849 does not define the term sa fe-state (at all) but refers to this term 
+anyway at several locations. In IEC 61508:2010, Part 4, Clause 3.1.13 the term “safe-state” is defined as: 
+ 
+safe state state of the EUC when safety is achieved 
+ 
+NOTE In going from a potentially hazardous condition to t he final safe state, the EUC may have to go through a 
+number of intermediate safe states. For some situati ons a safe state exists onl y so long as the EUC is 
+continuously controlled. Such continuous control ma y be for a short or an indefinite period of time.  
+Note: EUC = Equipment Under Control (i.e. the machine) 
+ With regard of this definition the following general conclusions of the term “safe-state” 
+can be made: \n49 
+ - There is no pre-defined/standardized control system output state which shall be 
+achieved in order to enter safe-state (e.g. all outputs de-energized) 
+- The safe-state can be entered by a controlled sequence 
+- The machine does not have to be stop ped when the safe-state is entered 
+ 
+There are two important properties to consider regarding diagnostic means 
+ 
+ 
+The machine control system reaction of a failure  
+ 
+The machine control system reaction on a failu re may be visualized in accordance to the 
+following figure: 
+timeControl system 
+safety availability
+Up-time
+Down-time
+a b c d e
+f
+ 
+Figure 13 Machine behaviour when a fault occurs 
+ 
+ Figure 9 is subdivided into the following time intervals a – During this time interval the machine ope rates according to its specification (i.e. safe 
+operation 
+b – A fault (e.g. random hardware fault) has occurred in the control system, the machine 
+may now operate dangerously  c – The control system detects and registers the fault by internal diagnostic mechanisms 
+and initiate a preventive action d – During this time period the machine pe rforms its preventive actions (e.g. applying 
+brakes, remove power from drives) 
+e – During this time the machine is in its safe state f – The time elapsed between a failure a nd the hazardous event without considering 
+diagnostic mechanisms  If possible (b + c + d) shall be less than f. 
+ 
+The periodicity of conducting diagnostic tests 
+ 
+If a diagnostic test is not performed frequently enough, there is a probability that a failure 
+causes a hazardous even t between tests.  \n50 
+  
+Requirements: 
+Table 6 in the standard specifies four levels  of diagnostic coverage according to the 
+following table:  
+Denotation Range 
+None DC < 60% 
+Low 60% < DC < 90% 
+Medium 90% < DC < 99% 
+High 99% < DC 
+ 
+ 
+(see Annex E) the average diagnostic coverage  for the whole SRP/CS be estimated using 
+the following equation (when applying the simplified method):  
+
+===k
+n ndk
+n ndn
+avg
+MTTFMTTFDC
+DC
+1 ,1 ,
+1 
+ 
+Guidance: 
+It is important to consider the robustness of the machine operation when designing 
+diagnostic techniques in order to avoid u nnecessary loss of production and/or to reduce 
+the risk that the machine operator tri es to tamper with safety functions.  
+ One example where trimming of the diagnostic  test technique is when applying cross 
+monitoring of the feed-back signals from two redundant electromechanical components. Even if the components are identical they will have different response times (so called 
+discrepancy times). Therefore the control syst em must tolerate a certain time deviation 
+between the feedback signals. The length of th e maximum allowed time deviation is to be 
+determined in the hazard and risk analys is. A similar reasoning is applied when 
+measuring analog values etc.  Examples of possible (non-exhaustive) interp retations of the implementation of some 
+diagnostic techniques is presented in Appendix B in this report. \n51 
+  
+7 Common cause failure 
+ 
+In machinery applications where the need of  a high degree of safety is needed a common 
+structure of the control system is a redundant architecture. The redundant structure is efficient to control random failures occurri ng in only one of the redundant channels. But 
+common cause failures (CCF) can affect both channels in a negative way. Examples of 
+CCF are short circuits, extreme temperatures and electromagnetic interference. 
+ 
+M
+ 
+Figure 14 A single common caus e failure affects two channels 
+ 
+In order to prevent that a common cause failure  can affect safety the aim is to reduce the 
+probability for common cause failures. During the design phase of a SRP/CS it is possible 
+to implemented measures in order to reduce the probability for common cause failures.   The standard requires the performance level of  the control system shall be determined 
+with estimation of CCF as one important aspect.  An assessment of CCF is necessary for 
+every safety validation, but can be performed in different ways.  The standard has a procedure for estimati ng the CCF measures implemented for SRP/CS 
+with a category 2, 3 or 4 structures. The pro cedure is presented by a score table F.1 in the 
+standard. The proposed procedure is described in an informative part of the standard. 
+Other procedures can be used to judge measures against CCF, but the proposed score 
+table F.1 is commonly applied. The sco re table covers the following areas: 
+ 
+• Separation/ Segregation of signal cables and also creepage distances on printed-
+circuit boards The intention is to avoid short circuits  between the redundant channels. It is 
+usually very important when static input  and output signals are used. The need 
+for separation may be reconsidered when dynamic signals are used. 
+• Diversity in technologies, design or physical principles  
+The intention is to reduce the probability of a fault affecting both channels. An 
+example is different sensitivity to el ectromagnetic interference in different 
+components, e.g. an electromechanical or an electronic sensor. Another example 
+is when diversity in software is app lied to reduce the risk of a programming 
+mistakes affecting both channels.  
+• Design/application/experience 
+The intention is to reduce the probability of an external factor affecting both 
+channels at the same time. An example is when a high voltage transient bursts 
+from inductive loads destroys electronic components in both channels. 
+• Failure mode and effect analysis covering CCF failures 
+The intention is to identify critical components of the design and reduce the 
+probability of a fault appearing in both channels. \n52 
+ • Competence/training in order to understand the causes and consequences of CCF 
+Both design engineers and maintenance st aff should be trained to understand the 
+significance of reducing CCF. 
+• Suitable design with respect to environmental impact 
+Environmental aspects may affect both channels at the same time. An example is that EMC performance of the design has been tested and approved. This will 
+reduce the probability of a disturbance affecting both channels. 
+ 
+For each area above points are presented. In order to fulfill the requirements a score of 
+minimum 65 points or better is needed. For each listed measure, only the full score or nothing can be clained. If a measure is only partly fulfilled, the score according to this 
+measure is zero. The maximum score is 100 points. When performing the assessment, a 
+motiviation for every judgment shall be noted. 
+ 
+Example of how measures against CCF can be estimated using the method proposed in the standard:  
+No Measure against CCF Max score Achieved 
+score 
+ 
+1 Separation / segregation 
+ 15 15 
+2 Diversity 20 20 
+3.1 Design: Protection against overvoltage, current, etc. 
+ 15 15 
+3.2 Design: Components are well tried 
+ 5 0 
+4 Assessment / analysis 5 5 
+5 Competence / training 
+ 5 0 
+6.1 
+ Environmental: EMC 
+ 25 25 
+6.2 Environmental: Other influences 
+ 10 10 
+ Total 100 90 
+ 
+ \n53 
+ 8 Software 
+ 
+Today many safety functions are depending on  both correct functioning of the hardware 
+and correct functioning of the software. Earlie r, mainly non safety critical functions were 
+implemented in software and safety critical functions were traditionally hard-wired. The 
+introduction of fail safe PLCs made it possible to  also realize safety critical functions by 
+software.   
+It is of course an advantage to be able to realize both safety critical and non safety critical 
+in the same fail safe PLC, but it is important to  understand that safety is not automatically 
+reached in this case and that you still as soft ware developer has got the responsibility to 
+develop a safe software. Situations that you must  try to avoid is for instance that a logical 
+fault in the software does not give an  unexpected start of the machine. 
+ 
+The standard gives support to the software designer what to think about during the different steps of the software safety lifecycle to, as far as it is possible, minimize that faults are introduced.   
+8.1 General requirements 
+ 
+In the standard two different types of languages are defined  
+ 
+ 
+Limited variability languages are typically [6 ] languages that are used in fail safe PLC 
+when developing the application software. 
+ 
+ 
+ 
+ 
+ 
+An example when full variability languages ar e used are when the manufacturers of fail 
+safe PLCs are developing the embedded software running inside the fail safe PLC. 
+Examples of FVL are for instance C and C++. 
+ 
+ 
+ 
+ application software  
+software specific to the applicati on, implemented by the machine  
+manufacturer  to meet the SRP/CS requirements 
+ 
+Chapter 3.1.36 in the standard full variability language (FVL)  
+type of language that provides the capability of implementing a wide variety  
+of functions and applications  Chapter 3.1.35 in the standard limited variability language (LVL)  
+type of language that provides the capability of combining predefined,  
+application-specific library functions to implement the safety requirements 
+specifications  
+Chapter 3.1.34 in the standard \n54 
+  
+ 
+ 
+For the application software the abbrev iation SRASW (safety-related application 
+software) is used  
+ For the embedded software the abbreviation SRESW (safety-related embedded software) 
+is used. 
+ 
+ 
+The figures below describes the connection between SRESW and SRASW and that 
+parameterization of both application SW and embedded SW can be performed by an 
+external parameterization tool:  
+ 
+Figure 15 Relation between SRESW and SRASW  
+ 
+ From the figure above, it is possible to see that the embedded software has a closer 
+connection to the hardware than the application software.  
+ The operating system in a fail-safe PLC is an  example of an embedded software while 
+writing code in [6] languages in a developm ent environment from a manufacturer of a 
+fail-safe PLC is an example of application software.  
+The aim with the V-model described in Figur e 6 (Figure 16 on the next page) in the 
+standard is to describe how the software  shall be developed from receiving a safety 
+functions specification until the software is validated.  embedded software / firmware / system software  
+software that is part of the system supplied by the control manufacturer and 
+which is not accessible for modification by the user of the machinery.  Chapter 3.1.37 in the standard \n55 
+ 
+ 
+Figure 16 Simplified V model of software lifecycle 
+ 
+In the standard the overall requirements as defined in the V-model is summarized as:   
+ 
+ 
+ 
+In Figure 6 in the standard also verificati on activities are included (dashed arrows). The 
+aim of the verification is to check that ea ch phase in the software safety life cycle has 
+been performed correctly. An example of a veri fication activity is that a person, that has 
+not been involved in the development of th e safety-related software specification reviews 
+this document to check that it is correct a nd fulfils the applicable requirements in the 
+standard 
+  
+ 
+ 
+ 
+ 
+ If SRASW is written in FVL, the requirements for SRESW shall apply and PL a to e  is achievable.  
+ 
+ Chapter 4.6.3 in the standard SRESW and SRASW written in FVL for components with PLr = e  shall comply 
+with IEC 61508-3:1998, Clause 7, appropriate for SIL 3 .  
+  Chapter 4.6.2 in the standard The main objective of the following re quirements is to have readable, 
+understandable, testable and maintainable software 
+ Chapter 4.6.1 in the standard \n56 
+ 
+ 
+Figure 17 Relations between ISO 13849-1 and IEC 61508-3 for software 
+ 
+The standard also points out that it is impor tant to document the result from each software 
+safety life cycle phase and that the documentati on shall be complete, available, readable 
+and understandable. The reason for this is th at it shall be possible to go back after a 
+project is finalized and check how is step in  the software safety life cycle is performed. 
+ The following additional measures for SR ESW for components with PLr c-d are 
+described in the standard: 
+ 
+• project management and quality manageme nt system comparable to, e.g. IEC 
+61508 or ISO 9001 
+• configuration management to identify all configuration items and documents 
+related to a SRESW release 
+ 
+For SRASW, written in LVL, for component s with PLr from c to e, the following 
+additional measures with increasing efficiency (lower for PLr of c, medium for PLr of d, higher for PLr of e) are required or recommended:  
+• Configuration management. It is high ly recommended that procedures and data 
+backup be established to identify and archive documents, software modules, 
+verification/validation results and tool configuration related to a specific SRASW version. 
+  
+8.2 Safety-related software specification 
+ 
+The first phase in the V-model is to develop a safety-related software specification. In this 
+phase it is important to read through the safety requirements specification for each safety 
+function and check which of these requirements that influence or need to be further 
+detailed in the safety-related software speci fication. Below follows a number of aspects 
+that needs to be considered in the safety-related software specification: 
+ 
+- safety functions with required PL and associated operating modes  
+- performance criteria, e.g. reaction times  \n57 
+ - real time properties  
+- hardware architecture with external si gnal interfaces detection and control of 
+external failure  
+- detection  and management of  faults in  sensors , logic units , actuators, and in the 
+software itself  (self-diagnosis) 
+- operating  modes 
+ 
+When the safety-related software specifica tion is developed it shall be verified. One 
+example of verification activity in this c ase can be that a person that has not been 
+involved in the development of the safety-rela ted software specification goes through this 
+document and check it for correctness.  Documentation: 
+ Safety-related software specification. 
+Safety-related software validation plan 
+ 
+8.3 System- and module design 
+ 
+When the safety-related software specification is ready, it is possible to go on with the 
+system- and module design. The aim with this phase is to give a high level description of 
+how the software will function. When possible, it is preferrable to divide the system into a 
+number of different modules. One reason for this  is that the risk for introducing faults 
+when coding will be reduced and it will also be possible to test each module separately.  
+During this phase, it is also important to de fine how each module shall be tested. This 
+information is described in the System- and module test plan.  For SRASW, written in LVL, for component s with PLr from c to e, the following 
+additional measures with increasing efficiency (lower for PLr of c, medium for PLr of d, 
+higher for PLr of e) are required or recommended: 
+ 
+• semi-formal methods to describe data and control flow, e.g. state diagram or 
+program flow chart 
+• modular and structured programming pre dominantly realized by function blocks 
+deriving from safety related validated function block libraries 
+• function blocks of limited size of coding 
+• code execution inside function block wh ich should have one entry and one exit 
+point 
+• architecture model of three stages, Inputs 
+⇒ Processing ⇒ Outputs 
+• assignment of a safety output at only one program location 
+• use of techniques for detection of external failure and for defensive programming 
+within input, processing and output blocks which lead to safe state  
+ 
+Documentation: 
+ System- and module design specification 
+System- and module test plan 
+    
+ 
+ \n58 
+ 8.4 Coding 
+ 
+When the system- and module design is ready the next step is to start writing the detailed code for each module in the system.  
+The following additional measures for SR ESW for components with PLr c-d are 
+described in the standard:   
+• use of suitable programming languages and computer-based tools with 
+confidence from use 
+• modular and structured programming, separ ation in non-safety-related software, 
+limited module sizes with fully defined interfaces, use of design and coding 
+standards 
+ 
+For SRASW, written in LVL, for component s with PLr from c to e, the following 
+additional measures with increasing efficiency (lower for PLr of c, medium for PLr of d, 
+higher for PLr of e) are required or recommended:  
+Selection of tools, libraries, languages: 
+• Suitable tools with confidence from use: for PL = e  achieved with one component 
+and its tool, the tool shall comply with  the appropriate safety standard; if two 
+diverse components with diverse tools are used, confidence from use may be 
+sufficient. Technical features which detect  conditions that could cause systematic 
+error shall be used. Checks should mainly  be carried out during compile time 
+and not only at runtime. Tools should enforce language subsets and coding guidelines or at least supervise or guide the developer using them. 
+• Validated function block (FB) libraries should be used — either safety-related FB 
+libraries provided by the tool manufacturer (highly recommended for PL = e ) or 
+validated application specific FB libraries and in conformity with this part of ISO 
+13849. 
+• A justified LVL-subset suitable for a mo dular approach should be used, e.g. 
+accepted subset of IEC 61131-3 languag es. Graphical languages (e.g. function 
+block diagram, ladder diagram) are highly recommended.  
+ 
+Where SRASW and non-SRASW are co mbined in one component: 
+• SRASW and non-SRASW shall be coded in  different function blocks with well-
+defined data links 
+• there shall be no logical combination of non-safety-related and safety-related 
+data which could lead to downgrading of the integrity of safety-related signals 
+ Software implementation/coding: 
+• code shall be readable, understandable and testable 
+• justified or accepted coding  guidelines shall be used 
+• data integrity and plausibility checks (e.g . range checks) available on application 
+layer (defensive programming) should be used 
+• code should be tested by simulation 
+• verification should be by contro l and data flow analysis for PL = d or e .  
+Documentation: 
+• code documentation within source text shall contain module headers with legal 
+entity, functional and I/O description, version and version of used library function blocks, and sufficient comments of networks/statement and declaration lines.  
+ \n59 
+ 8.5 Module- and integration testing 
+ 
+The aim of the module test is to check that  each module works as specified. The tests will 
+be based on information in the System- and m odule test plan. After each module is tested, 
+it is also important to check that the system  is working as specified when integration the 
+hardware and software. 
+ Documentation: 
+ Module test report 
+Integration test report 
+  
+8.6 Software validation 
+ 
+The purpose of the software validation is to check that the software fulfills the 
+requirements specified in the safety-related so ftware validation plan. It is important to 
+follow this safety-related software validati on plan. The results of validation shall be 
+documented and action plans on detected errors are specified.  
+Testing shall be the main validation method.  
+ It is preferable if the validation is carried out by persons that are independent of design 
+(to an appropriate level)  In some situations it can be more efficient to only have one validation that covers both 
+hardware and software, instead of having two different validation activities (one for 
+hardware and one for software)  The following measures for SRESW for compone nts with PLr a-d are described in the 
+standard: 
+ 
+• software safety lifecycle with ver ification and validation activities 
+• where using software-based measures for control of random hardware failures, 
+verification of correct implementation 
+• functional testing, e.g. black box testing 
+ The following additional measures for SR ESW for components with PLr c-d are 
+described in the standard: 
+ 
+• coding verification by walk-through/revi ew with control flow analysis 
+• extended functional testing, e.g. grey box testing, performance testing or 
+simulation 
+ 
+The following measures for SRASW written in LVL for components with PLr a-e are 
+described in the standard:  
+• functional testing 
+ 
+For SRASW, written in LVL, for component s with PLr from c to e, the following 
+additional measures with increasing efficiency (lower for PLr of c, medium for PLr of d, higher for PLr of e) are required or recommended: 
+• The safety-related software specification shall be reviewed, made available to 
+every person involved in the lifecycle \n60 
+  
+Testing: 
+• the appropriate validation method is bla ck-box testing of functional behaviour 
+and performance criteria (e.g. timing performance); 
+• for PL = d or e , test case execution from boundary value analysis is 
+recommended; 
+• test planning is recommended and should include test cases with completion 
+criteria and required tools; 
+• I/O testing shall ensure that safety-rel ated signals are correctly used within 
+SRASW. 
+Verification 
+• using review, inspection, walkthrough  or other appropriate activities. 
+Verification is only necessary for applicati on-specific code, and not for validated 
+library functions. 
+ 
+Documentation: 
+ 
+Software validation report 
+  
+8.7 Software modifications 
+ 
+It is important to be careful when performi ng modification in safety-related software. The 
+standard says that appropriate software safe ty lifecycle activities shall be performed. This 
+means that before you change the code it is important to investigate how this change will 
+influence the earlier work performed and whet her certain safety life cycle phases needs to 
+be updated. 
+ 
+The following additional measures for SR ESW for components with PLr c-d are 
+described in the standard:  
+• impact analysis and appropriate softwa re safety lifecycle activities after 
+modifications  
+ 
+For SRASW, written in LVL, for component s with PLr from c to e, the following 
+additional measures with increasing efficiency (lower for PLr of c, medium for PLr of d, higher for PLr of e) are required or recommended: 
+ 
+- After modifications of SRASW, impact analysis shall be performed to ensure 
+specification. Appropriate lifecycle ac tivities shall be performed after 
+modifications. Access rights to modifications  shall be controlle d and modification 
+history shall be documented.  
+ 
+Documentation: 
+ 
+Impact analysis 
+ 
+8.8 Parameterization 
+ 
+In the standard much focus is placed on soft ware-based parameterization. The reason for 
+this is that software-based parameteri zation can be seen as an untyped programming 
+language that can influence the safety of the machinery.  Following requirement can be found in Chapter 4.6.4 in the standard: \n61 
+  
+Software-based parameterization of safety-rel ated parameters shall  be considered as a 
+safety-related aspect of SRP/CS design to be described in the software safety 
+requirements specification. 
+ 
+In Chapter 4.6.4 in the standard it is possi ble to find more detailed information about 
+which requirements that are placed on parame terization tools and different alternative 
+ways to fulfill these requirements.  
+ \n62 
+ 9 Achieved PL 
+ 
+The standard describes a number of different methods of determining the PL for the identified safety functions.  The following methods will be described in this report:  
+• Apply Figure 5 in the standard in combination with Annex K in the standard 
+• Apply Table 7 in the standard 
+• Apply Table 11 in the standard 
+ 
+9.1 Apply Figure 5 in combination with Annex K 
+ 
+Below Figure 5 from the standard describ es how a PL can be decided based on the 
+category (for the SRP/CS), MTTFd (for each cha nnel in the SRP/CS), DCavg (totally for 
+the SRP/CS)  
+ 
+Figure 18 Relationships between categories, DC avg, MTTF d of each channel and PL 
+ To be able to use this method, the architect ure of the SRP/CS must be in accordance with 
+a designated architecture (category). The next step after the category is decided is to 
+decide which diagnostic coverage that is  reached for the SRP/CS. Table 6 from the 
+standard has defined four different levels  \n63 
+ 
+ 
+ 
+More information about diagnostic coverage can  be found in Chapter 6 in this report.  
+ The last step after the category and diagnostic coverage is chosen is to decide the MTTFd 
+reached for the SRP/CS. Below Table 5 from the standard has defined three different 
+levels.  
+ 
+ 
+When applying Figure 5 in the standard it is important to be careful when the MTTFd level is chosen (MTTFd=Low, MTTFd=Medium or MTTFd=High) covers more than one 
+designated architecture (category) and in th is case it will be necessary to go into Annex K 
+and check exactly at which value of MTTFd the PL switches from one level to another. 
+ 
+9.2 Apply Table 7 
+ 
+Table 7 in the standard is similar to Figure 5 in the standard with the difference that it is 
+more conservative, in effect in th ose cases where the c hosen MTTFd value 
+(MTTFd=Low, MTTFd=Medium, MTTFd=High) in  Figure 5 covered two PL levels only 
+the lowest PL can be reached when applying Table 7.  
+This gives a conservative approach, but on the other hand it is an very easy method where 
+it will not be necessary to go into Annex K and check the exact limit between different 
+PL levels.   \n64 
+ 9.3 Apply Table 11 
+ 
+In some situations it is not possible to use Fi gure 5 or Table 7 in the standard. This is for 
+instance the situation when you shall combine different SRP/CS with different designated 
+architectures (categories) to a safety function. 
+ 
+Below Table 11 in the standard describes how  to reach a PL for the safety function. 
+ 
+ 
+It is important to point out that Table 11 in the standard can only be used for SRP/CS that 
+are connected in serial (in effect no redundant architecture). When using Table 11 in the standard the first step is to identify how many (called N
+low) SRP/CS that has got the 
+lowest PL, called PL low.  
+ 
+As an example if PL low is c and N low is less than or equal to two than the PL reached for 
+the complete safety function will be PL=c. If N low instead had been higher than two the 
+PL reached for the complete safety functions would have been decreased to PL=b.  When using Table 11 in the standard it is important to consider the interfaces between 
+these different SRP/CS and check in the safety manuals for each SRP/CS how it shall be 
+connected to other SRP/CS. 
+Table 11 in the standard is conservative a nd one alternative way is to summarize the 
+PFH
+D value for each SRP/CS and then use be low Table 3 from the standard to check 
+which PL the summarized PFH D corresponds to: 
+  \n65 
+ 
+ 
+ 
+ \n66 
+  
+10 Conclusions 
+ 
+EN ISO 13849-1:2008 gives a good support both for companies developing control systems and for machine builders.  EN ISO 13849-1:2008 does only briefly mention management issues and thus this report 
+has thoroughly described the meaning of management of functional safety. The 
+description was based on Figure 3 in the sta ndard, which gives an overview of the 
+complete safety life cycle, from risk assessment to modification of safety systems.  An advantage with EN ISO 13849-1:2008 compar ed to EN 954-1:1996 is that it is more 
+flexible concerning how to use categories. In EN 954-1:1996 a direct connection existed 
+between the risk assessment and which cate gory that was required. In EN ISO 13849-
+1:2008 the result of the risk assessment is instead that a certain PL
+r is required for each 
+safety function (and not directly a certa in category) and to reach this PL r it is possible to 
+combine categories, MTTF D and DC avg in different ways. What this means is that in 
+certain cases a lower category can be compensated by using reliable components (high 
+MTTF D) and implement different kinds of  diagnostic techniques (high DC avg). 
+ This report gives a detailed description of how to interpret the different categories 
+(designated architectures) described in EN ISO 13849-1:2008 together with a practical example. 
+ 
+Also the meaning of MTTF
+D is described both the background theory and also how it can 
+be applied.  Another central part of EN ISO 13849-1:2008  is diagnostic coverage. This report 
+describes the meaning of diagnostic coverage and also includes a number of different 
+examples on how to interpret the diagnostic t echniques described in Table E.1 in EN ISO 
+13849-1:2008.  The report also describes the difference betw een systematic failures and common cause 
+failures. 
+ 
+The description of the software in the report is made outgoing from the different phases in 
+the V-model.  Finally the report describes a number of differe nt methods to determine the overall PL for 
+the safety functions. 
+ \n67 
+ Appendix A Safety requirements specification – 
+machinery 
+ 
+This appendix presents a template for the safety requirements specification for safety functions intended for machinery applications.   A safety function has the following definition: a function of the machine whose failure can result in an immediate increase of the risk (s). Parts of machinery control systems that 
+are assigned to provide safety functions are called safety-related parts of control systems 
+(SRP/CS).  The standard does not give support or requirements on the content of a safety requirements specification for the design of safety functions. Requirements are instead 
+focused on the software safety requirements , the specification of safety functions and 
+details of safety functions.  
+ All relevant information for the required f unctionality of the safety functions shall be 
+described and it is important that requirements are described in a way to avoid 
+misunderstandings. The safety requirement s specification is an important document 
+during verification and validation activities.  In some cases, the information regarding the machinery may not be possible to get before 
+the design process of the machine is starte d. In this case the safety requirements 
+specification needs to be updated during the design process. 
+ 
+The result of the risk analysis for the machin ery is the base for the requirements as well as 
+the intended use for the machinery and e xpected environmental aspects for the 
+machinery. The following is an example of what is needed: 
+• Functional description of the machinery 
+• The work modes of the machinery 
+• The identified safety functions 
+• Functional description of the safety functions 
+• Cycle time of the machinery 
+• Response time of the machinery 
+• Environmental conditions 
+• Interactions between human and the machine 
+ Inspection of the safety requirements spec ification is needed in order to avoid 
+incompleteness and contradictions in the specifications. The examination should (if 
+possible) be carried out by a team that was not involved in the creation of the specification. The required level of i ndependence needs to be determined. 
+ 
+ 
+ \n68 
+ Template for the Safety requirements specification 
+ 
+Specify responsible person for the Safety re quirements specification. The work can be 
+split on several persons with suitable compet ence e.g. hardware, mechanics, software. 
+ 
+Responsible 
+Main responsible: Name/Company/E-mail/Telephone  
+ 
+ 
+Responsible Competence area 
+   
+ 
+  
+ 
+General description 
+General description of the machinery  
+Name of the machine Manufacturer 
+ 
+  
+ 
+Identification of the machine e.g. type/ serial no.  
+ 
+ 
+Functional description of the machine 
+   
+ 
+ 
+Working modes (e.g. automatic. manual, setting, 
+service, cleaning)  Priority of working modes (if any)  
+ 
+ 
+   
+ 
+Interactions between the human and the machine (e.g. setting, cleaning, maintenance)  
+ 
+ 
+Cycle time  Response time 
+   
+ 
+Environmental conditions  (temperature, water, dust, vibration)  
+  
+ 
+ \n69 
+ Supporting documents 
+Describe the documents that have been used as support. 
+Machinery documentation 
+Name of the risk analysis. Identification (e.g. version or date)  
+ 
+   
+ 
+Other supporting documents Identification (e.g. version or date)  
+ 
+   
+ 
+ 
+Identified safety functions 
+Summarize the identified safety functions and ve rify that they are safety related. This 
+work needs knowledge of the function of the machine and the risks associated.  
+Identified safety functions 
+Safety function Safety critical (Yes/No) 
+1.  
+2.  
+3.  
+4.  
+5.  
+6.  
+ 
+The safety critical functions shall have a PL according to the requirements (the risk 
+analysis or product standard).   
+Comments regarding the safety function 
+Safety function Comment 
+ 
+ 
+  
+ \n70 
+ Description of the safety function 
+Describe each individual safety functi on by using the template below: 
+Description of the safety function 
+Name of the safety function 
+ 
+ 
+Hazard(s) associated Performance Level required  PL r 
+ 
+   PL
+r =  
+Type of safety function Example of safety functions:  
+• Safety related stop f unction initiated by a 
+safety function 
+• Emergency stop 
+• Manual reset 
+• Start/ restart 
+• Control function 
+• Muting 
+• Hold to run 
+• Activation function 
+• Mode selector for  control or operating 
+modes  
+• Start function 
+• Prevention of unexpected start 
+• Emergency rescue of draw in hazards  
+• Isolating function or energy dissipation 
+function  
+ 
+When shall the safety function be activated 
+(normally all operating modes) 
+   
+Activating factor (the trigger) Expected usage? 
+e.g. how often will the safety function be 
+activated?
+    
+ 
+Action when the safety function is activated 
+  
+Description of the safe state 
+  
+Fault behavior of the machine when a fault is detected: 
+ 
+Affects the response time of the machine safety? Yes/No   
+Maximum response time or stop time? 
+ 
+  
+Description of the interface to other machines or safety functions  
+   
+  
+ 
+ 
+ \n71 
+ Action plan 
+Action plan for remaining activities: 
+Action plan 
+Activity Responsible Finish date Activity 
+OK y/n? Comment 
+ 
+ 
+  
+  
+  
+  
+ 
+      
+ 
+     
+ 
+     
+ 
+Verification of the safety requirements specification 
+Specify the verification activities. 
+Verification activities 
+Verification 
+activity Responsible 
+ Finish date Activity 
+OK y/n? Comment 
+ 
+ 
+  
+  
+  
+  
+ 
+      
+ \n72 
+ Appendix B Examples of diagnostic techniques 
+S1Process (machine) 
+The sensor (S1) is periodic ally altered by the process
+Cyclic test stimuli
+t+V(m)
+(e)
+failureCyclic test stimuli by dynamic change of the input signals, example
+(e) – Electrical signal
+(m) – Mechanical signalE/E/PES
+OutputsInputs
+Input(s) LogicDC = 90%
+TI
+TI – Tested Item
+ 
+Figure 19 Cyclic test stimuli by dynamic change of the input signal  
+ 
+ 
+Figure 20 Plausibilty check   
+ 
+ 
+Figure 21 Cross monitoring of inputs without dynamic tests \n73 
+  
+Process (machine) 
+E/E/PES
+SRSP1
+SRSP2(e)S1 S2
+(e)
+failure
+(e) – Electrical signal
+(m) – Mechanical signal
+Input(s) LogicResponses (values)
+S1 and S2 are e.g. potentiometers or switchesAlt. 1 Alt. 2Alt. 1 S1 & S2 are hardwired to both SRSP1 & 
+SRSP2 which compares their responses 
+TI
+SRSP – Safety Related Signals ProcessingTI – Tested ItemAlt. 2 S1 & S2 are individually connected to SRSP1 
+& SRSP2 which both forwards the responses 
+internally for comparison (e)
+(e)Cross monitoring of input signals with dynamic test if 
+short circuits are not detectable (for multiple I/O), exampleDC = 90%
+ 
+Figure 22 Cross monitoring of i nput signals with dynamic test 
+ 
+ 
+Figure 23 Cross monitoring of inpu t signals and intermediate results 
+ \n74 
+ 
+ 
+Figure 24 Indirect monitoring 
+ 
+ 
+Figure 25 Direct monitoring 
+ \n75 
+ 
+ 
+Figure 26 Fault detection by the process 
+ 
+ 
+Figure 27 Monitoring some characteristics of the sensor \n76 
+  
+ 
+Figure 28 Simple temporal time monitoring 
+ 
+ 
+Figure 29 Temporal and logic monitoring 
+ 
+ 
+Figure 30 Checking the monitoring device reaction capability 
+ \n77 
+ 
+ 
+Figure 31 Monitoring of outputs by one channel without dynamic tests 
+ 
+ 
+Figure 32 Cross monitoring of outputs without dynamic test 
+ 
+ 
+Inputs (ch2) Inputs (ch1)
+Outputs (ch2) Outputs (ch1)
+ 
+Figure 33 Redundant shut-off path with no monitoring of the actuator \n78 
+  
+ 
+Figure 34 Redundant shut-off path monitoring of one of the actuators 
+ 
+ 
+Figure 35 Redundant shut-off path monitoring actuators \nSP Electronics
+SP REPORT 2011:81How to design safe machine 
+control systems – a guideline to  
+EN ISO 13849-1
+Johan Hedberg
+Andreas Söderberg
+Jan TegehallSP Technical Research Institute of Sweden 
+Our work is concentrated on innovation and the development of value-adding technology. Using 
+Sweden’s most extensive and advanced resources for technical evaluation, measurement technolo-
+gy, research and development, we make an important contribution to the competitiveness and sus-tainable development of industry. Research is carried out in close conjunction with universities and institutes of technology, to the benefit of a customer base of about 10 000 organisations, ranging 
+from start-up companies developing new technologies or new ideas to international groups.
+SP Electronics
+SP REPORT 2011:81
+ISBN 978-91-87017-14-8
+ISSN 0284-5172SP Technical Research Institute of Sweden
+Box 857, SE-501 15 Borås, SWEDEN
+Telephone: +46 10 516 50 00
+Telefax: +46 33 13 55 02
+E-mail: info@sp.se
+www.sp.se
+SP Technical Research Institute of Sweden
+More information about publications published by SP: www.sp.se/publ

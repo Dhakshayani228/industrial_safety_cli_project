@@ -1,0 +1,814 @@
+ 
+      A practical guide to 
+Machinery Safety
+Your guide to machinery safety, 
+covering legislation, risk assessments and machinery safety solutions from Machinery Safety Experts, TÜV SÜD 
+Product Service. 
+TÜV SÜD Product Service 
+Edition 5\nMachinery Safety is one of the 
+most significant issues facing every 
+manufacturing company in Europe 
+today.  It’s just as important as productivity and is essential for the 
+well being of everyone involved.  \nTÜV SÜD has put together this practical guide to provide an insight into 
+the field of machinery safety, basing it around common hazards and issues that they come across on a regular basis.
+TÜV SÜD is a leading international expert in providing testing, 
+certification, training and knowledge services to a range of industries.  The Machinery Safety Division provides a range of machinery audits and inspections, CE marking services, risk assessments and training solutions, to help ensure the safety and compliance of machinery.Welcome
+3
+DISCLAIMER 
+The aim of this Practical Guide to Machinery Safety is to provide general information on Machinery Safety and is not 
+an exhaustive treatment of the subject. Accordingly, the information in the Practical Guide is not intended to and shall 
+not constitute consulting or professional advice or services. If you are seeking specific advice on any matters relating to 
+information in this document, you should – where appropriate – contact us directly with your specific query.
+Copyright 
+The copyright for this Practical Guide to Machinery Safety belongs to TÜV SÜD Product Service. The information 
+contained may not be copied, quoted or referred to in any other publication or materials without the prior written consent of TÜV SÜD Product Service.  
+All rights reserved © 2015 TÜV SÜD Product Service.Legislative Framework
+1
+section
+2
+section
+3
+section
+4
+section
+5
+section
+6
+section
+7
+section
+Risk Assessment
+Four Steps to CE marking
+EMC Solutions
+PUWER
+Pre-Purchase Audit
+Appendices\n4
+Introduction to 
+Machinery Safety
+This training course provides an introduction to your 
+legal responsibilities and requirements and the role that new technologies are having on the machinery safety lifecycle, along with practical mechanical and electrical solutions.  
+ Course includes:
+■ 
+CE requirements when building and purchasing machines
+■ Creating complex assemblies and modifying machinery■ Functional safety■ PUWER assessments
+Find out more:
+www.tuv-sud.co.uk/ 
+machinery-safety\n5To enable the European Union to trade successfully 
+across boundaries, the European Commission embarked on a policy of harmonisation.  Initially the Commission proposed Directives, which would identify a unified approach to the production and trade of products and goods across Europe. However these Directives were prescriptive and it was felt that this was having a detrimental effect on innovation and invention.  To counter this the Commission introduced the New Approach Directives (CE marking Directives).  
+ These Directives are not prescriptive and lay down minimum criteria for compliance. The  New Approach Directives are similar in format for ease of reference and use.  Perhaps the most significant aspect of the new legislation is the conformity assessment procedure (the means by which the compliance is ensured).  The Directives offer a flexible approach.
+Significant Directives:
+  Machinery Directive 2006/42/EC
+  EMC Directive 2004/108/EC
+  Low Voltage Directive 2006/95/EC
+ Section 1 - Legislative Framework
+5
+Legislative Framework
+■ Framework
+■ Machinery Directive
+■ EMC Directive
+■ Low Voltage Directive
+■ Pressure Equipment Directive
+■ ATEX Directive
+■ Work Equipment Directive
+■ EN Standards
+■ SEMI Assessments
+■ Maritime SpecificsSection Contents
+1
+section\n66Machinery Directive
+ 
+All machines supplied in the European Economic Area(EEA) from January 1st 1995, must comply with the Machinery Directive and be safe. There are few exclusions to the Directive making this one of the most significant of all the New Approach Directives.
+The scope of the Machinery Directive defines a machine 
+as the following:
+1. An assembly fitted with or intended to be fitted 
+with a drive system other than directly applied manual or animal effort, consisting of linked parts or components , at least one of which moves, and which are joined together for a specific application.
+2. Machinery referred to in 1 missing only the components to connect it on site or to sources of energy and motion.
+3. Lifting apparatus whose only power source is directly applied manual effort.
+4. An assembly of machines and  / or partly completed machinery which, in order to achieve the same end are arranged and controlled to function as an integral whole.
+5. Interchangeable equipment means a device which, after placing into service with machinery or tractor is assembled with that machinery or tractor by the operator himself in order to change its function.
+Safety components for machinery, described as: 
+  which serves to fulfil a safety function,
+ which is independently placed on the market,
+ the failure and/or malfunction of which endangers  the safety of persons, and which is not necessary in order for the machinery to function, or for which normal components may be substituted in order for the machinery to function.
+The New Approach Directives lay down minimum criteria for compliance. These criteria are called The Essential Health and Safety Requirements (EHSR).
+The preferred way to comply with EHSRs is by Risk 
+Assessment and the application of harmonised EN standards, which are replacing the national standards of member states.
+EMC Directive
+The EMC Directive states that most electrical and electronic products made or sold in Europe must:
+ Be so constructed that they do not cause excessive electromagnetic interference and are not duly affected by  electromagnetic interference,
+ Carry CE marking - if your product is sold, used by yourself, given away or used in  anyway, it must comply with the Essential Protection Requirements as laid down in the Directive. Ignorance of the legislation is no excuse and a punitive penalty structure is documented.
+The requirements under the EMC Directive are: 
+ That the product must not interfere with any other product in any way.
+ The product must meet certain standards in that it must not suffer interference from any other product.
+1
+sectionLegislative Framework\n77Low Voltage Directive  
+ 
+The Low Voltage Directive states that: 
+   Only electrical equipment which does not jeopardise the safety of people, domestic animals and property shall be placed onto the market.
+   Equipment operating at voltage between 50v & 1000v AC and 75v &1500v DC should comply.
+The requirements under the Low Voltage Directive are:
+   That the product is electrically safe
+  The product has been constructed in accordance with accepted good engineering practice and is safe
+   The product has been designed and constructed in accordance with the Principal Elements of the Safety Objectives of the Directive.
+Electrical equipment shall be designed and constructed to ensure that it is safe when connected to the electricity supply, by providing a level of protection against electric shock. 
+Pressure Equipment Directive
+ 
+The Pressure Equipment Directive (PED) 97/23/EC which affects equipment operating at a pressure greater than 0.5 bar, entered into force on 29th November 1999 and is mandatory from 29th May 2002.PED is generally considered one of, if not the most complex and difficult to understand of the new approach directives. Many organisations, particularly small and medium sized companies with limited resource to allocate specifically to the task of conformance, are reporting difficulties in interpretation and application.The PED impacts upon design, production, final inspection/test, marking and labelling and instructions for use/maintenance. Therefore, in most affected companies no single person will be able to resolve all issues particularly when choosing to apply a quality assurance module.
+The PED requires that each affected item of pressure equipment be categorised according to specific criteria.  If you are not fully conversant with the directive this process can be time consuming and can result in costly errors. The Directive provides many options and routes to conformity (modules), inappropriate choice can lead to significant third party inspection costs. 
+ATEX Directive
+ The “ATEX” Directive 94/9/EC is a so-called “New Approach” Directive which provides the technical requirements to be applied to equipment intended for use in potentially explosive atmospheres. It is named after the French “ATmosphere EXplosible”.
+The Directive covers a surprisingly large range of 
+equipment, potentially including equipment used on fixed offshore platforms, in petro-chemical plants, mines, flour mills and other areas where a potentially explosive atmosphere may be present.
+In very broad terms, there are three pre-conditions for 
+the Directive  to apply:
+   The equipment must have its own source of ignition
+   Be intended for use in a potentially explosive atmosphere (air mixtures)
+   Be under normal atmospheric conditions.
+Legislative Framework
+1
+section\n8The Directive also covers components essential for the 
+safe use and safety devices directly contributing to the safe use of the equipment  in scope. These latter devices may be outside the potentially explosive environment.
+Work Equipment Directive
+ The Provision and Use of Work Equipment Regulations 1998 (PUWER) requires users of work equipment to carry out risk assessment and provide work equipment that is suitable for its intended task and can be used without putting persons at risk. 
+The Regulations cover any machinery, appliance, 
+apparatus, tool or installation for use at work (whether exclusively or not) - effectively it is anything used at work. The 1998 regulations (updating the original 1992 Regulations) introduce requirements to ensure that, for reasons of health and safety, inspections are carried out:  
+    After installation and before being put into service for the first time; or after assembly at a new site or in a new location to ensure that it has been installed correctly and is safe to operate.
+   After work equipment has been exposed to any conditions causing deterioration, which is liable to cause a dangerous situation.
+    At suitable intervals; and
+    Each time that exceptional circumstances have occurred that are liable to jeopardise the safety of work equipment. The results of these inspections have to be documented and kept.The regulations make it an offence to allow work equipment to leave an employer’s undertaking, or if obtained from another undertaking, be used, unless it is accompanied by physical evidence that the last inspection has been carried out.
+EN Standards  
+ By definition a standard is “A document established by consensus and approved by a recognised body, that provides, for common and repeated use, rules, guidelines or characteristics for activities or their results aimed at the achievement of the optimum degree of order in a given context” (ISO/IEC guide 2 (1986).
+Three organisations are mandated by the European 
+Commission to produce standards, with each organisation being responsible for specific standards.
+Once a standard has been produced through the 
+process as detailed by CEN and CENELEC they become known as transposed harmonised standards. European member states will then remove any existing national standards which conflict with the new standard and add the relevant country prefix. For example, EN designates that the standard is a full, harmonised standard. The process of transposition adds the country prefix hence a standard will become BS EN in the UK. A DIN EN standard in Germany will be exactly the same.
+1
+sectionLegislative Framework\n9SEMI
+ 
+Semiconductor Equipment and Materials International (SEMI) is a global industry association for members of the semiconductor and related industries. The Environmental Health and Safety (EHS) Committee within SEMI’s International Standards Division develops industry standards and guidelines that are globally accepted as ensuring the highest level of safety and quality.  
+SEMI standards focus on lowering manufacturing costs, developing new industries and guaranteeing the existence of open markets. SEMI S2 is the foundation guideline in SEMI’s fleet of safety documents which defines the minimum safety requirements for  semiconductor products. Conforming to SEMI S2 contributes to business efficiency and profitability whilst increasing the marketability of products.  
+Why Use Standards?
+ The use of standards is not mandatory, however, if a standard is applied correctly, conformance with the relevant EHSRs of a directive may be presumed, hence they represent the surest way to compliance. The user though, must still ensure that the equipment complies with the Directive and is in fact safe.  
+ 
+Maritime specifics  
+November 2006 saw a major change with PUWER. Up to this date, work equipment on ships was outside of the scope of PUWER because there were other maritime regulations that took precedence (these have now been revoked). In September 2006, a new maritime version of PUWER was published. The Merchant Shipping & Fishing Vessels (Provision & Use of Work Equipment) Regulations 2006 impose the minimum health and safety requirements for the provision and use of work equipment by workers at work. 
+The regulations require that employers shall ensure that 
+the work equipment made available to workers on board a ship, is suitable for the work being carried out and safe to use. 
+Alongside the maritime PUWER regulations is a 
+maritime version of LOLER (Lifting operations, Lifting Equipment Regulations), which applies LOLER to ships in the same manner that PUWER has now been applied. 
+Linkspans and Passenger Walkways
+ These, in simple terms, are the bridging between ship and port that allows for tidal movements. They have always been considered machinery due to the latent energy in the hydraulic systems that balance them. At a recent meeting of Notified Bodies for the Machinery Directive, it was discussed whether linkspans should actually fall under Annex IV of the Machinery Directive as they effectively lift people, and devices for the lifting of people are Annex IV machines. The discussion concluded that linkspans should be considered as Annex IV machinery and so maritime architects and builders will now have to use a Notified Body when building linkspans in ports.Legislative Framework
+1
+section\nFunctional Safety  
+Functional Safety is the part of the overall safety of a 
+system or piece of equipment that depends on the system or equipment operating correctly in response to its inputs, including the safe management of likely operator errors, hardware and software failure and environmental changes. 
+TÜV SÜD provide a broad range of functional safety 
+services from assessments to our industry-recognised ‘Functional Safety Certified Professional’ training course.
+Find out more:
+www.tuv-sud.co.uk/ 
+functional-safety\n11
+Guidance on carrying out risk assessment can be 
+found in many places. EN ISO 12100 is the main standard for risk assessment for machinery as it sets down the principles for the process.  
+Risk assessment is fundamental to any health and safety process and in particular machinery safety. Because of this, anyone involved in dealing with machinery safety issues should be competent in risk assessment and be well aware of the types of hazards that may occur across their working environment.  
+Risk Assessment is subjective therefore the information in this section gives help and advice on risk assessment. It has to be stressed that it is only a guide and the onus remains firmly with the person carrying out the assessment to comply with all the relevant regulations.Section 2 - Risk Assessment
+11■  Hazard Identification
+■  Risk Assessment Objectives
+■  Safety Related Control Systems
+■  EN ISO 13849-1 vs EN IEC 62061
+■  Common HazardsSection ContentsRisk Assessment
+2
+section\n12Issues to consider when assessing machinery:
+Emergency Stops
+■ Are they fitted 
+correctly?
+■ Do they all work correctly?
+■  Are they accessible?
+■  Are they correct type?Electrical Enclosure
+■  Is the enclosure 
+locked?
+■  Are all enclosures fitted with electrical warning signs?
+■  Are they free from debris and foreign objects?CE marking
+■  Does the machinery fall 
+under the Machinery Directive?
+■  Have all the Directives been considered i.e. EMC, LVD, ATEX and PED?
+■  If so, has it been CE marked?
+■  Has it been altered in a way that could affect the original CE marking?Environment
+■  Is there adequate 
+lighting?
+■  Is the floor area free from slip and trip hazards?Guarding
+■  Is guarding fitted?
+■  Is it adequate?
+■  Are interlocks fitted 
+where required and are they positively acting?
+■  Do fixed guards require tools for their removal?
+2
+sectionRisk Assessment\n13Risk Assessment
+2
+section
+Hazard Identification
+A hazard is:
+Anything that has the potential to do harm, a source of 
+possible injury or damage to health.
+A risk is: 
+The likelihood of someone coming into contact with a hazard and the degree of injury or damage to health that could be caused should contact occur.
+A hazardous situation is:  
+A situation where people are exposed to hazards.  
+Examples: 
+A moving belt on a conveyor would be a hazard. The risk would be the likelihood of someone coming into contact with an in-running nip or being drawn along the belt by a protrusion and the severity of injury or damage to health that could be caused. An electrical enclosure containing voltages above 50v AC and 75v DC that has uncovered terminations is a hazard even though the enclosure may be kept locked and strict key control enforced. The reason for this is that if an electrician had to carry out diagnostic testing on a live enclosure they could inadvertently touch an adjacent terminal with a tool etc. The risk would be the likelihood of that happening and the severity of injury or damage to health that could be caused. 
+Risk Assessment Definition
+ A comprehensive estimation of the probability and degree of possible injury or damage to health in a hazardous situation in order to select appropriate safety measures. Risk Assessment Objective
+ To achieve adequate safety according to the state of the art and technical and economic requirements. There are numerous ways of assessing risk involved with a hazard, one of which is the hazard rating number system (HRN). The risk assessment method that is used by TÜV SÜD is Preliminary Hazard Analysis, which uses the HRN system. 
+A sample risk assessment form can be found in the appendices at the end of this guide.
+ Numerical values are assigned to descriptive phrases relating to:
+   The likelihood of occurrence (LO)
+   The frequency of exposure (FE)
+   The degree of possible harm (OPH)
+   The number of persons at risk (NP)
+ The hazard description is vital in understanding those risk assessments, unless otherwise stated, the risk assessment relates to the hazards in the normal operation of the machine. Where a specific risk is associated with that equipment, a separate risk assessment will be provided. Where there is no control over the frequency of exposure, a worst-case scenario must be assumed, and a constant frequency is assigned.
+Risk Assessment Example
+ Injury due to access to dangerous parts of machinery. The present guarding, partially fitted, allows access to the moving parts. \n14LO FE DPH NP=H.R.N.
+2 X 5 X 4 X 1=40
+Degree of risk: = Significant  
+From this example we can see that the existing guarding, 
+whilst offering a certain amount of protection, is not adequate and the degree of risk can be reduced further by fitting a guard that completely prevents contact with the hazard but does not affect the production. 
+Control Measure:
+Fit a tunnel guard that prevents all access to the moving parts in accordance with EN 953 and EN ISO 13857.  After control measures fitted:  
+ 
+LO FE DPH NP=H.R.N.
+0.1 X 0.1 X 4 X 1=0.04  
+Degree of risk: = Negligible
+The control measure has detailed the machinery needs additional guarding, and has detailed the Standards to which you should construct that guard in accordance with. EN Standards will be used for the correct control measure where those Standards exist. The control measure is deliberately left non-specific in its description in order to allow the designer of that guard some scope of flexibility in his approach. If we detail an exact specification to a guard or control measure, we effectively tie your hands. Our assessments are one method of compliance and should you find an alternative way to achieve compliance, then we would welcome your suggestions. Our engineers are available to give specific advice to you outside of these assessments should you require it.As mentioned at the start of this section, EN ISO 12100 is the main standard for risk assessment for machines and is harmonised to the Machinery Directive. It lays down principles for risk assessment, hazard analysis and documentation requirements.  Also included within the standard is a table giving examples of hazards, hazardous situations and hazardous events. This table gives detail as to the kind of hazards or hazardous situations that can occur. Anyone involved in a risk assessment project for machinery should refer to this list as matter of course unless they are totally confident in their knowledge and ability to carry out the assessment. 
+Safety Related Control Systems
+A control system responds to input signals from the machine or from the operator and generates output signals. These make the machine operate in a desired manner. So if for example, an operator presses a start button then the control system may respond by closing a contactor and energising a motor. Control systems can be implemented in a range of technologies, but this guidance is mostly concerned with electro technical systems employing electrical, electronic and programmable electronic technologies. Electro technical control systems can range from simple electromechanical relay based systems to complex programmable systems with multiple analogue and digital inputs and outputs. 
+What is a safety related control system?
+A control system in a machine should be regarded as being safety-related if it contributes to reducing the occurrence of a hazardous situation or if it is required 
+2
+sectionRisk Assessment\n15to function correctly to maintain or achieve safety. The 
+functions carried out by a safety-related control system are termed safety functions. Generally safety functions either prevent the initiation of a hazard or detect the onset of a hazard. Safety-related control systems should be designed and configured to be reliable enough (bearing in mind the consequences of any failure) and to perform the necessary functions to achieve or maintain a safe state or mitigate the consequences of a hazard. To assist a designer or assessor in deciding which of the two main standards to use: BS EN ISO 13849 or EN (IEC) 62061, a distinction is drawn between those electro technical safety related systems that use programmable technologies and those that use electromechanical components.
+EN ISO 13849-1 and EN (IEC) 62061
+These are standards for safety related control systems that are published in the UK as BS EN ISO 13849-1 and BS EN 62061. They are both harmonised to the Machinery Directive and this has left many people confused about which standard should be applied in any particular application.
+EN ISO 13849-1 (Safety of machinery, Safety related parts 
+of control systems, General principles for design) is the standard that replaced, EN 954-1 (Safety of machinery, Safety related parts of control systems, General principles for design), EN 954-1 was completely withdrawn at the end of 2011. EN 62061 (Safety of machinery, functional safety of safety-related electrical, electronic and programmable electronic control systems) is also harmonised to the Machinery Directive. It is a machinery sector standard based on the requirements of IEC 61508.From a users point of view if you are implementing safety related controls using electrical/electronic/programmable electronic systems (E/E/PES) there is no clear distinction as to which of the standards should be used for any particular application (EN ISO 13849-1 is not “technology specific” and can be used as guidance for non-electrical technologies). The choice will be influenced by quite a number of factors, however whichever of the standards you choose the main steps to follow, and the outcomes, are pretty much the same. 
+The Choice
+In the UK there was a considerable body of opinion that the use of BS EN ISO 13849-1 should be restricted to low complexity safety systems, and that BS EN 62061 should be chosen for systems that used “Safety PLCs”, indeed the national foreword to the original BS editions of the standards almost said as much. However the choices as far as the standards themselves are concerned is not that clear. Either standard can be used as guidance for both hardware and application software for systems up to the highest integrity or performance identified in them. So how does a user make the decision? As already mentioned if the safety-related controls use technologies other than E/E/PES then EN ISO 13849-1 is the only choice, but for the vast majority of systems several factors will influence the choice.
+It is becoming clear that more use is being made of EN ISO 
+13849-1, this is probably due to it being the replacement for EN 954-1 and carrying over a lot of the familiar content, but it might also be because it is seen as the more straightforward of the two (not necessarily the case!). Risk Assessment
+2
+section\n16Some considerations that might influence the choice are:
+  Previous knowledge and experience in the design of 
+machinery control systems based upon the concept of 
+Categories described in ISO 13849-1:1999 may mean that the use of ISO 13849-1:2006 is more appropriate;
+  Control systems based upon media other than 
+electrical may mean that the use of ISO 13849-1 is more appropriate;
+  Customer requirements to demonstrate the safety 
+integrity of a machine control system in terms of a Safety Integrity Level (SIL) may mean that the use of IEC 62061 is more appropriate;
+  Control systems of machinery used in, for example, the 
+process industries, where other safety-related systems (such as safety instrumented systems in accordance with IEC 61511) are characterised in terms of SILs may mean that the use of IEC 62061 is more appropriate.(Source ISO/DTR 23849)
+Main steps
+Machinery safety starts at the very beginning with the design and development of the machine itself. Wherever possible hazards should be eliminated by design, or fixed safeguards should be in place to avoid exposing people to hazards. EN ISO 12100 gives excellent guidance on these vitally important considerations. It is also worth noting that neither EN ISO 13849-1 nor EN 62061 cover the general electrical safety aspects for machinery, this is the subject of EN 60204.
+So it is only once it has been decided that further risk 
+reduction is required from safeguards utilising safety related controls that we should consider the guidance given by either EN ISO 13849-1 or EN 62061.
+Both standards use the concept of “functional safety” 
+which means specifying the safety requirements in terms of the functional requirements (for example: “When the guard is opened hazardous movement must be stopped”), and the amount of risk reduction required. EN 62061 uses Safety Integrity Levels (SIL), EN ISO 13849-1 uses Performance Levels (PL). Both standards require the user to follow essentially the same series of steps:
+SIL 3 is directly equivalent to PLe, SIL 2 is directly equivalent to PLd, SIL 1 is equivalent to PLb – PLc
+Verification according to hardware reliability.  In order to verify that a target SIL or PL has been achieved it is necessary to consider a number of things, these include the hardware architectures of the safety related controls (e.g. single channel or dual channel), the reliability of the components used, the amount of Diagnostic Coverage (DC), and the susceptibility to Common Cause Failures (CCF). These are considered to be the quantifiable 
+aspects.EN ISO 13849-1
+Performance Level (PL)Average probability of a dangerous 
+failure per hour [1/h]EN 62061
+Safety Integrity Level (SIL)
+a ≥ 10-5 to < 10-4no special safety requirements
+b ≥ 3 x 10-6 to < 10-51
+c ≥ 10-6 to < 3 x 10-61
+d ≥ 10-7 to < 10-62
+e ≥ 10-8 to < 10-73
+2
+sectionRisk Assessment\n  Assess the Risks
+  Allocate the Safety measures
+  Design Architecture
+  Verify/Validate that the requirements have been met
+Both standards have a recommended method to help 
+establish the amount of risk reduction that is required from each safety function, although the methods are quite different the outcomes should be the same (or very similar) for any given function. In IEC 62061 the requirement is a Safety Integrity Level (SIL), in ISO 13849-1 it is a Performance Level (PL). Both SILs and PLs are defined in terms of the average probability of a dangerous failure per hour, and there is a correspondence between them.
+The future?
+The standards organisations are working to produce a single standard that will combine the contents of IEC 62061 and ISO 13849, this standard will be published as IEC/ISO 17305. Publication is not expected until about 2018.
+Common Hazards
+ These common faults and hazards are examples taken from our experience and are illustrated using the TÜV SÜD virtual reality training model.
+Isolators
+Common faults that are found are that there isn’t an isolator fitted, the isolator is of the wrong type or is incorrectly fitted, the mains isn’t terminated at the isolator. Image B is a corrected version of A.
+Multiple Earths/ terminations
+Another common electrical fault is that of multiple terminations, in particular with earthing, onto one point. 
+Guarding
+Guarding is one of the more visual issues for machinery safety. The examples used below are extreme but the issues concerned are, is there guarding on the machine and is it adequate. 
+Hydraulics and Pneumatics
+Where you find hydraulics and pneumatics on machinery, safety issues include the state of the pipework, whether the pipes are correctly labelled and whether they have lockable isolators or not.
+17
+Risk Assessment
+2
+section\nTake your training to a 
+higher level
+Make sure you keep up-to-date with the latest machinery 
+safety Standards.  TÜV SÜD provide a range of Machinery Safety training courses from a half day ‘refresher course’ on machinery safety through to a five day University-backed course on the European Machinery Safety Requirements.
+Find out more:
+www.tuv-sud.co.uk/ 
+training\n19The machinery directive is one of the widest ranging 
+directives due to the definitions of what is machinery. According to machinery Directive 2006/42/EC, machinery is:  
+  An assembly, fitted with or intended to be fitted with 
+a drive system other than directly applied human or animal effort, consisting of linked parts or components, at least one of which moves, and which are joined together for a specific application
+  An assembly referred to in the first indent, missing only 
+the components to connect it on site or to sources of energy and motion
+  Assemblies of machinery or partly completed 
+machinery which, in order to achieve the same end, are arranged and controlled so that they function as an integral whole
+ It also states that a manufacturer is:
+  Any natural or legal person who designs and/or 
+manufactures machinery covered by this Directive and is responsible for the conformity of the machinery with this Directive with a view to its being placed on the market, under his own name or trademark or for his own use.
+ 
+So whether you are designing, manufacturing or importing machinery, you need to know what your legal duties and responsibilities are.Section 3 - Four steps to CE marking for the 
+Machinery Directive
+■ Essential Health & Safety Requirements
+■ Technical Construction Files
+■ Declaration of Conformity
+■ Affix the CE mark
+■ Project ManagementSection ContentsFour steps to CE marking
+3
+section
+\nStep 1: The Essential Health and 
+Safety Requirements (EHSRs)
+ 
+In order to comply with the Supply of Machinery (Safety) Regulations, the machinery must be able to satisfy the EHSRs for any corresponding hazard which may apply to it. Typical examples of Essential Health and Safety Requirements are the requirements to provide adequate warning marks where there are moving parts that might trap parts of the body of personnel using the machine. Another item would be the requirement to provide safety guards to machine tools. The requirements are wide ranging, taking into account potential dangers to operators and other persons who may be at risk. The Essential Health and Safety Requirements are mandatory. However, taking into account the state of art, it may not be possible to meet all the objectives set by them. With this in mind, the machinery must be designed and constructed with the purpose of approaching these objectives. Within the Supply of Machinery (Safety) Regulations, the Essential Health and Safety Requirements are divided into six sections:
+1. EHSRs applicable to all machinery
+2. EHSRs for Certain categories of machinery including 
+Foodstuffs machinery, machinery for cosmetics or pharmaceutical products, hand-held and/or hand-guided machinery, portable fixing and other impact machinery, machinery for working wood and material with similar physical characteristics
+3. EHSRs to offset hazards due to the mobility of 
+machinery
+4. EHSRs to offset hazards due to a lifting operation5. EHSRs for machinery intended for underground work6. EHSRs to offset hazards due to the lifting of moving of 
+persons
+The 2006/42/EC Directive made changes to a number of the EHSRs. Some of the more significant changes are as follows:  
+  EHSR 1.1.7 The operating position must be designed to 
+avoid any risk due to exhaust gases/ lack of oxygen
+  EHSR 1.1.8 work stations that are an integral part of 
+the machine must be designed for the installation of seating
+  EHSR 1.2.2 Manual controls must be clearly visible and 
+identifiable; the use of pictograms is recommended
+  EHSR 1.4.2.1 Fixed guards. Fixing systems must remain 
+attached to the guards when removed
+  EHSR 1.1.2 requires risk assessment to be carried out
+Risk assessment is the fundamental starting point for designers of machinery under the Machinery (Safety) Regulations as well as for operators of existing machinery under the Provision and Use of Work Equipment Regulations 98.
+The standard EN ISO 12100 entitled “Safety of 
+Machinery –Risk Assessment” defines risk assessment as “a series of logical steps to enable, in a systematic way, the analysis and evaluation of the risks associated with machinery.”
+EN ISO 12100 goes on; “Risk assessment is followed, 
+whenever necessary, by risk reduction. Iteration of this process can be necessary to eliminate hazards as far as practicable and to adequately reduce risks by the implementation of protective measures.”
+20
+3
+sectionFour steps to CE marking\n21To assist manufacturers comply with the Directives 
+and to harmonise standards throughout the EEA the European Commission charged CEN (Commission for European Normalisation) to prepare standards which will provide a European wide scope. These Standards provide two important statements:
+1. The level of safety attained in a member state must 
+not be lowered.
+2. Products or machinery manufactured in conformity 
+with a specified published European Standard will be 
+presumed to comply with the Essential Health and Safety Requirements covered by those standards.
+Construction of Standards  
+A Type Standards apply to all machinery and are essential reading to designers and builders. B Type Standards , these are laterally interlinked and are 
+generally divided into B1 and B2 standards. B1 Standards  apply to all machinery and are designed to 
+promote the essential factors of safety. B2 Standards  apply when used i.e. if a particular safety 
+device is used it must be manufactured to the relevant standard.
+C Type Standards , these will inform designers, manufacturers 
+and users of specific safety precautions to be taken, and devices which are required to be used in particular
+All standards which have been harmonised for Machinery Directive 98/37/EC will need to be at least rewritten if not fully updated to ensure compliance with the 2006/42/EC Directive. Step 2: Technical Construction File
+Under the Supply of Machinery (Safety) Regulations, any manufacturer wishing to supply machinery within the European Economic Area (EEA) must be able to assemble a file, often known as the “product file”, containing technical information relative to the machinery. The file must remain available for inspection by a competent national authority, such as the UK Health and Safety Executive, for a period of ten years. The file, however, does not have to include detailed information such as the sub-assemblies of the machine, unless a knowledge of them is essential for verification and compliance with the Essential Health and Safety Requirements. For machinery it is considered this information is essential and should be provided. 
+The file should contain the following:  
+  The Directives applicable for design, manufacture,  installation etc and with which compliance is claimed
+  Any other national standards/guidance/technical  
+specification as applicable
+  An overall drawing of the machinery
+  A list of the Essential Health and Safety RequirementsA Type StandardsBS EN 414 
+BS EN 12100
+B Type StandardsB1 
+BS EN 60204B2
+BS EN 13850
+BS EN 1088
+C Type StandardsBS EN 12417
+BS EN 415
+BS EN 693 BS EN 474
+BS EN ISO 10218-1Four steps to CE marking
+3
+section
+\n22  Complete detailed drawings, calculation notes and 
+test results etc, deemed necessary to endorse the 
+conformity of the machinery, with the EHSRs
+  An account of the techniques used to reduce or 
+eliminate hazards posed by the machinery/product.
+  Drawings of the operating system/control circuitry 
+with details outlining how it works
+  The standards used and any reports/test results 
+required by these standards
+  A copy of all works and site testing and commissioning 
+reports
+  If so desired a certificate or technical report obtained 
+from a competent body in support of standards conformity
+  A copy of the operator’s instructions and maintenance 
+manual  
+Non-European manufacturers must appoint someone within Europe to hold their Technical Files and this person’s name and address must be included in the Declaration.
+Step 3: Declaration 
+ The Declaration of Conformity is a certificate, which must accompany every machine placed on what is termed “the market” (unless a Declaration of Incorporation is issued instead). The manufacturer of a machine automatically places the machine on “the market”. The Declaration is the manufacturer’s assurance to the customer that the product complies with the applicable directives. The Declaration carries relevant product information and is signed by a responsible person on behalf of the manufacturer or importer.Declaration of Incorporation
+Partly completed machinery means an assembly which is almost machinery but which cannot in itself perform a specific application. It is only intended to be incorporated into or assembled with other machinery or partly completed machinery. The manufacturer of partly completed machinery should draw up a declaration of incorporation which should accompany the assembly instructions and the partly completed machinery when it is placed on the market. The declaration and assembly instructions will then form part of the technical file for the final machinery. 
+Step 4: CE mark 
+ Affix the CE mark to machines which are issued with a Declaration of Conformity only. CE marking must be affixed in the immediate vicinity of the name of the manufacturer or Authorised Representative and applied using the same technique. 
+Project Management
+ When building machines or when combining machines to produce a ‘complex assembly’ of machines it is easy to get things wrong and end up with a project that requires a lot of rework and ends up going over budget or overtime. To this end, ensure that the CE marking is considered from the start. Frequently what happens is that equipment is designed and installed with no thought as to what happens either upstream or downstream, or who takes 
+3
+sectionFour steps to CE marking
+\n23the responsibility for which parts, and who takes 
+responsibility for the final assembly. This can be exacerbated when equipment is sourced from outside the European Economic Area, or existing equipment is linked to new equipment.
+ 
+Common problems that occur when CE marking 
+is not considered from the start include: 
+  Equipment being installed before a final layout is 
+agreed - leads to machines being moved and rework being required.
+  Consideration not given to a Safety related control 
+system at the start, leading to a number of problems when linking different machines of different performance level the machine under EN ISO 13849.
+  Consideration not being given to control system 
+functionality with feed conveyors not being stopped when a process is stopped, leading to damaged product at best, and injury at worst.
+  Machinery not being inspected before installation, and 
+then when non compliances are found, disagreements about who pays to put it right, the supplier, the   contractor or the user.
+  Control colours not being agreed, with different  
+suppliers using different colours, leading to confusion.  The European Standard allows for Green, White, Black  or Grey for Start, and Red, White, Black or Grey for Stop!  Even by complying with the Standard, errors can occur.
+When starting a project, decide who is going to take the responsibility for the CE marking, and lay down the ground rules. Decide what Performance Level the machine will come under, using EN ISO 13849 and ensure all suppliers are aware of what is required.Make sure they all understand which EN Standards to follow, and make sure they have copies of the Standards. Ask for sample Declarations before deciding on suppliers, and check to see if they have all the information on them, and the correct numbers for example. Issue Purchase Orders, and ensure there is a clause about CE marking, and whose responsibility it is. If building a complex assembly, decide how EMC issues are to be tackled if testing is to be carried out, all suppliers should be aware of potential failures, especially if using Inverter Drives. Check that these are installed using the manufacturers guidelines. Before accepting and paying for any machines, check that they meet the requirements of the order and also that they conform to the Machinery Directive. If there is any doubt, it should be resolved before final payment.Four steps to CE marking
+3
+section
+\nMeet the EMC Experts
+One stop solutions for ensuring the el ectromagnetic 
+compatibility of your products from the UK’s leading fully 
+accredited EMC testing laboratory.
+ 
+Services include:■ 11 semi-anechoic chambers (up to 10m x 7m x 6m)■ 2 large chambers with 3m and 5m diameter turntables■ Conducted emissions and immunity testing from  
+10 Hz-400 MHz
+■ Radiated emissions and immunity from 10 Hz-40GHz■ On-site testing and site surveys to meet your CE marking 
+and Health and Safety requirements
+■ Professional training courses in EMC
+Find out more:
+www.tuv-sud.co.uk/emc\n25The main objectives of the EMC Directive, introduced in 
+1992 and a mandatory requirement from 1996, are: 
+  To harmonise technical rules and requirements for 
+controlling interference emitted by equipment and the control of immunity of equipment to electromagnetic noise.Section 4 - EMC Solutions
+■ EMC Directive
+■ Mains Filters
+■ CablesSection ContentsEMC Solution
+4
+section\n26EMC Solutions
+The EMC Directive, 2004/108/EC is due to be superseded 
+by the EMC Directive 2014/30/EU in April 2016.  In the UK the Directive is implemented by the Electromagnetic Compatibility (EMC) Regulations 2006.
+The EMC Directive is concerned with the protection of 
+the radio spectrum to ensure that broadcast radio, TV, communication and telecommunication systems can operate without interference. The immunity requirement ensures that equipment operates without unacceptable degradation. What is less well realised is that the EMC Directive is not a safety Directive and does not address EMC and its impact on Functional Safety. 
+The requirement for equipment to remain safe in relation 
+to EMC and Functional Safety falls under the Machinery Directive 2006/42/EC itself, specifically under clause 1.5.11; External radiation - Machinery must be designed and constructed in such a way that external radiation does not interfere with its operation.
+However demonstrating EMC and Functional Safety 
+under the Machinery Directive requires compliance with the EMC Directive as a first step but with the addition of a risk assessment of the design for EMC and Functional Safety and the achievement of higher immunity performance for safety related elements. 
+Electromagnetic compatibility (EMC) is an issue that 
+many machine builders find complex and confusing, but that doesn’t mean that they can ignore their legal obligation to ensure their products meet the requirements of the EMC and Machinery Directive.There can be no doubt about the need for electromagnetic compatibility. If, for example, the control system of a machine is disturbed by electromagnetic interference it may randomly malfunction, creating a potentially dangerous situation. Conversely, if the electrical and electronic systems fitted to a machine generate a high level of interference, they may cause other nearby equipment to malfunction.
+Higher Immunity 
+The machinery sector Functional Safety standard EN 62061, based on EN 61508, requires higher levels of immunity to interference for safety related electronic equipment. EN ISO 13849-1 requires compliance with appropriate EMC standards.  EMC immunity testing is one of the verification techniques but as IEC/TS 61000-1-2 states, EMC and Functional Safety cannot be achieved by testing alone due to the difficulty of testing all combinations and permutations of equipment and environment, operating conditions and modes of operation. Conversely testing at higher immunity levels can find failures that could not be predicted by reviewing the design and therefore has a verification role to assess the ‘common’ EMC failure mechanisms. A new draft standard has been issued that provides more specific guidance on the higher immunity levels required; EN 61000-6-7 Electromagnetic compatibility (EMC) - Part 6-7: Generic standards - Immunity requirements for equipment intended to perform functions in a safety-related system (functional safety) in industrial locations.
+ 
+4
+sectionEMC Solution\n27Risk Assessment for EMC and 
+Functional Safety
+The best practice method of achieving EMC and 
+Functional Safety is by reference to technical specification IEC/TS 61000-1-2; Methodology for the achievement of functional safety of electrical and electronic systems including equipment with regard to electromagnetic phenomena. IEC/TS 61000-1-2 can be considered the ‘EMC annex’ to EN 61508 and EN 62061.
+Where possible the design should mitigate the EMC 
+immunity hazard by use of e.g. inherently immune technology, diverse technology and other design measures such as those set out in the IET guide; Overview of techniques and measures related to EMC for Functional Safety, available on the IET website. Although the tools available for EMC hazard and risk assessment are limited, approaches are available such as those specified in IEC/TS 61000-1-2 to construct an EMC matrix to identify and analyse the safety related elements of a system and their interaction with internal and external sources of interference. The key objective is that even if a safety related element becomes susceptible, the overall system remains safe.
+EMC Directive
+Returning to the first step to meet the EMC Directive, to understand the implications for machine builders, a good starting point is to look at the “Guide to the Electromagnetic Compatibility (EMC) Regulations 2006”. Section 2 of this guide, which covers essential requirements, includes statements that can be summarised as saying that equipment must be designed and manufactured so that the electromagnetic disturbance it creates is not excessive, and so that it has a reasonable level of immunity to electromagnetic disturbances. In addition, fixed installations – which includes the majority of machines - must be installed applying good engineering practices and respecting the intended use of its components.
+Then comes a very interesting statement, “There are 
+no conformity assessment or CE marking requirements for fixed installations”. Does this mean that builders of machines categorised as fixed installations have no need to concern themselves with the EMC performance of their products? Indeed it does not. The machines must still be designed and manufactured so that they meet the essential requirements mentioned earlier – the only relaxation of the rules relates to assessment and marking, not to performance!
+But how can machine builders be sure that their 
+products really do have satisfactory EMC performance? It’s very tempting to think that the answer is to use only components that are themselves compliant with the EMC Regulations. Surely, if all of the components used in a machine satisfy the regulations, it’s reasonable to conclude that the whole machine must also meet the regulations?
+Unfortunately, that’s not how it works and it’s relatively 
+easy to see why. Consider, for example, a variable speed drive that, for the sake of argument, produces a level of electromagnetic interference about half of that acceptable under the regulations. Clearly, there’s no problem in stating that this drive complies with the regulations.
+EMC Solution
+4
+section\n28Now put four of those drives on a machine. Is it 
+reasonable to assume that the machine complies with the regulations, simply because each of the drives is compliant? Probably not. The machine may be compliant, especially if measures to control EMC have been incorporated in its design, but the point is that it can’t be assumed to be compliant. In fact, since there is no proven way of calculating or modelling the EMC performance of a machine, it is the opinion of TÜV SÜD that the only way compliance with the EMC Directive can be verified is by testing. This opinion may be considered by some as rather controversial, but when the Health & Safety Executive was asked to comment on this issue, it provided the following statement:
+“Section 6 of the Health & Safety at Work Act (HSW) 
+places a duty on manufacturers to carry out or arrange for the carrying out of such testing and examination as may be necessary to ensure that the article is so designed and constructed that it will, as far as is reasonably practicable, be safe and without risks to health. In the context of EMC, in most applications it is the electromagnetic immunity of equipment that is of interest in relation to Section 6 of the HSW. If it is reasonably practicable to carry out testing for immunity to electromagnetic disturbances, the HSW requires this to be carried out”.
+This statement leaves no room for doubt about the 
+necessity for EMC testing of machines in the vast majority of cases – there is simply no shortcut to achieving compliance with the EMC and Machinery Directive Regulations. Unfortunately, there is also no doubt that EMC testing can be complex and time consuming, especially for the majority of machine builders that lack in-house expertise in this specialist area.For this reason, many machine builders find it preferable to work with a specialist consultant like TÜV SÜD on matters relating to EMC. Provided that they are involved with a project at an early enough stage, a consultant of this type can provide design guidance that will help to optimise the EMC performance of the machine, as well as giving invaluable advice on compliance and testing. The consultant’s services may also include arranging for and supervising the tests.
+The period after testing is often the time when the 
+knowledge and ability of the consultant engineer really comes into play. Rather than walk away from a machine which has issues with EMC and hence has failed some or all of the tests carried out, TÜV SÜD engineers will work with the customer to find the source of the problem and guide the customer to find a solution. The following principles can be used to improve the machines EMC performance and help pass the testing.
+1. Mains Filters
+To reduce the conducted emissions from the machine and improve its immunity to transients, a mains filter is required. It is important to ensure that all supply cables are filtered, i.e. all live supply cables and Neutral. When fitting a mains filter it is important to ensure that it is fitted correctly, i.e. it must be mounted at the point where the mains incoming cable enters the cabinet, the body of the mains filter should be bonded to the metal work of the electrical cabinet and the bond should be metal to metal. When wiring the rest of the electrical cabinet ensure that all cables are routed away from the mains input cables. 
+4
+sectionEMC Solution\n2. Cables
+When routing cables within a machine it is important to 
+consider the types of cables concerned. These can be broken down into the following broad areas:
+  Type 1: Sensitive analogue cables. (Measuring signals)
+  Type 2: Ordinary analogue cables and digital cables.  
+(RS422, RS458, limit switches)
+  Type 3: Low voltage AC controls and DC power. 
+(Relays,  contactors, solenoids DOL motors)
+  Type 4: Very noisy signals. (Inverter input / output 
+cables,  DC motors, RF generators)
+It is important not to mix the different types of cable together, however when contact is unavoidable they should run perpendicular to each other. When the machine consists of a number of sub assemblies, which require interconnection via long lengths of cables, it is recommended that where possible, screened cables be used. The screens of these cables must be bonded to their local EMC earth at both ends, and it is recommended that this bonding exists around all 360 degrees of the cables (i.e. their entire periphery).Unscreened cables entering and leaving the cabinet should be filtered. 
+When installing screened cables the screen should not 
+be used as a signal return path. For unscreened cables all signal and return cables should be twisted, i.e. Live & Neutral, 24v and 0v. It is important not to mix signal and return cables. When bonding other parts of machinery such as doors and lids etc. ensure that the earth straps have a large cross section. Braids or thick cables are normally used for these purposes. These should be kept as short as possible. 
+Mains CableElectrical
+Cabinet/xmarkbldMainsFilter
+Mains CableElectricalCabinet
+MainsFilter/checkbldMains CableElectrical
+Cabinet/xmarkbldMains
+Filter
+Mains CableElectrical
+Cabinet
+Mains
+Filter/checkbld
+29MainsFilter MainsFilterUnscreened cables are filtered
+A BTrunking bonded to 
+cabinets at both ends
+Cabinet 1 Cabinet 2
+All metal work bonded to earthEMC Solution
+4
+section\nmCom+ Solution
+Helping you manage machinery compliance
+mCom+ is a bespoke software solution that enables TÜV 
+SÜD to support you in meeting CE marking and PUWER 
+obligations, by guiding users through the compliance process.  A simple checklist system ensures that no vital steps are missed with a final report generating a prioritised action list for any areas of non-compliance.
+Find out more:
+www.tuv-sud.co.uk/mcomplus\n31The Provision and Use of Work Equipment Regulations 
+1998 (PUWER) requires users of work equipment to carry out risk assessment and provide work equipment that is suitable for its intended task and can be used without putting persons at risk.  The Regulations cover any machinery, appliance, apparatus, tool or installation for use at work (whether exclusively or not) - effectively it is anything used at work. The Regulations introduce requirements to ensure that health and safety inspections are carried out:
+  After installation and before being put into service 
+for the first time; or after assembly at a new site or in a new location to ensure that it has been installed correctly and is safe to operate.
+  After work equipment has been exposed to any 
+conditions causing deterioration, which is liable to cause a dangerous situation.
+  At suitable intervals; and
+  Each time that exceptional circumstances have 
+occurred that are liable to jeopardise the safety of work equipment. The results of these inspections have to be documented and kept until the subsequent inspection is recorded.  
+The Regulations make it an offense to allow work equipment to leave an employer’s undertaking, or if obtained from another undertaking, be used, unless it is accompanied by physical evidence that the last inspection has been carried out. Section 5 - PUWER
+■ PUWER Regulations
+■ Regulation 6
+■ Regulation 10-24Section ContentsPUWER
+5
+section\n32PUWER  
+ 
+The primary objective of PUWER is to ensure the provision of safe work equipment and its safe use. This has several components, which are interlinked:
+  Work equipment should not give rise to risks to health 
+and safety, irrespective of its age or place of origin.
+  The Regulations implement European Community (EC) 
+Directive 89/655/EEC, amended by the non-lifting aspects of the Work Equipment Directive (AUWED).
+  The Regulations are made under the Health and Safety 
+at Work, etc Act 1974 (HSW Act), and apply to all users and the self employed covered by that Act in Great Britain except the crews of sea-going ships.
+  These regulations place a requirement to carry out a Risk 
+Assessment on all existing equipment (see section Six).
+  The regulations ask that the electrical system, the 
+guarding and other possible hazards be assessed and corrected if required.
+The Health And Safety At Work Act 1974 Section 2(2) Employers must, so far as is reasonably practicable provide and maintain plant and systems of work that are safe & without risk to health.
+Risk Assessments are a key part to any PUWER 
+assessment and are cross-referenced with the appropriate section/question at all times. If a non-compliance does occur and you are asked for your reports you will probably be asked primarily for the risk assessments carried out against the equipment in question. In order to fully comply, Risk Assessments are carried out and where problems are found they are reported against a particular section/question. Regulation 6: Inspection
+ Where the safety of work equipment depends on installation it must be inspected:
+(a) After installation and before being put into 
+service for the first time or
+(b) After assembly at a new site or in a new location
+Work equipment that is exposed to conditions causing deterioration liable to result in a dangerous situation must be inspected:
+(a) At suitable intervals, and(b) Each time circumstances liable to jeopardise the 
+safety have occurred
+ The results of any inspection made under this regulation must be recorded and kept until the next inspection. 
+Every employer shall ensure that no work equipment:
+(a) Leaves their undertaking, or
+(b) If obtained from the undertaking of another 
+person, is used in their undertaking unless
+ It is accompanied by physical evidence that the last required inspection has been carried out: 
+  You should ensure that the persons who determine the 
+nature of the inspections required and who carry out the inspections are competent to do so.
+  The competent person should have the necessary 
+knowledge and experience to decide what the inspection should include, how and when it should be carried out.
+  Every employer must ensure that any work equipment 
+complies with any European Directive that applies to it.
+5
+sectionPUWER\n33Regulations 10-24  
+ 
+The following questions highlight the types of hazards that need to be considered under PUWER:
+Reg 10: Conformity with community requirements
+  Equipment complies with all applicable Directives
+Reg 11: Dangerous parts of machinery
+  Is there access to dangerous parts of  machinery
+  Are guards positioned correctly and securely held
+  Can the guarding be bypassed or disabled
+Reg 12: Protection against specified hazards
+  Is there any possibility of fire or explosion
+  Is there a possibility of a discharge of hazardous material
+Reg 13: High or very low temperatures
+  Are there any hot/cold surfaces
+Reg 14: Controls for starting or making a 
+significant change in operating conditions
+  Is a start control provided
+  Is there a reset facility provided
+  Will the machine restart automatically after a stoppage
+Reg 15: Stop controls
+  Are normal stop controls provided
+  Does the machine stop safely
+Reg 16: Emergency stops
+  Are E -stops located correctly
+  Do they function correctlyReg 17: Controls
+  Can the operator see all around the machine from the 
+operating position
+  Is there a delayed start and warning system
+ 
+Reg 18: Control systems
+  Is the control system fail safe
+  Is it possible to be trapped in a machine
+Reg 19: Isolation of energy sources
+  Can all sources of energy be isolated and locked
+Reg 20: Stability
+  Is the machine stable under its own weight or bolted to  
+the floor
+Reg 21: Lighting
+  Is ambient lighting of adequate intensity
+  If not is the machine provided with adequate lighting
+Reg 22: Maintenance
+  Can safe maintenance be carried out
+  Are safe working procedures in place
+Reg 23: Markings
+  Are flow directions marked
+  Are rotational directions marked
+  Are pipes and vessels marked
+  Are permanently live circuits marked
+Reg 24: Warnings
+  Are relevant PPE warnings posted
+  Are electrical safety warnings posted
+  Are hot surface warnings posted
+  Have audible & visual warnings got a checking functionPUWER
+5
+section\nField Labelling - Your
+passport to the USA 
+machinery market
+TÜV SÜD provides Field Labelling services for 
+manufacturers wishing to export machinery to North America.  
+Service includes:
+■ Preliminary Inspection■ The Field Evaluation Final Inspection■ The NRTL Field Label
+Find out more:
+www.tuv-sud.co.uk/ 
+field-labelling\n35The Pre-Purchase Audit is a system designed to assist 
+their clients to purchase machinery and equipment that is both safe and correct. Section 6 - Pre-Purchase Audit
+■ Background
+■ PUWER Assessment
+■ Solution
+■ What to look atSection ContentsPre-Purchase Audit
+6
+section\n36Background
+ 
+When the Provision and Use of Work Equipment Regulations (PUWER) first came into force in 1992 it included a very simplistic view on CE marking: the end user only has to check that the equipment concerned carried a CE Mark. If it did, they were able to presume conformity. PUWER was updated in 1998 and one of the more important, but easily overlooked, changes was that the onus was now put on the end-user to make sure that the equipment complies with all relevant legislation such as CE marking. These changes were re-enforced with further changes in June 2002. This point has been further backed up in other guidance from HSE including “INDG 271 - Buying new machinery”. This document asks the question “Is CE marking a guarantee of safety?” The answer given is “No. The manufacturer is claiming that the machinery complies with the law. You still need to check the machine is safe before it is used”. A list of items to think about (such as do any parts look dangerous, are there guards and are they in place?) is included along with a brief checklist entitled “What do I do when I have bought new machinery?” The key in all of this is that the emphasis is on the purchaser to check that the machine is safe to use. If this is the case, and the end-user should now check more thoroughly regarding the CE marking of new equipment, what is the best way to do this? 
+PUWER
+ To fully comply with PUWER, any new equipment should be inspected after installation and before it is put into use to make sure it is safe. This inspection, if carried out correctly, will highlight any safety issues, which may have an effect on the CE marking of the equipment. Any issues that appear to relate to the CE marking of the equipment should be raised with the manufacturer or supplier of the equipment. However, as the equipment has been installed it may be more difficult to deal with. 
+The Solution
+ A solution to this is to use a User Requirement Specification (URS) when purchasing new equipment. This specification will outline your requirements for the equipment supplier. A URS should include statements such as:
+  The machine must comply with all applicable European 
+and UK legislation. (List all applicable Directives)
+  Euro-Norm Standards should be used to achieve 
+compliance with the Essential Safety  Requirements of all applicable Directives
+  Documentary evidence demonstrating compliance 
+with all applicable Directives will be required
+  A Declaration of Conformity will be required
+  A CE mark will be applied to the machine, preferably on 
+the makers nameplate
+  A full operation and maintenance manual that complies 
+with EHSR 1.7.4 of the Machinery Directive will be required  
+The above is not a complete list, but is indicative of the type of information you should be asking for. To ensure compliance with the URS, the equipment may need to be inspected or audited before it is shipped from the manufacturer or supplier. But this inspection need not 
+6
+sectionPre-Purchase Audit\n37be limited to only safety issues. Often a purchaser may 
+want to inspect his equipment to ensure the product he is receiving is indeed the product he believes he is buying. These inspections are both engineering and quality based. Often a company may lack the skill or resources to carry out an inspection of this type in one visit.  
+Combining the two inspections into one is a cost effective method of ensuring the machine you receive is both safe and meets your specification. Any potential issues can be raised with the manufacturer and either dealt with before it is shipped or at least be planned into the installation process once the equipment has been shipped. Retrofitting is the more difficult method of compliance; it is always advisable to deal with safety as early as possible in the purchasing process, the design stage being preferable.  
+So, if as a company, you decide to include such an audit in your equipment purchasing policy, what would you need to look at and who should carry out the audit? Dealing with the person first, they should have a good knowledge of the equipment type itself as well as competent understanding of PUWER and CE marking legislation and have a sound engineering background to understand the latest developments in machine manufacture. Whilst the auditor may not go through the EHSRs as in-depth as the manufacturer, the same areas need to be covered. It may be beneficial for the auditors to create a generic checklist that can be used so that all people who are carrying out an audit for the company are looking at the same points. Areas to look at include:
+  Documentation, manuals, etc.
+  Drawings, electrical pneumatic, hydraulic etc.
+  Electrical wiring and termination checks
+  Hardware checks
+  Environmental checks
+  Calibration, machine parameters, control systems
+  Software
+  Safety CE, PUWER as applicable
+  Safety related control systems, interlocks etc.
+  Safety, manual handling, COSHH, hazards etc
+  Ergonomic Assessments
+  Maintenance and cleaning procedures
+  Training requirements
+It may also be beneficial at this stage to collate all the relevant documentation such as manuals, drawings etc so that a file is in place when the equipment arrives on site. 
+External Assistance
+ There may be many reasons why a company feels that a pre-purchasing audit is not feasible. It may be manpower, time, competence or a mixture of the three. TÜV SÜD currently carries out this kind of audit for a number of major blue chip companies, both in the UK and abroad. Following the audit, the client will receive a full report highlighting any problem areas with a recommended corrective action. TÜV SÜD can also carry out an inspection to enable compliance with PUWER.Pre-Purchase Audit
+6
+section\n38 38
+38
+Machinery Safety 
+Training
+Make sure you keep up-to-date with the latest machinery 
+safety Standards.  TÜV SÜD provide a range of Machinery Safety training courses from a half day ‘refresher workshop’ on machinery safety through to a five day University-backed course on the European Machinery Safety Requirements.
+Find out more:
+www.tuv-sud.co.uk/ training
+7
+sectionAppendices\n39The following pages consist of forms, charts and 
+checklists that can be used to make-up a machinery safety inspection. Please feel free to photocopy before using.  
+Please note the use of the checklists does not guarantee compliance, they should be used as aide memoires as part of an inspection. Section 7 - Appendices
+■ Safety Related Control Systems
+■ EN 62061
+■ Risk Assessment Template
+■ Technical File ChecklistSection ContentsAppendices
+7
+section\n40Safety Related Control Systems
+EN ISO 13849-1
+ 
+Severity of injury 
+S1 - Slight injuryS2 - Severe injury
+ 
+Frequency of ExposureF1 - Less frequent or short durationF2 - Frequent or long duration
+Possibility of Avoidance
+P1 - PossibleP2 - Less possible
+EN 62061 
+ 
+ConsequencesSeverity 
+SEClass CI
+3-4 5-7 8-10 11-13 14-15
+Death, losing an eye or arm 4 SIL 2 SIL 2 SIL 2 SIL 3 SIL 3
+Permanent, losing fingers 3 OM SIL 1 SIL 2 SIL 3
+Reversible, medical attention 2 OM SIL 1 SIL 1
+Reversible, first aid 1 OM SIL 1Frequency, FR 
+(duration > 10 min)Probability of 
+Hazard. Event, PrAvoidance, Av
+<1 hour 5Common 5
+>hr - >1 day 5Likely 4
+>1 day - <2 wks 4Possible 3Impossible 5
+>2 wks - <1yr 3Rarely 2Possible 3
+>1 year 2Negligible 1Likely 1
+Calculate Class first, Cl (Class) = Fr + Pr + Av, then the consequence defines the SIL level.
+
+7
+sectionAppendices\n41Company: ......................................................................................................................................
+Type: .................................................................. Make: ............................................................
+Model : ............................................................... Serial Number: ............................................
+Location: ........................................................... Power Supply: .............................................
+ Nature of Hazard: 
+ 
+Risk Assessment: 
+LO FE DPH NP HRN
+Degree of Risk:
+ Recommended Control Measure:
+ 
+Risk Assessment: 
+LO FE DPH NP HRN
+Degree of Risk:
+Further risk reduction required?
+Assessment By:
+Date:Risk Assessment
+\n42LO Likelihood of OccurrenceFE Frequency of 
+Exposure
+0 Impossible cannot happen 0.1 Infrequently
+0.1 Almost unlikely possible in extreme circumstances 0.2 Annually
+0.5 Highly unlikely though conceivable 1 Monthly
+1 Unlikely but could occur 1.5 Weekly
+2 Possible but unusual 2.5 Daily
+5 Even chance could happen 4 Hourly
+8 Probable not surprised 5 Constantly
+10 Likely to be expected
+15 Certain no doubt
+DPH Degree of Possible Harm NP Number of Persons
+0.1 Scratch or bruise 1 1-2 persons
+0.5 Laceration or mild ill health 2 3-7 persons
+1 Break of a minor bone or minor illness (temporary) 4 8-15 persons
+2 Break of a major bone or minor illness (permanent) 8 16-50 persons
+4 Loss of limb/eye/serious illness of a temporary natury 12 50+ persons
+8 Loss of limbs/eyes/serious illness of a permanent nature
+15 Fatality
+Risk Negligible Very Low Low Significant High Very High Extreme Unacceptable
+HRN 0-1 1-5 5-10 10-50 50-100 100-500 500-1000 Over 1000
+ Comments/Measures Implemented:
+Review Dates:
+42
+\n43Technical File Inclusions
+Section One : Risk Assessments Signature
+1A Safety related control circuit assessment
+1B Risk assessment
+1C Support documentation for assessments
+Section Two : Essential Requirements
+2A Essential health and safety requirements
+2B Complete detailed drawings showing conformity with the ESHR
+2C Calculation notes, test results showing conformity with EHSR
+2D Electrical checklist
+2E Pneumatic checklist
+2F Hydraulic checklist
+Section Three : Standards3A The Standards used
+3B Reports and test results required by the Harmonised Standards
+Section Four : Certification and Specifications
+4A Any technical specifications
+4B Certificates or technical reports obtained from a competent body 
+supporting conformity (optional)
+Section Five : Drawings
+5A Overall drawings
+5B Drawing of control circuitry
+5C Specific drawings
+Section Six : Manuals6A Instruction manual in the language of the country of intended use
+6B Maintenance manual
+6C Other manuals
+Section Seven : Series Manufacture7A For series manufacture internal measures implemented to ensure 
+machinery remains in conformity with the Directive
+Section Eight : Other Documentation
+8A Any other documentation showing support for product
+Section Nine : Declarations/Inclusions9A Declaration of Conformity/Incorporation\nA practical guide to machinery safety
+www.tuv-sud.co.uk/machinery
+machinery@tuv-sud.co.uk
+2014 © TUV SUD Ltd | UK-MKG/IDP/1.0/en/GBTÜV SÜD Product Service
+Belasis Business Centre, Coxwold WayBillingham, Cleveland
+TS23 4EA, United Kingdom
+Telephone: +44 (0)1642 345637machinery@tuv-sud.co.ukwww.tuv-sud.co.uk/machinery

@@ -1,0 +1,220 @@
+Robotic Industries Association:
+Robot Standards
+Carole Franklin
+Director of Standards Development
+Robotic Industries Association\nRobotic Industries Association (RIA)
+Today’s Topics:
+–About RIA
+–About RIA’s Standards 
+•History
+•RIA’s Foundational Standard: Safety Requirements for Industrial 
+Robots and Robot Systems
+•Additional Standards Documents for Robot System Safety
+–Definitions
+–Resources\nRobotic Industries Association (RIA)
+Today’s Topics:
+–About RIA
+–About RIA’s Standards 
+•History
+•RIA’s Foundational Standard: Safety Requirements for Industrial 
+Robots and Robot Systems
+•Additional Standards Documents for Robot System Safety
+–Definitions
+–Resources\nAbout RIA
+•Founded in 1974
+•Daughter organization of A3 –the Association for 
+Advancing Automation
+–> 1,200 member companies
+–Largest automation trade group in North America, and number 2 in the world 
+(second to only VDMA in Germany)
+•Leader in robot standards development since 1982
+–ANSI, ISO primarily\nRIA’s Role in Robot Standards
+5ANSI: R15, Robotics Standards 
+in the U.S.
+•R15 Standards Approval 
+Committee (SAC)
+•R15.06 Drafting 
+Subcommittee
+•R15.08 Drafting 
+Subcommittee
+•ANSI Committee members are 
+notrequired to be RIA 
+membersU.S. Technical Advisory Group to 
+ISO TC 299 (“U.S. TAG” )
+•Administers ANSI’s 
+membership in the ISO TC 
+299, Robotics
+•U.S. TAG members are not
+required to be RIA membersISO Technical Committee 299, 
+Robotics (“TC 299”)
+•WG 1 –Vocabulary
+•WG 2 –Personal Care Safety
+•WG 3 –Industrial Safety
+•WG 4 –Service Robots
+•JWG 5 * –Medical Robot 
+Safety
+•WG 6 –Modularity for 
+Service RobotsRIA Standards Development Committee (SDC)
+•RIA Members\nRobotic Industries Association (RIA)
+Today’s Topics:
+–About RIA
+–About RIA’s Standards 
+•History
+•RIA’s Foundational Standard: Safety Requirements for Industrial 
+Robots and Robot Systems
+•Additional Standards Documents for Robot System Safety
+–Definitions
+–Resources\nAbout RIA’s Robot Standards: Today
+•R15.06-2012 > Direct U.S. Adoption of ISO 10218-2011. Safety 
+requirements for industrial robots and robot systems.
+–RIA TRR15.306- 2016. Task -based risk assessment.
+–RIA TRR15.406- 2014. Safeguarding.
+–RIA TRR15.506- 2014. Applicability for existing systems. 
+–RIA TRR15.606- 2016 > Direct U.S. Adoption of ISO/ TS15066:2016. Safety 
+requirements for collaborative robots.
+–RIA TRR15.706- 201X (In development). User Guidance.
+–RIA TRR15.806- 2018. Test methods for PFLcollaborative robot systems.
+–RIA TRR15.906- 20XX (In development). Safety -related software.
+•R15.08-20XX (In development). Safety requirements for industrial 
+mobile robots\nAbout RIA’s Robot Standards:  History
+Year Standard Document
+1986 ANSI/RIA R15.06 -1986
+1992 ANSI/RIA R15.06 -1992
+1999 ANSI/RIA R15.06 -1999
+~2000 ISO 10218 begun, based on R15.06 -1999
+2006 ISO 10218 -1:2006
+2007 ANSI/RIA ISO 10218 -1:2017 & RIA TRto enable its use
+2011 ISO 10218 -1,2:2011
+2012 ANSI/RIA R15.06 -2012 (U.S. national adoption of 10218 -1,2:2011)
+2014 RIA TRs306, 406, 506
+2016 ISO/TS15066:2016; RIA TRR15.606- 2016 (U.S. national adoption). TR306 update.
+2017 ISO/ TR20218- 2:2017
+2018 ISO/ TR20218 -1:2018. RIA TRR15.806 -2018.\nRIA’s Foundational Standard
+ANSI/RIA R15.06- 2012, 
+Safety Requirements for Industrial 
+Robots & Robot Systems
+•U.S. National Adoption of ISO 10218 -
+1,2:2011
+–10218 Part 1: Safety Requirements for 
+Industrial ROBOTS
+–10218 Part 2: Safety Requirements for 
+Industrial ROBOT SYSTEMS and Systems 
+Integration\nANSI/RIA R15.06- 2012: Table of Contents
+\nRobotic Industries Association (RIA)
+Today’s Topics:
+–About RIA
+–About RIA’s Standards 
+•History
+•RIA’s Foundational Standard: Safety Requirements for Industrial 
+Robots and Robot Systems
+•Additional Standards Documents for Robot System Safety
+–Definitions
+–Resources\nRIA’s Definitions
+•Question 1: How does your group define terminology (e.g., 
+ontologies, glossaries, something else)?
+•Question 2: How do you define the following terms (as 
+appropriate): robot, automated robot, teleoperated robot, 
+environment, pose?
+•Question 3: How did you determine these definitions (e.g., 
+adopted from other standards, consensus among group 
+members, something else )?\nRIA’s Definitions
+•Question 1: How does your group define terminology (e.g., 
+ontologies, glossaries, something else)?
+•RIA response: English language/ natural language consensus 
+definitions
+–For the Broader Industry: RIA/ A3 actively participates in IFR’s vocabulary efforts
+–For Standards: RIA’s Standards definitions generally follow R15.06/10218, + ISO 8373 
+where applicable
+•RIA Standards: English language/ natural language consensus 
+definitions
+–Consult ISO 8373:2012, Robots and Robotic Devices -Vocabulary
+–Consult ISO 10218- 1,2:2011, Robots and Robotic Devices -Industrial robots and robot 
+systems – Safety requirements\nRIA’s Standards Definitions
+•Question 2: How do you define the following terms (as 
+appropriate): robot, automated robot, teleoperated robot, 
+environment, pose?
+Term Definition Source
+Robot actuated mechanism programmable in two or 
+more axes (4.3) with a degree of autonomy 
+(2.2), moving within its environment, to perform 
+intended tasks [There are 2 Notes]ISO 8373:2012
+Industrial robot automatically controlled, reprogrammable (2.4), 
+multipurpose (2.5) manipulator (2.1), 
+programmable in three or more axes (4.3), 
+which can be either fixed in place or mobile for 
+use in industrial automation applications 
+[There are 4 Notes in the 10218 version]ISO 8373:2012; 
+10218 -1,2:2011 
+(adapted)\nRIA’s Standards Definitions
+•Question 2: How do you define the following terms (as 
+appropriate): robot, automated robot, teleoperated robot, 
+environment, pose?
+Term Definition Source
+Automated robot We do not use this term; in our general usage, 
+all robots are “automated”; autonomy is a key 
+part of our conception of a “robot”
+Teleoperated
+robotWe do not use this term; the closest related 
+terms are “teleoperation” (8373) and “manual 
+mode” (10218)
+Environment We do not use this term; the closest related 
+term is “normal operating conditions” (8373)\nRIA’s Standards Definitions
+•Question 2: How do you define the following terms (as 
+appropriate): robot, automated robot, teleoperated robot, 
+environment, pose?
+Term Definition Source
+Pose Combination of position and orientation in 
+space [There are 2 Notes]
+There are also a number of related terms, e.g., 
+command pose, attained pose, path, trajectory ISO 8373:2012\nRIA’s Standards Definitions
+•Question 3: How did you determine these definitions (e.g., 
+adopted from other standards, consensus among group 
+members, something else)?
+•RIA Response: Adopted from ISO 10218 and 8373; participated 
+in the development of the natural language definitions in 10218 
+by consensus among group members, which then fed into the 
+first version of 8373.\nRobotic Industries Association (RIA)
+Today’s Topics:
+–About RIA
+–About RIA’s Standards 
+•History
+•RIA’s Foundational Standard: Safety Requirements for Industrial 
+Robots and Robot Systems
+•Additional Standards Documents for Robot System Safety
+–Definitions
+–Resources\nResources: Robotics.org
+•Feature Articles
+•Safety Resources
+•Webinars
+•Supplier Information
+•Certified Integrators 
+Program
+•Industry Event 
+Schedule
+•More!
+\nResources: Robotics.org/ Events
+\nResources: Robotics.org/ Safety Page
+•Standards 
+Documents
+•Safety Seminars
+•Webinars
+•Risk 
+Assessment 
+Software
+\nResources: Robotics.org/ Standards
+Page •Standards 
+Newsletter
+•Upcoming 
+Standards 
+Meetings 
+Schedule
+•Committee 
+Application
+\nQuestions About Standards?
+Carole Franklin
+Director of Standards Development
+Robotic Industries Association (RIA)
+Ann Arbor, MI  USA
+cfranklin@robotics.org
+734-994-6088
+www.robotics.org
