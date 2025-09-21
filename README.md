@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Industrial Safety CLI - Full Version (with AI Q&A)
 
 This command-line project ingests a folder of industrial safety PDFs, extracts text (with optional OCR), 
@@ -68,3 +69,6 @@ industrial_safety_cli_project_full/
 - Embeddings usage will consume tokens on your OpenAI account; building the index might cost a few cents to a few dollars depending on document size.
 - If you prefer a cheaper/faster embedding model, change `text-embedding-3-small` to another model in `scripts/ask_ai.py`.
 - If you want, I can add a Dockerfile to containerize this project.
+=======
+# industrial_safety_cli_project
+>>>>>>> 3a64ad8e42d3f18b1572eff48909d165711a456a
